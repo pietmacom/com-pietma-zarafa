@@ -1,0 +1,65 @@
+# Maintainer: MartiMcFly info@pietma.com
+# Contributor: Archist archist@die-optimisten.net
+# Contributor: C Anthony Risinger
+
+pkgname=('zarafa-webapp'
+	 'zarafa-webapp-plugins')
+pkgver=1.6.1
+_pkgsvn=svn46039
+pkgrel=1
+pkgdesc=('WebApp for Zarafa')
+arch=('any')
+url=('http://www.zarafa.com/')
+license=('AGPL3')
+#istall=('install')
+#backup=("usr/share/${pkgname}/config.php")
+depends=('php')
+makedepends=('apache-ant'
+	     'gettext')
+source=("webapp-${pkgver}.${_pkgsvn}.tar.gz::http://download.zarafa.com/community/final/WebApp/${pkgver}/webapp-${pkgver}.${_pkgsvn}.tar.gz")
+md5sums=('b948773f97847887f594240f74da40c2')
+
+package_zarafa-webapp() {
+    # php-fpm
+    # nginx
+
+    cd ${srcdir}/webapp-${pkgver}.${_pkgsvn}
+    
+    # create translations, compress javascript-files
+    ant deploy
+
+    cd deploy
+
+    # create folders
+    mkdir -p ${pkgdir}/usr/share/${pkgname}/
+    cp -r * ${pkgdir}/usr/share/${pkgname}/
+
+    mkdir -p ${pkgdir}/usr/share/doc/${pkgname}/
+    cp config.php.dist ${pkgdir}/usr/share/doc/${pkgname}/
+    cp debug.php.dist ${pkgdir}/usr/share/doc/${pkgname}/
+
+    # replace project name in install
+    #sed -i "s/{pkgname}/$pkgname/g" "${pkgdir}/install"
+}
+
+package_zarafa-webapp-plugins() {                                     
+    cd ${srcdir}/webapp-${pkgver}.${_pkgsvn}
+
+    # create translations, compress javascript-files.
+    ant deploy-plugins
+
+    # create folders                                                
+    mkdir -p ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/                         
+
+    cd deploy/plugins
+    cp -r extbox ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
+    cp -r folderwidgets ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
+    cp -r oauthlib ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
+    cp -r pdfbox ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
+    cp -r pimfolder ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
+    cp -r quickitems ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
+    cp -r shellgame ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
+    cp -r webappmanual ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
+    cp -r webodf ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
+    cp -r xmpp ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
+}

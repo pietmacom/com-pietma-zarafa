@@ -1,0 +1,7 @@
+post_install() {
+    if [ ! -e /usr/share/{pkgname}/config.php ]
+    then
+	cp -n /usr/share/doc/{pkgname}/config.php.dist /usr/share/{pkgname}/config.php
+	cp -n /usr/share/doc/{pkgname}/debug.php.dist /usr/share/{pkgname}/debug.php
+    fi
+}
