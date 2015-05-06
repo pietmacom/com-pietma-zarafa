@@ -1,0 +1,792 @@
+
+[20-Mar-2014 03:33:00] ERROR - array (
+  'msg' => 'file_exists(): open_basedir restriction in effect. File(/usr/share/php//mapi/mapitags.php) is not within the allowed path(s): (/var/lib/nginx/http:/usr/share/sabre-zarafa/:/var/lib/sabre-zarafa/:/usr/share/z-push/:/var/log/z-push/:/var/lib/z-push/:/usr/share/zarafa-webaccess/:/var/lib/zarafa-webaccess/tmp/:/usr/share/zarafa-webapp/:/var/lib/zarafa-webapp/tmp/:/home/:/tmp/:/usr/share/php/)',
+  'file' => '/usr/share/zarafa-webaccess/server/class.configcheck.php:369',
+)
+[20-Mar-2014 03:33:00]  - '
+@ class.configcheck.php:369 - file_exists(...)
+@ class.configcheck.php:73 - ConfigCheck->checkInclude(...)
+@ index.php:92 - ConfigCheck->ConfigCheck(...)
+'
+[20-Mar-2014 03:34:00] ERROR - array (
+  'msg' => 'file_exists(): open_basedir restriction in effect. File(/usr/share/php/mapi/mapitags.php) is not within the allowed path(s): (/var/lib/nginx/http:/usr/share/sabre-zarafa/:/var/lib/sabre-zarafa/:/usr/share/z-push/:/var/log/z-push/:/var/lib/z-push/:/usr/share/zarafa-webaccess/:/var/lib/zarafa-webaccess/tmp/:/usr/share/zarafa-webapp/:/var/lib/zarafa-webapp/tmp/:/home/:/tmp/:/usr/share/php/)',
+  'file' => '/usr/share/zarafa-webaccess/server/class.configcheck.php:369',
+)
+[20-Mar-2014 03:34:00]  - '
+@ class.configcheck.php:369 - file_exists(...)
+@ class.configcheck.php:73 - ConfigCheck->checkInclude(...)
+@ index.php:92 - ConfigCheck->ConfigCheck(...)
+'
+[20-Mar-2014 03:34:01] ERROR - array (
+  'msg' => 'file_exists(): open_basedir restriction in effect. File(/usr/share/php/mapi/mapitags.php) is not within the allowed path(s): (/var/lib/nginx/http:/usr/share/sabre-zarafa/:/var/lib/sabre-zarafa/:/usr/share/z-push/:/var/log/z-push/:/var/lib/z-push/:/usr/share/zarafa-webaccess/:/var/lib/zarafa-webaccess/tmp/:/usr/share/zarafa-webapp/:/var/lib/zarafa-webapp/tmp/:/home/:/tmp/:/usr/share/php/)',
+  'file' => '/usr/share/zarafa-webaccess/server/class.configcheck.php:369',
+)
+[20-Mar-2014 03:34:01]  - '
+@ class.configcheck.php:369 - file_exists(...)
+@ class.configcheck.php:73 - ConfigCheck->checkInclude(...)
+@ index.php:92 - ConfigCheck->ConfigCheck(...)
+'
+[20-Mar-2014 03:34:02] ERROR - array (
+  'msg' => 'file_exists(): open_basedir restriction in effect. File(/usr/share/php/mapi/mapitags.php) is not within the allowed path(s): (/var/lib/nginx/http:/usr/share/sabre-zarafa/:/var/lib/sabre-zarafa/:/usr/share/z-push/:/var/log/z-push/:/var/lib/z-push/:/usr/share/zarafa-webaccess/:/var/lib/zarafa-webaccess/tmp/:/usr/share/zarafa-webapp/:/var/lib/zarafa-webapp/tmp/:/home/:/tmp/:/usr/share/php/)',
+  'file' => '/usr/share/zarafa-webaccess/server/class.configcheck.php:369',
+)
+[20-Mar-2014 03:34:02]  - '
+@ class.configcheck.php:369 - file_exists(...)
+@ class.configcheck.php:73 - ConfigCheck->checkInclude(...)
+@ index.php:92 - ConfigCheck->ConfigCheck(...)
+'
+[20-Mar-2014 03:34:21] ERROR - array (
+  'msg' => 'file_exists(): open_basedir restriction in effect. File(/usr/share/php/mapi/mapitags.php) is not within the allowed path(s): (/var/lib/nginx/http:/usr/share/sabre-zarafa/:/var/lib/sabre-zarafa/:/usr/share/z-push/:/var/log/z-push/:/var/lib/z-push/:/usr/share/zarafa-webaccess/:/var/lib/zarafa-webaccess/tmp/:/usr/share/zarafa-webapp/:/var/lib/zarafa-webapp/tmp/:/home/:/tmp/:/usr/share/php/)',
+  'file' => '/usr/share/zarafa-webaccess/server/class.configcheck.php:369',
+)
+[20-Mar-2014 03:34:21]  - '
+@ class.configcheck.php:369 - file_exists(...)
+@ class.configcheck.php:73 - ConfigCheck->checkInclude(...)
+@ index.php:92 - ConfigCheck->ConfigCheck(...)
+'
+[20-Mar-2014 03:36:37] ERROR - array (
+  'msg' => 'file_exists(): open_basedir restriction in effect. File(/usr/share/pear//mapi/mapitags.php) is not within the allowed path(s): (/var/lib/nginx/http:/usr/share/sabre-zarafa/:/var/lib/sabre-zarafa/:/usr/share/z-push/:/var/log/z-push/:/var/lib/z-push/:/usr/share/zarafa-webaccess/:/var/lib/zarafa-webaccess/tmp/:/usr/share/zarafa-webapp/:/var/lib/zarafa-webapp/tmp/:/home/:/tmp/:/usr/share/php/)',
+  'file' => '/usr/share/zarafa-webaccess/server/class.configcheck.php:369',
+)
+[20-Mar-2014 03:36:37]  - '
+@ class.configcheck.php:369 - file_exists(...)
+@ class.configcheck.php:73 - ConfigCheck->checkInclude(...)
+@ index.php:92 - ConfigCheck->ConfigCheck(...)
+'
+[20-Mar-2014 03:36:38] ERROR - array (
+  'msg' => 'file_exists(): open_basedir restriction in effect. File(/usr/share/pear//mapi/mapitags.php) is not within the allowed path(s): (/var/lib/nginx/http:/usr/share/sabre-zarafa/:/var/lib/sabre-zarafa/:/usr/share/z-push/:/var/log/z-push/:/var/lib/z-push/:/usr/share/zarafa-webaccess/:/var/lib/zarafa-webaccess/tmp/:/usr/share/zarafa-webapp/:/var/lib/zarafa-webapp/tmp/:/home/:/tmp/:/usr/share/php/)',
+  'file' => '/usr/share/zarafa-webaccess/server/class.configcheck.php:369',
+)
+[20-Mar-2014 03:36:38]  - '
+@ class.configcheck.php:369 - file_exists(...)
+@ class.configcheck.php:73 - ConfigCheck->checkInclude(...)
+@ index.php:92 - ConfigCheck->ConfigCheck(...)
+'
+[20-Mar-2014 03:37:28] ERROR - array (
+  'msg' => 'file_exists(): open_basedir restriction in effect. File(/usr/share/pear//mapi/mapitags.php) is not within the allowed path(s): (/var/lib/nginx/http:/usr/share/sabre-zarafa/:/var/lib/sabre-zarafa/:/usr/share/z-push/:/var/log/z-push/:/var/lib/z-push/:/usr/share/zarafa-webaccess/:/var/lib/zarafa-webaccess/tmp/:/usr/share/zarafa-webapp/:/var/lib/zarafa-webapp/tmp/:/home/:/tmp/:/usr/share/php/)',
+  'file' => '/usr/share/zarafa-webaccess/server/class.configcheck.php:369',
+)
+[20-Mar-2014 03:37:28]  - '
+@ class.configcheck.php:369 - file_exists(...)
+@ class.configcheck.php:73 - ConfigCheck->checkInclude(...)
+@ index.php:92 - ConfigCheck->ConfigCheck(...)
+'
+[20-Mar-2014 03:38:08] ERROR - array (
+  'msg' => 'file_exists(): open_basedir restriction in effect. File(/usr/share/pear/mapi/mapi/mapitags.php) is not within the allowed path(s): (/var/lib/nginx/http:/usr/share/sabre-zarafa/:/var/lib/sabre-zarafa/:/usr/share/z-push/:/var/log/z-push/:/var/lib/z-push/:/usr/share/zarafa-webaccess/:/var/lib/zarafa-webaccess/tmp/:/usr/share/zarafa-webapp/:/var/lib/zarafa-webapp/tmp/:/home/:/tmp/:/usr/share/php/)',
+  'file' => '/usr/share/zarafa-webaccess/server/class.configcheck.php:369',
+)
+[20-Mar-2014 03:38:08]  - '
+@ class.configcheck.php:369 - file_exists(...)
+@ class.configcheck.php:73 - ConfigCheck->checkInclude(...)
+@ index.php:92 - ConfigCheck->ConfigCheck(...)
+'
+[20-Mar-2014 03:38:08] ERROR - array (
+  'msg' => 'file_exists(): open_basedir restriction in effect. File(/usr/share/pear/mapi/mapi/mapitags.php) is not within the allowed path(s): (/var/lib/nginx/http:/usr/share/sabre-zarafa/:/var/lib/sabre-zarafa/:/usr/share/z-push/:/var/log/z-push/:/var/lib/z-push/:/usr/share/zarafa-webaccess/:/var/lib/zarafa-webaccess/tmp/:/usr/share/zarafa-webapp/:/var/lib/zarafa-webapp/tmp/:/home/:/tmp/:/usr/share/php/)',
+  'file' => '/usr/share/zarafa-webaccess/server/class.configcheck.php:369',
+)
+[20-Mar-2014 03:38:08]  - '
+@ class.configcheck.php:369 - file_exists(...)
+@ class.configcheck.php:73 - ConfigCheck->checkInclude(...)
+@ index.php:92 - ConfigCheck->ConfigCheck(...)
+'
+[20-Mar-2014 03:38:55] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:740',
+)
+[20-Mar-2014 03:38:55]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:38:55] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:742',
+)
+[20-Mar-2014 03:38:55]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:38:55] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:901',
+)
+[20-Mar-2014 03:38:55]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:38:55] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:620',
+)
+[20-Mar-2014 03:38:55]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:38:55] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:623',
+)
+[20-Mar-2014 03:38:55]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:38:55] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Parser.php:618',
+)
+[20-Mar-2014 03:38:55]  - '
+@ Unserializer.php:86 - zarafa_error_handler(...)
+@ Unserializer.php:86 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mär-2014 03:38:55] ERROR - array (
+  'msg' => 'Undefined index: user',
+  'file' => '/usr/share/zarafa-webaccess/client/login.php:53',
+)
+[20-Mär-2014 03:38:55]  - '
+@ login.php:53 - zarafa_error_handler(...)
+@ index.php:279 - include(...)
+'
+[20-Mar-2014 03:39:09] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:740',
+)
+[20-Mar-2014 03:39:09]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:09] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:742',
+)
+[20-Mar-2014 03:39:09]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:09] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:901',
+)
+[20-Mar-2014 03:39:09]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:09] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:620',
+)
+[20-Mar-2014 03:39:09]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:09] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:623',
+)
+[20-Mar-2014 03:39:09]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:09] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Parser.php:618',
+)
+[20-Mar-2014 03:39:09]  - '
+@ Unserializer.php:86 - zarafa_error_handler(...)
+@ Unserializer.php:86 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:10] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:740',
+)
+[20-Mar-2014 03:39:10]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:10] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:742',
+)
+[20-Mar-2014 03:39:10]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:10] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:901',
+)
+[20-Mar-2014 03:39:10]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:10] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:620',
+)
+[20-Mar-2014 03:39:10]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:10] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:623',
+)
+[20-Mar-2014 03:39:10]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:10] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Parser.php:618',
+)
+[20-Mar-2014 03:39:10]  - '
+@ Unserializer.php:86 - zarafa_error_handler(...)
+@ Unserializer.php:86 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:10] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:740',
+)
+[20-Mar-2014 03:39:10]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:10] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:742',
+)
+[20-Mar-2014 03:39:10]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:10] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:901',
+)
+[20-Mar-2014 03:39:10]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:10] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:620',
+)
+[20-Mar-2014 03:39:10]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:10] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:623',
+)
+[20-Mar-2014 03:39:10]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:10] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Parser.php:618',
+)
+[20-Mar-2014 03:39:10]  - '
+@ Unserializer.php:86 - zarafa_error_handler(...)
+@ Unserializer.php:86 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ index.php:108 - require(...)
+'
+[20-Mar-2014 03:39:16] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:740',
+)
+[20-Mar-2014 03:39:16]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:16] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:742',
+)
+[20-Mar-2014 03:39:16]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:16] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:901',
+)
+[20-Mar-2014 03:39:16]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:16] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:620',
+)
+[20-Mar-2014 03:39:16]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:16] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:623',
+)
+[20-Mar-2014 03:39:16]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:16] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Parser.php:618',
+)
+[20-Mar-2014 03:39:16]  - '
+@ Unserializer.php:86 - zarafa_error_handler(...)
+@ Unserializer.php:86 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:21] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:740',
+)
+[20-Mar-2014 03:39:21]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:21] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:742',
+)
+[20-Mar-2014 03:39:21]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:21] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:901',
+)
+[20-Mar-2014 03:39:21]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:21] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:620',
+)
+[20-Mar-2014 03:39:21]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:21] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:623',
+)
+[20-Mar-2014 03:39:21]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:21] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Parser.php:618',
+)
+[20-Mar-2014 03:39:21]  - '
+@ Unserializer.php:86 - zarafa_error_handler(...)
+@ Unserializer.php:86 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:22] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:740',
+)
+[20-Mar-2014 03:39:22]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:22] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:742',
+)
+[20-Mar-2014 03:39:22]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:22] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:901',
+)
+[20-Mar-2014 03:39:22]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:22] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:620',
+)
+[20-Mar-2014 03:39:22]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:22] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:623',
+)
+[20-Mar-2014 03:39:22]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:22] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Parser.php:618',
+)
+[20-Mar-2014 03:39:22]  - '
+@ Unserializer.php:86 - zarafa_error_handler(...)
+@ Unserializer.php:86 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:31] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:740',
+)
+[20-Mar-2014 03:39:31]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:31] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:742',
+)
+[20-Mar-2014 03:39:31]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:31] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:901',
+)
+[20-Mar-2014 03:39:31]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:31] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:620',
+)
+[20-Mar-2014 03:39:31]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:31] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:623',
+)
+[20-Mar-2014 03:39:31]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:39:31] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Parser.php:618',
+)
+[20-Mar-2014 03:39:31]  - '
+@ Unserializer.php:86 - zarafa_error_handler(...)
+@ Unserializer.php:86 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:06] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:740',
+)
+[20-Mar-2014 03:40:06]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:06] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:742',
+)
+[20-Mar-2014 03:40:06]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:06] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:901',
+)
+[20-Mar-2014 03:40:06]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:06] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:620',
+)
+[20-Mar-2014 03:40:06]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:06] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:623',
+)
+[20-Mar-2014 03:40:06]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:06] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Parser.php:618',
+)
+[20-Mar-2014 03:40:06]  - '
+@ Unserializer.php:86 - zarafa_error_handler(...)
+@ Unserializer.php:86 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:07] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:740',
+)
+[20-Mar-2014 03:40:07]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:07] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:742',
+)
+[20-Mar-2014 03:40:07]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:07] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:901',
+)
+[20-Mar-2014 03:40:07]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:07] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:620',
+)
+[20-Mar-2014 03:40:07]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:07] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:623',
+)
+[20-Mar-2014 03:40:07]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:07] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Parser.php:618',
+)
+[20-Mar-2014 03:40:07]  - '
+@ Unserializer.php:86 - zarafa_error_handler(...)
+@ Unserializer.php:86 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:36] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:740',
+)
+[20-Mar-2014 03:40:36]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:36] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:742',
+)
+[20-Mar-2014 03:40:36]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:36] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Unserializer.php:901',
+)
+[20-Mar-2014 03:40:36]  - '
+@ class.xmlparser.php:53 - zarafa_error_handler(...)
+@ class.xmlparser.php:53 - require_once()
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:36] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:620',
+)
+[20-Mar-2014 03:40:36]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:36] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/PEAR.php:623',
+)
+[20-Mar-2014 03:40:36]  - '
+@ Unserializer.php:81 - zarafa_error_handler(...)
+@ Unserializer.php:81 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'
+[20-Mar-2014 03:40:36] ERROR - array (
+  'msg' => 'Assigning the return value of new by reference is deprecated',
+  'file' => '/usr/share/zarafa-webaccess/server/PEAR/XML/Parser.php:618',
+)
+[20-Mar-2014 03:40:36]  - '
+@ Unserializer.php:86 - zarafa_error_handler(...)
+@ Unserializer.php:86 - require_once()
+@ class.xmlparser.php:53 - require_once(...)
+@ class.request.php:53 - require_once(...)
+@ zarafa.php:78 - include(...)
+'

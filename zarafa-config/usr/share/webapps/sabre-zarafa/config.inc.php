@@ -1,0 +1,1 @@
+/etc/webapps/sabre-zarafa/config.inc.php

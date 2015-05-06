@@ -1,0 +1,1 @@
+/etc/webapps/z-push/config.php

@@ -1,0 +1,132 @@
+/*
+ * Copyright 2005 - 2012  Zarafa B.V.
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License, version 3, 
+ * as published by the Free Software Foundation with the following additional 
+ * term according to sec. 7:
+ *  
+ * According to sec. 7 of the GNU Affero General Public License, version
+ * 3, the terms of the AGPL are supplemented with the following terms:
+ * 
+ * "Zarafa" is a registered trademark of Zarafa B.V. The licensing of
+ * the Program under the AGPL does not imply a trademark license.
+ * Therefore any rights, title and interest in our trademarks remain
+ * entirely with us.
+ * 
+ * However, if you propagate an unmodified version of the Program you are
+ * allowed to use the term "Zarafa" to indicate that you distribute the
+ * Program. Furthermore you may use our trademarks where it is necessary
+ * to indicate the intended purpose of a product or service provided you
+ * use it in accordance with honest practices in industrial or commercial
+ * matters.  If you want to propagate modified versions of the Program
+ * under the name "Zarafa" or "Zarafa Server", you may only do so if you
+ * have a written permission by Zarafa B.V. (to acquire a permission
+ * please contact Zarafa at trademark@zarafa.com).
+ * 
+ * The interactive user interface of the software displays an attribution
+ * notice containing the term "Zarafa" and/or the logo of Zarafa.
+ * Interactive user interfaces of unmodified and modified versions must
+ * display Appropriate Legal Notices according to sec. 5 of the GNU
+ * Affero General Public License, version 3, when you propagate
+ * unmodified or modified versions of the Program. In accordance with
+ * sec. 7 b) of the GNU Affero General Public License, version 3, these
+ * Appropriate Legal Notices must retain the logo of Zarafa or display
+ * the words "Initial Development by Zarafa" if the display of the logo
+ * is not reasonably feasible for technical reasons. The use of the logo
+ * of Zarafa in Legal Notices is allowed for unmodified and modified
+ * versions of the software.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *  
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ */
+
+/**
+ * Mdm (mobile device management) Module
+ *
+ * This is the css file.
+ *
+ * Created on 15.04.2009
+ * Author: Manfred Kutas <m.kutas@zarafa.com>
+ *
+ */
+div.mdmContainer {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: relative;
+    padding: 5px 0px 0px 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+div.mdmMaster {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+span.mdmDescription {
+    text-align:left;
+    font-size:larger;
+}
+
+span.wipeddevices {
+    color:#F00;
+}
+
+table.devicesTable {
+    border: 1px solid #8595FC;
+    font-family:Arial;
+    width: 95%;
+}
+
+td.devicesTableHeader1{
+    text-align:left;
+    background-color:#E3EBFE;
+    padding-left:5px;
+    border-bottom: 1px solid #D5E5FD;
+}
+
+td.devicesTableHeader2{
+    text-align:left;
+    background-color:#C5D5FC;
+    padding-left:5px;
+    border-bottom: 1px solid #D5E5FD;
+}
+
+td.devicesTableContent1 {
+    vertical-align:top;
+    padding: 5px 5px 0px 5px;
+    border-bottom: 1px solid #D5E5FD;
+}
+
+td.devicesTableContent2 {
+    background-color:#E3EBFE;
+    vertical-align:top;
+    padding: 5px 5px 0px 5px;
+    border-bottom: 1px solid #D5E5FD;
+}
+
+td.devicesTableContentInput{
+    vertical-align:top;
+    border-bottom: 1px solid #D5E5FD;
+}
+
+.icon_mdm_wipe {
+    background-image: url(img/icon_mdm_wipe.gif);
+}
+
+.icon_mdm_remove {
+    background-image: url(img/icon_mdm_remove.gif);
+}
+
+.icon_mdm_resync {
+    background-image: url(img/icon_mdm_resync.gif);
+}

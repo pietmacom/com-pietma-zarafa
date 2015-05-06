@@ -1,0 +1,5380 @@
+.icon_createToolbarMenu
+{
+	background-image: url(../icons/create.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.icon_createEmailMessage
+{
+	background-image: url(../icons_large/new/new_email.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.x-menu .icon_createEmailMessage
+{
+	background-image: url(../icons/new/new_email.png) ! important;
+}
+.icon_replyEmail
+{
+	background-image: url(../icons/new/reply.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_replyAllEmail
+{
+	background-image: url(../icons/new/reply_all.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_forwardEmail,
+.icon_forwardNote
+{
+	background-image: url(../icons/new/forward.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_sendEmail
+{
+	background-image: url(../icons/new/mail_send.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_send_email_to_recipient
+{
+	background-image: url(../icons/new/new_email.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_edit_recipient
+{
+	background-image: url(../icons/new/edit_recipient.png) !important;
+}
+
+.icon_recipient_details
+{
+	background-image : url(../icons/new/contact.png) !important;
+}
+
+.icon_attachment_preview
+{
+	background-image: url(../icons/new/preview.png) !important;
+}
+
+.icon_attachment_download
+{
+	background-image: url(../icons/new/download.png) !important;
+}
+
+.icon_attachment
+{
+	background-image: url(../icons/new/paperclip.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_embedded_attachment
+{
+	background-image: url(../icons/new/embed_attachment.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_attachment_box
+{
+	background-image: url(../icons/new/paperclip_box.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_embedded_attachment_box
+{
+	background-image: url(../icons/new/embed_attachment_box.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_saveEmail
+{
+	background-image: url(../icons/new/floppy.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_addAttachment
+{
+	background-image: url(../icons/email_attach.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_addSignature
+{
+	background-image: url(../icons/new/signature.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_checkNames
+{
+	background-image: url(../icons/new/checknames.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_showbcc
+{
+	background-image: url(../icons/icon_showbcc.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_showfrom
+{
+	background-image: url(../icons/icon_showfrom.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_setHighPriority
+{
+	background-image: url(../icons/icon_priority_high.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_setLowPriority
+{
+	background-image: url(../icons/icon_priority_low.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_setReadReceipt
+{
+	background-image: url(../icons/icon_read_receipt.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_openMessageOptions
+{
+	background-image: url(../icons/new/cogwheel.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_create_appointment
+{
+	background-image: url(../icons_large/new/new_appointment.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.x-menu .icon_create_appointment
+{
+	background-image: url(../icons/new/new_appointment.png) ! important;
+}
+.icon_invite_attendees
+{
+	background-image: url(../icons/new/invite_attendees.png)!important;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.icon_create_meeting_request
+{
+	background-image: url(../icons/new/new_meeting_request.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.x-menu .icon_create_meeting_request
+{
+	background-image: url(../icons/new/new_meeting_request.png) ! important;
+}
+
+.icon_cancel_meeting_request
+{
+	background-image: url(../icons/new/calendar_appt_cancelled.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_accept_meeting_request
+{
+	background-image: url(../icons/new/accept_appointment.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_accept_proposal
+{
+	background-image: url(../icons/new/accept_proposal.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_decline_meeting_request
+{
+	background-image: url(../icons/new/decline_appointment.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_tentative_meeting_request
+{
+	background-image: url(../icons/new/tentative_appointment.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_newtime_meeting_request
+{
+	background-image: url(../icons/new/propose_new_time.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_view_all_meeting_request
+{
+	background-image: url(../icons/new/view_all_proposals.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_notcurrent_meeting_request,
+.icon_no_response_required
+{
+	background-image: url(../icons/icon_not_current.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_remove_from_calendar
+{
+	background-image: url(../icons/new/calendar_appt_cancelled.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_calender
+{
+	background-image: url(../icons/new/calendar_blue.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_createFolder
+{
+	background-image: url(../icons_large/new/folder_create.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.x-menu .icon_createFolder
+{
+	background-image: url(../icons/new/new_folder.png) ! important;
+}
+.x-menu .icon_createFolderColor
+{
+	background-image: url(../icons/new/folder_create.png) ! important;
+}
+
+.icon_createContact
+{
+	background-image: url(../icons_large/new/new_contact.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.x-menu .icon_createContact
+{
+	background-image: url(../icons/new/new_contact.png) ! important;
+}
+
+.icon_createDistributionList
+{
+	background-image: url(../icons/new/new_distlist.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_createTask
+{
+	background-image: url(../icons_large/new/new_task.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.x-menu .icon_createTask
+{
+	background-image: url(../icons/new/new_task.png) ! important;
+}
+
+.icon_create_taskrequest
+{
+	background-image: url(../icons/icon_assign_task.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_taskrequest
+{
+	background-image: url(../icons/icon_assign_task.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.icon_taskrequest_accepted
+{
+	background-image: url(../icons/icon_taskrequest_accepted.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_taskrequest_decline
+{
+	background-image: url(../icons/icon_cancel_asign_task.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_taskrequest_assignercopy
+{
+	background-image: url(../icons/icon_asign_task.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_taskrequest_assigneecopy
+{
+	background-image: url(../icons/icon_taskrequest_assignee.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_createNote
+{
+	background-image: url(../icons/new/note_menu.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.x-btn .x-btn-large .icon_createNote
+{
+	background-image: url(../icons_large/new/note_menu.png) ! important;
+}
+.icon_search
+{
+	background-image: url(../icons/new/magnifier.png) ! important;
+	background-repeat: no-repeat ! important;
+	background-position: 0 center ! important;
+}
+
+.icon_advanced_find
+{
+	background-image: url(../icons/folder_find.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_change_picture
+{
+	background-image: url(../icons/new/chang_picture.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_delete
+{
+	background-image: url(../icons_large/new/trash_action.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.x-menu-list-item .icon_delete
+{
+	background-image: url(../icons/new/trash_action.png) !important;
+	background-position: center;
+}
+.x-btn-small .icon_delete
+{
+	background-image: url(../icons/new/trash_action.png) ! important;
+}
+.icon_categories
+{
+	background-image: url(../icons/new/categories.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_private
+{
+	background-image: url(../icons/icon_private.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_junk
+{
+	background-image: url(../icons/new/folder_junk.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_copy
+{
+	background-image: url(../icons/new/copy_email.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.x-menu .icon_print, .x-btn-small .icon_print
+{
+	background-image: url(../icons/new/print_email.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.contact_photo_box
+{
+	border:1px solid #B6B6B4;
+	padding : 2px;
+	cursor : pointer;
+	width : 94px;
+	height : 94px;
+}
+
+.default_contact_photo
+{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../images/contact/default_contact_profile.png);
+}
+
+.contact_photo_box:hover
+{
+	border:1px solid #F2BB66;
+}
+
+.icon_print
+{
+	background-image: url(../icons_large/new/print_email.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_addressbook
+{
+	background-image: url(../icons_large/new/addressbook.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_restore
+{
+	background-image: url(../icons/icon_restore.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_saveaseml
+{
+	background-image: url(../icons/new/save_as_eml.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_rules
+{
+	background-image: url(../icons/icon_rules.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_sendAndReceive
+{
+	background-image: url(../icons/icon_send_receive.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_store
+{
+	background-image: url(../icons/icon_store.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_appointment,
+.icon_folder_default_calendar,
+.icon_folder_shared_calendar
+{
+	background-image: url(../icons/new/calendar.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder
+{
+	background-image: url(../icons/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_task,
+.icon_folder_default_task,
+.icon_folder_shared_task
+{
+	background-image: url(../icons/new/tasks.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_contact,
+.icon_folder_default_contact,
+.icon_folder_shared_contact
+{
+	background-image: url(../icons/new/contact_color.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_stickynote,
+.icon_folder_default_note,
+.icon_folder_shared_note
+{
+	background-image: url(../icons/new/note_yellow.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_note	/* This is not for StickyNote folders, but for normal message folders. */
+{
+	background-image: url(../icons/new/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_shared_store,
+.icon_folder_public_store,
+.icon_folder_shared_undefined
+{
+	background-image: url(../icons/new/folder_public.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_rss
+{
+	background-image: url(../icons/new/rss.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_default_inbox,
+.icon_folder_shared_inbox
+{
+	background-image: url(../icons/new/folder_mail.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_default_outbox
+{
+	background-image: url(../icons/new/folder_outbox.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_default_drafts
+{
+	background-image: url(../icons/new/drafts.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_default_junk
+{
+	background-image: url(../icons/new/folder_junk.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_default_journal
+{
+	background-image: url(../icons/new/journal.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_default_wastebasket
+{
+	background-image: url(../icons/new/trash.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_default_sent
+{
+	background-image: url(../icons/new/folder_sent.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_folder
+{
+	background-image: url(../icons/new/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_default_publicfolders
+{
+	background-image: url(../icons/new/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_default_favorites
+{
+	background-image: url(../icons/new/folder_favs.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_default_syncissues
+{
+	background-image: url(../icons/new/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_default_conflicts
+{
+	background-image: url(../icons/new/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_default_localfailures
+{
+	background-image: url(../icons/new/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_default_serverfailures
+{
+	background-image: url(../icons/new/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_store_large
+{
+	background-image: url(../icons_large/icon_store.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_calendar_large
+{
+	background-image: url(../icons_large/calendar.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_appointment_large
+{
+	background-image: url(../icons_large/calendar.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_task_large
+{
+	background-image: url(../icons_large/task.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_contact_large
+{
+	background-image: url(../icons_large/vcard.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_note_large
+{
+	background-image: url(../icons_large/note.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_stickynote_large
+{
+	background-image: url(../icons_large/note.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_mail_large
+{
+	background-image: url(../icons_large/icon_mailfolder.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_inbox_large
+{
+	background-image: url(../icons_large/folder_mail.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_outbox_large
+{
+	background-image: url(../icons_large/folder_go.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_drafts_large
+{
+	background-image: url(../icons_large/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_junk_large
+{
+	background-image: url(../icons_large/icon_junk.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_journal_large
+{
+	background-image: url(../icons_large/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_wastebasket_large
+{
+	background-image: url(../icons_large/folder_delete.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_sent_large
+{
+	background-image: url(../icons_large/folder_go.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_folder_large
+{
+	background-image: url(../icons_large/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_publicfolders_large
+{
+	background-image: url(../icons_large/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_favorites_large
+{
+	background-image: url(../icons_large/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_syncissues_large
+{
+	background-image: url(../icons_large/icon_mailfolder.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_conflicts_large
+{
+	background-image: url(../icons_large/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_localfailures_large
+{
+	background-image: url(../icons_large/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_serverfailures_large
+{
+	background-image: url(../icons_large/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/** mail preview icons **/
+.icon_previewpanel_off
+{
+	background-image: url(../icons_large/new/no_preview.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.x-menu .icon_previewpanel_off
+{
+	background-image: url(../icons/new/no_preview.png) ! important;
+}
+.icon_previewpanel_right
+{
+	background-image: url(../icons_large/new/right_preview.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.x-menu .icon_previewpanel_right
+{
+	background-image: url(../icons/new/right_preview.png) ! important;
+}
+.icon_previewpanel_bottom
+{
+	background-image: url(../icons_large/new/bottom_preview.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.x-menu .icon_previewpanel_bottom
+{
+	background-image: url(../icons/new/bottom_preview.png) ! important;
+}
+/** contact preview icons **/
+.contact_list_view
+{
+	background-image: url(../icons_large/new/contact_list_view.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.x-menu .contact_list_view
+{
+	background-image: url(../icons/new/contact_list_view.png) !important;
+}
+.contact_card_view
+{
+	background-image: url(../icons_large/new/contact_card_view.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.x-menu .contact_card_view
+{
+	background-image: url(../icons/new/contact_card_view.png) !important;
+}
+/** task list icons **/
+.task_list_view
+{
+	background-image: url(../icons/new/contact_list_view.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.task_active_view
+{
+	background-image: url(../icons/new/task_active.png) !important;
+}
+.task_simple_view
+{
+	background-image: url(../icons/new/task_simple.png) !important;
+}
+.task_overdue_view
+{
+	background-image: url(../icons/new/task_overdue.png) !important;
+}
+.task_completed_view
+{
+	background-image: url(../icons/new/task_completed.png) !important;
+}
+.task_seven_days
+{
+	background-image: url(../icons/new/task_seven_days.png) !important;
+}
+/** note list icons **/
+.note_icon_view
+{
+	background-image: url(../icons/new/note_icon_view.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.note_list_view
+{
+	background-image: url(../icons/new/contact_list_view.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/** calendar **/
+.icon-calendar-day
+{
+	background-image: url(../icons/calendar_day.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-calendar-workweek
+{
+	background-image: url(../icons/calendar_view_week.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-calendar-week
+{
+	background-image: url(../icons/calendar_view_week.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-calendar-month
+{
+	background-image: url(../icons/calendar_view_month.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-calendar-create
+{
+	background-image: url(../icons/calendar_add.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-calendar-delete
+{
+	background-image: url(../icons/calendar_delete.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-calendar-edit
+{
+	background-image: url(../icons/calendar_edit.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-calendar-zoom
+{
+	background-image: url(../icons/date_magnify.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-calendar-today
+{
+	background-image: url(../icons/new/calendar_today.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.zarafa-maintoolbar .icon-calendar-today
+{
+	background-image: url(../icons_large/new/calendar_today.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-calendar-day
+{
+	background-image: url(../icons/new/calendar_view_day.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-calendar-workweek
+{
+	background-image: url(../icons/new/calendar_view_workweek.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-calendar-week
+{
+	background-image: url(../icons/new/calendar_view_week.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-calendar-month
+{
+	background-image: url(../icons/new/calendar_view_month.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.icon-calendar-grid
+{
+	background-image: url(../icons/new/contact_list_view.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.zarafa-maintoolbar .icon-calendar-day
+{
+	background-image: url(../icons_large/new/calendar_view_day.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.zarafa-maintoolbar .icon-calendar-workweek
+{
+	background-image: url(../icons_large/new/calendar_view_workweek.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.zarafa-maintoolbar .icon-calendar-week
+{
+	background-image: url(../icons_large/new/calendar_view_week.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.zarafa-maintoolbar .icon-calendar-month
+{
+	background-image: url(../icons_large/new/calendar_view_month.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.zarafa-maintoolbar .icon-calendar-grid
+{
+	background-image: url(../icons_large/new/contact_list_view.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_calendar_zoom_large
+{
+	background-image: url(../icons_large/date_magnify.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_item_add
+{
+	background-image: url(../icons/add.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.zarafa-logoutbutton
+{
+	background-image: url(../icons/door_in.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_busystatus
+{
+	background-image: url(../icons/busystatus.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_busystatus_free
+{
+	background-image: url(../icons/busystatus_free.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_busystatus_tentative
+{
+	background-image: url(../icons/busystatus_tentative.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_busystatus_busy
+{
+	background-image: url(../icons/busystatus_busy.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_busystatus_outofoffice
+{
+	background-image: url(../icons/busystatus_outofoffice.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_busystatus_unknown
+{
+	background-image: url(../icons/busystatus_unknown.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-calendar-zoom
+{
+	background-image: none ! important;
+}
+
+.icon-calendar-zoom-selected
+{
+	background-image: url(../icons/icon_complete.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_importance
+{
+	background-image: url(../icons/importance.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_importance_nonurgent
+{
+	background-image: url(../icons/icon_priority_low.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_importance_urgent
+{
+	background-image: url(../icons/icon_priority_high.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_index
+{
+	background-image: url(../icons/icon_index.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.importance_combobox
+{
+	padding-left: 15px;
+	height: 15px;
+}
+
+.icon_complete
+{
+	background-image: url(../icons/icon_complete.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_save
+{
+	background-image: url(../icons/new/floppy.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_recurring
+{
+	background-image: url(../icons/icon_recurring.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_recurrence
+{
+	background-image: url(../icons/icon_recurrence.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_reminder
+{
+	background-image: url(../icons/icon_reminder.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_allday
+{
+	background-image: url(../icons/icon_complete.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_task_complete
+{
+	background-image: url(../icons/icon_task_complete.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.icon_note_blue
+{
+	background-image: url(../icons/new/note_blue.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.icon_note_green
+{
+	background-image: url(../icons/new/note_green.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.icon_note_pink
+{
+	background-image: url(../icons/new/note_pink.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.icon_note_yellow
+{
+	background-image: url(../icons/new/note_yellow.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.icon_note_white
+{
+	background-image: url(../icons/new/note_white.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.notelargeicon_yellow {
+	background-image: url(../icons/new/note_yellow_large.png);
+}
+.notelargeicon_green {
+	background-image: url(../icons/new/note_green_large.png);
+}
+.notelargeicon_blue {
+	background-image: url(../icons/new/note_blue_large.png);
+}
+.notelargeicon_pink {
+	background-image: url(../icons/new/note_pink_large.png);
+}
+.notelargeicon_white {
+	background-image: url(../icons/new/note_white_large.png);
+}
+.icon_open {
+	background-image: url(../icons/new/folder.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_flag_blue {
+	background-image: url(../icons/icon_flag_blue.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_flag_green {
+	background-image: url(../icons/icon_flag_green.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_flag_orange {
+	background-image: url(../icons/icon_flag_orange.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_flag_purple {
+	background-image: url(../icons/icon_flag_purple.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_flag_red {
+	background-image: url(../icons/icon_flag_red.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_flag_yellow {
+	background-image: url(../icons/icon_flag_yellow.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_flag_complete {
+	background-image: url(../icons/icon_flag_complete.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mark_all_read {
+	background-image: url(../icons/new/mail_read.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-reload {
+	background-image: url(../icons/new/refresh.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_rename {
+	background-image: url(../icons/new/folder_rename.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_delete {
+	background-image: url(../icons/new/trash.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_empty_trash {
+	background-image: url(../icons/new/trash.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_folder_add_favorite {
+	background-image: url(../icons/folder_star.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_store_close,
+.icon_folder_close {
+	background-image: url(../icons/icon_close_store.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Reusing extjs icons */
+.icon_progress_busy {
+	background-image: url(../../extjs/resources/images/default/tree/loading.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Reusing extjs icons */
+.icon_progress_done_ok {
+	background-image: url(../../extjs/resources/images/default/tree/drop-yes.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Reusing extjs icons */
+.icon_progress_done_fail {
+	background-image: url(../../extjs/resources/images/default/tree/drop-no.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.x-tbar-loading {
+	background-image: url(../icons_large/new/refresh.png) !important;
+}
+.view_icon {
+	background-image: url(../icons_large/new/view.png) !important;
+}
+.icon_message,
+.icon_mail.icon_message_read
+{
+	background-image: url(../icons/new/mail_read.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_stubbed
+{
+	background-image: url(../icons/new/stub.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail.icon_message_unread
+{
+	background-image: url(../icons/new/mail_unread.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_submitted
+{
+	background-image: url(../icons/mapi/mail_submitted.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_unsent
+{
+	background-image: url(../icons/mapi/mail_unsent.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_receipt
+{
+	background-image: url(../icons/mapi/mail_receipt.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_replied
+{
+	background-image: url(../icons/new/mail_replied.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_forwarded
+{
+	background-image: url(../icons/new/mail_forwarded.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_remote
+{
+	background-image: url(../icons/mapi/mail_remote.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_delivery_receipt
+{
+	background-image: url(../icons/mapi/mail_delivery_receipt.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_read_receipt
+{
+	background-image: url(../icons/mapi/mail_read_receipt.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_nondelivery_receipt
+{
+	background-image: url(../icons/mapi/mail_nondelivery_receipt.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_nonread_receipt
+{
+	background-image: url(../icons/mapi/mail_nonread_receipt.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_recall_s
+{
+	background-image: url(../icons/mapi/mail_recall_s.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_recall_f
+{
+	background-image: url(../icons/mapi/mail_recall_f.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_tracking
+{
+	background-image: url(../icons/mapi/mail_tracking.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_oof
+{
+	background-image: url(../icons/mapi/mail_oof.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_recall
+{
+	background-image: url(../icons/mapi/mail_recall.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_tracked
+{
+	background-image: url(../icons/mapi/mail_tracked.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_contact_user
+{
+	background-image: url(../icons/new/contact_card.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_contact_distlist
+{
+	background-image: url(../icons/new/distlist.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_contact_equipment
+{
+	background-image: url(../icons/mapi/contact_equipment.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_contact_gab_user
+{
+	background-image: url(../icons/new/contact_smtp.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_contact_room
+{
+	background-image: url(../icons/mapi/contact_room.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_contact_company
+{
+	background-image: url(../icons/new/contact_company.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_note
+{
+	background-image: url(../icons/mapi/note.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.icon_appt_appointment
+{
+	background-image: url(../icons/new/calendar_blue.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_appt_recurring
+{
+	background-image: url(../icons/new/calendar_appt_recurring.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_appt_meeting_single
+{
+	background-image: url(../icons/new/calendar_mr.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_appt_meeting_recurring
+{
+	background-image: url(../icons/new/calendar_appt_recurring.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_appt_meeting_accept
+{
+	background-image: url(../icons/new/calendar_appt_accept.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_appt_meeting_decline
+{
+	background-image: url(../icons/new/calendar_appt_cancelled.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_appt_meeting_tentative
+{
+	background-image: url(../icons/new/calendar_appt_tentative.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.icon_appt_meeting_newtime
+{
+	background-image: url(../icons/new/calendar_appt_newtime.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+.icon_appt_meeting_cancel
+{
+	background-image: url(../icons/new/calendar_appt_cancelled.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_appt_meeting_outofdate
+{
+	background-image: url(../icons/new/calendar_appt_outofdate.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_appt_meeting_forward
+{
+	background-image: url(../icons/mapi/appt_meeting_forward.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.icon_task_normal
+{
+	background-image: url(../icons/new/tasks.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_task_recurring
+{
+	background-image: url(../icons/mapi/task_recurring.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_task_assignee
+{
+	background-image: url(../icons/mapi/task_assignee.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_task_assigner
+{
+	background-image: url(../icons/mapi/task_assigner.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.icon_journal_conversation
+{
+	background-image: url(../icons/mapi/journal_conversation.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_document
+{
+	background-image: url(../icons/mapi/journal_document.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_email
+{
+	background-image: url(../icons/mapi/journal_email.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_fax
+{
+	background-image: url(../icons/mapi/journal_fax.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_letter
+{
+	background-image: url(../icons/mapi/journal_letter.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_meeting
+{
+	background-image: url(../icons/mapi/journal_meeting.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_meeting_cancel
+{
+	background-image: url(../icons/mapi/journal_meeting_cancel.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_meeting_request
+{
+	background-image: url(../icons/mapi/journal_meeting_request.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_meeting_response
+{
+	background-image: url(../icons/mapi/journal_meeting_response.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_access
+{
+	background-image: url(../icons/mapi/journal_access.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_excel
+{
+	background-image: url(../icons/mapi/journal_excel.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_powerpoint
+{
+	background-image: url(../icons/mapi/journal_powerpoint.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_word
+{
+	background-image: url(../icons/mapi/journal_word.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_note
+{
+	background-image: url(../icons/mapi/journal_note.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_phone_call
+{
+	background-image: url(../icons/mapi/journal_phone_call.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_remote_session
+{
+	background-image: url(../icons/mapi/journal_remote_session.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_task
+{
+	background-image: url(../icons/mapi/journal_task.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_task_request
+{
+	background-image: url(../icons/mapi/journal_task_request.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_task_response
+{
+	background-image: url(../icons/mapi/journal_task_response.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_journal_other
+{
+	background-image: url(../icons/mapi/journal_other.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_nondelivery_receipt
+{
+	background-image: url(../icons/mapi/mail_report_ndr.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_read_receipt
+{
+	background-image: url(../icons/mapi/mail_report_accept.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_nonread_receipt
+{
+	background-image: url(../icons/mapi/mail_report_decline.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.x-zarafa-boxfield-item {
+	position: relative;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	o-border-radius: 4px;
+	khtml-border-radius: 4px;
+	border: 1px solid #d3d2d2;
+	background-color: #ebeaeb;
+	padding: 1px 5px 1px 5px;
+}
+
+.x-zarafa-boxfield-item-hover {
+	cursor: pointer;
+	background-color: #d3d2d2;
+}
+
+.x-zarafa-boxfield-item-focus {
+	background-color: #3e91f3;
+	color: #FFF;
+}
+
+.x-zarafa-boxfield-item-close {
+	margin-left: 2px;
+	cursor: pointer;
+	height: 12px;
+	width: 8px;
+	/* The close.png contains multiple icons, here we dislay the top one */
+	background: url(../images/boxfield/close.png) no-repeat scroll left 0px;
+	display: block;
+	float: left;
+	position: relative;
+	top: -1px;
+}
+/* Hovering above the close button when focussed and when not-focussed  */
+.x-zarafa-boxfield-item-focus .x-zarafa-boxfield-item-close.x-zarafa-boxfield-item-close-hover, 
+.x-zarafa-boxfield-item-close-hover {
+	/* On hovering over the close icon we display the second icon */
+	background-position: left -12px;
+}
+.x-zarafa-boxfield-item-focus .x-zarafa-boxfield-item-close {
+	/* When item is focussed we display the last icon as close icon */
+	background-position: left -24px;
+}
+
+.x-zarafa-boxfield li {
+	float: left;
+	margin: 1px 1px 1px 1px;
+	line-height: 12px;
+}
+
+.x-zarafa-boxfield li.x-zarafa-boxfield-input-item {
+	padding: 0;
+}
+.x-zarafa-boxfield li input.x-zarafa-boxfield-input {
+	height: 12px;
+}
+.x-zarafa-boxfield li input.x-zarafa-boxfield-input-noborder {
+	border: 0px;
+	/* ExtJS adds a gradient as background, here we remove it */
+	background-image: none;
+}
+.x-zarafa-boxfield li input.x-trigger-noedit {
+	cursor: auto ! important;
+	visibility: hidden;
+	width: 0px;
+}
+
+.x-zarafa-boxfield-item-icon {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	height: 12px;
+	width: 12px;
+}
+
+.x-zarafa-boxfield-item-text {
+	float: left;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+/** RECIPIENT FIELD **/
+/* Hide the icon for recipients by default */
+.x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item .x-zarafa-boxfield-item-icon {
+	display: none;
+}
+
+/* Display the icon when the recipient box is resolved */
+.x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item-resolved .x-zarafa-boxfield-item-icon, 
+.x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item-ambiguous .x-zarafa-boxfield-item-icon, 
+.x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item-invalid .x-zarafa-boxfield-item-icon {
+	display: block;
+}
+
+/* Display the icon when the recipient box is ambiguous */
+.x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item-ambiguous .x-zarafa-boxfield-item-icon {
+	background-image: url(../icons/icon_addressbook.gif) ! important;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* Make the background a different color when selected if the recipient is ambiguous */
+.x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item-ambiguous {
+	background-color: #f8bf76;
+	border-color: #d19c47;
+}
+
+/* Make the background a different color when selected if the recipient is pending */
+.x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item-ambiguous.x-zarafa-boxfield-item-focus {
+	background-color: #3e91f3;
+	color: #FFF;
+}
+
+/* Display the icon when the recipient box is pending */
+.x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item-pending {
+	background-color: #ffffff;
+}
+/* Make the background a different color when selected if the recipient is pending */
+.x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item-pending.x-zarafa-boxfield-item-focus {
+	background-color: #3e91f3;
+	color: #FFF;
+}
+
+/* Display the icon when the recipient box is invalid */
+.x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item-invalid .x-zarafa-boxfield-item-icon {
+	background-image: url(../icons/icon_flag_red.gif) ! important;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item-invalid {
+	background-color: #F3D6D6;
+	border-color: #D7B7B7;
+}
+/* Make the background a different color when selected if the recipient is pending */
+.x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item-invalid.x-zarafa-boxfield-item-focus {
+	background-color: #3e91f3;
+	color: #FFF;
+}
+
+/** ATTACHMENTS FIELD **/
+.x-zarafa-boxfield-item.x-zarafa-boxfield-attachment-item-uploaded {
+}
+
+.x-zarafa-boxfield-item.x-zarafa-boxfield-attachment-item-uploading {
+	background-color: #f8bf76;
+	border-color: #d19c47;
+}
+
+.x-zarafa-boxfield-item.x-zarafa-boxfield-attachment-item-invalid {
+	background-color: #F3D6D6;
+	border-color: #D7B7B7;
+}
+/*
+ * Calendar grid (HTML & Canvas)
+ */
+.zarafa-calendar-grid-blue .zarafa-calendar-grid-group-header
+{
+	border-color: #5a8ece;
+}
+
+.zarafa-calendar-grid-blue .zarafa-calendar-grid-group-title
+{
+	color: #5a8ece;
+}
+
+.zarafa-calendar-grid-blue.zarafa-calendar-grid-row
+{
+	background-image: none ! important;
+	background-color: #a5bee7 ! important;
+}
+
+/*
+ * Calendar (HTML & Canvas)
+ */
+.zarafa-calendar-header .zarafa-calendar-blue.zarafa-calendar-container-header
+{
+	background-color: #a5bee7;
+}
+
+.zarafa-calendar-body .zarafa-calendar-blue.zarafa-calendar-border
+{
+	background-color: #8caede;
+	border-color: #5a8ece;
+}
+
+/*
+ * Calendar Tabs (HTML & Canvas)
+ */
+.zarafa-calendar-tabarea .zarafa-calendar-blue.zarafa-calendar-tab-body
+{
+	background-image: url(../images/calendar/cs_blue_timestrip_tab_center.png);
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-blue.zarafa-calendar-tab-leftside
+{
+	background-image: url(../images/calendar/cs_blue_timestrip_tab_left.png);
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-blue.zarafa-calendar-tab-rightside
+{
+	background-image: url(../images/calendar/cs_blue_timestrip_tab_right.png);
+}
+.zarafa-calendar-body
+{
+	background-color : #ffffff;
+}
+
+.zarafa-calendar-scrollable
+{
+	position: absolute;
+    overflow-y : scroll;
+    overflow-x : hidden;
+}
+
+.zarafa-calendar-header
+{
+	position: absolute;
+}
+
+.zarafa-calendar-headerLine
+{
+	overflow: hidden;
+	position: absolute;
+    background-color : #adaead;
+}
+
+
+.zarafa-calendar-bottomarea
+{
+	position: absolute;
+    /* background-color : #e0e0e0; */
+}
+
+
+.zarafa-calendar-outline
+{
+	position: absolute;
+    border : 3px solid #7f7f7f;
+}
+
+.zarafa-calendar-container
+{
+	position: absolute;
+}
+
+.zarafa-calendar-border-left
+{
+	position: absolute;
+	overflow: hidden;
+	border-left: 1px solid;
+}
+
+.zarafa-calendar-border-right
+{
+	position: absolute;
+	overflow: hidden;
+	border-right: 1px solid;
+}
+
+.zarafa-calendar-border-top
+{
+	position: absolute;
+	overflow: hidden;
+	border-right: 1px solid;
+	border-left: 1px solid;
+	border-top: 1px solid;
+}
+
+.zarafa-calendar-border-bottom
+{
+	position: absolute;
+	overflow: hidden;
+	border-right: 1px solid;
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+}
+
+.zarafa-calendar-textedit-body,
+.zarafa-calendar-textedit-header
+{
+	border: 1px solid #000000;
+	position : absolute;
+	z-index : 999;
+}
+
+/* ? */
+.zarafa-calendar-appointment-boxview-allday
+{
+	border : 1px solid #000000;
+	font-weight: bold;
+}
+
+/* ? */
+.zarafa-calendar-appointment-boxview-appointment
+{
+
+}
+
+/* ? */
+.zarafa-calendar-appointment-body-fullday
+{
+    font-weight : bold;
+	text-align: center;
+}
+
+
+.zarafa-calendar-dragproxy-time
+{
+	overflow : hidden;
+	position : absolute;
+	color : #000000;
+	font-weight : bold;
+	font-size : 11px;
+    font-family: tahoma, arial, verdana, sans-serif;
+}
+
+.zarafa-calendar-dragproxy-header
+{
+	color : #ffffff;
+	
+	overflow : hidden;
+	position : absolute;
+	display : none;
+	cursor : move ! important;
+	z-index : 999;
+	
+	opacity:.5;
+	-moz-opacity:.5;
+	filter:alpha(opacity=50);
+	background-color : #9f9faf;
+}
+
+.zarafa-calendar-dragproxy-outside
+{
+	overflow : hidden;
+	display : none;
+	position : absolute;
+	cursor : move;
+	z-index : 999;
+	padding : 4px;
+	
+	font-weight : bold;
+	font-size : 11px;
+    font-family: tahoma,arial,verdana,sans-serif;
+    padding : 4px;
+    
+	border : 1px solid #a0a0a0;
+	color : #000000;
+	background-color : #e7e7e7;
+	
+}
+
+.zarafa-calendar-dragproxy
+{
+	/* border : 1px dashed black; */
+	
+	padding : 2px;
+	
+	opacity:.5;
+	-moz-opacity:.5;
+	filter:alpha(opacity=50);
+	
+	/* background-color : #9f9faf; */
+	background-color : #7f7f7f;
+	
+	overflow: hidden;
+	position: absolute;
+}
+
+.zarafa-calendar-dragproxy-single
+{
+	border: 1px solid #3f3f3f;
+}
+
+.zarafa-calendar-dragproxy-first
+{
+	border-top: 1px solid #3f3f3f;
+	border-left: 1px solid #3f3f3f;
+	border-right: 1px solid #3f3f3f;
+}
+
+.zarafa-calendar-dragproxy-middle
+{
+	border-left: 1px solid #3f3f3f;
+	border-right: 1px solid #3f3f3f;
+}
+
+.zarafa-calendar-dragproxy-last
+{
+	border-bottom: 1px solid #3f3f3f;
+	border-left: 1px solid #3f3f3f;
+	border-right: 1px solid #3f3f3f;
+}
+
+.zarafa-calendar-droppoint
+{
+	overflow: hidden;
+	position: absolute;
+	border: 1px dashed black;
+}
+
+
+.zarafa-calendar-verticalline
+{
+	position: absolute;
+	overfow: hidden;
+	background-color: black;
+}
+
+
+.zarafa-calendar-column
+{
+	position: absolute;
+}
+
+
+.header_top
+{
+	/* background-image: url(../images/zarafa_top_background.gif) ! important; */
+	background-color: #ffffff;
+	border-bottom : 1px solid black;
+}
+
+.appointment_read
+{
+}
+
+.appointment_unread
+{
+	font-weight : bold;
+}
+
+
+
+/**
+ * Calendar common (HTML & Canvas)
+ */
+.zarafa-calendar-selection
+{
+	overflow : hidden;
+	position : absolute;
+	cursor : move;
+	z-index : 999;
+	
+	opacity:.5;
+	-moz-opacity:.5;
+	filter:alpha(opacity=50);
+	background-color : #0f0f0f;
+}
+
+.zarafa-calendar-selection-dragging
+{
+	color : #000000;
+	background-color : #7f7f7f;
+}
+
+
+/*
+ * Calendar timestrip (HTML & Canvas)
+ */
+.zarafa-calendar-timestrip
+{
+	position: absolute;
+	background-color : #9fbf00;
+	background-color: #f7f3f7;
+	overflow : hidden;
+	border-left: 1px solid black;
+}
+
+.zarafa-calendar-timestrip-element
+{
+    font-size: 14px;
+    font-family: tahoma,arial,verdana,sans-serif;
+	position: absolute;
+	color: #393839;
+	text-align:right;
+}
+
+.zarafa-calendar-timestrip-element div
+{
+	padding-top:4px;
+	padding-right:6px;
+}
+
+.zarafa-calendar-timestrip-line
+{
+	overflow: hidden;
+	position: absolute;
+	background-color: #adaead;
+}
+
+.zarafa-calendar-timestrip-header
+{
+    font-size: 11px;
+    font-family: tahoma,arial,verdana,sans-serif;
+	position: absolute;
+	color: black;
+	vertical-align: bottom;
+	padding-left: 2px;
+	overflow: hidden;
+}
+
+/*
+ * Calendar Tabs (HTML & Canvas)
+ */
+.zarafa-calendar-tabarea
+{
+	position: absolute;
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-tab div
+{
+	position : absolute;
+	overflow : hidden;
+	height : 23px;
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-tab-selected div
+{
+	height: 24px;
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-tab-background .zarafa-calendar-tab-leftside,
+.zarafa-calendar-tabarea .zarafa-calendar-tab-background .zarafa-calendar-tab-rightside
+{
+	width: 32px;
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-tab-contents
+{
+	padding-left: 8px;
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-tab-contents .zarafa-calendar-tab-title
+{
+	position : absolute;
+	overflow : hidden;
+	padding-top : 8px;
+	cursor : pointer;
+	font-size : 10px;
+	font-family: tahoma,arial,verdana,sans-serif;
+	margin-left: 4px;
+	white-space:nowrap;
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-tab-selected .zarafa-calendar-tab-title
+{
+	font-weight:bold;
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-tab-icon
+{
+	position : absolute;
+	overflow : hidden;
+	cursor : pointer;
+	width : 16px;
+	height: 16px;
+	margin: 3px 0px 0px 4px;
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-tab-icon-close
+{
+	background-image: url(../icons/cross.png) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-tab-icon-merge
+{
+	background-image: url(../icons/arrow-left.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-tab-icon-separate
+{
+	background-image: url(../icons/arrow-right.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*
+ * Canvas Calendar
+ */
+.zarafa-canvas
+{
+	position : absolute;
+}
+
+/*
+ * Appointment Dialog (HTML & Canvas)
+ */
+.zarafa-calendar-appointment-label-none
+{
+	background-color: transparent;
+}
+
+.zarafa-calendar-appointment-label-important
+{
+	background-color: #E98784;
+}
+
+.zarafa-calendar-appointment-label-work
+{
+	background-color: #8CA9D9;
+}
+
+.zarafa-calendar-appointment-label-personal
+{
+	background-color: #C0D98C;
+}
+
+.zarafa-calendar-appointment-label-holiday
+{
+	background-color: #DFCB47;
+}
+
+.zarafa-calendar-appointment-label-required
+{
+	background-color: #D9C18C;
+}
+
+.zarafa-calendar-appointment-label-travel-required
+{
+	background-color: #8CC6D9;
+}
+
+.zarafa-calendar-appointment-label-prepare-required
+{
+	background-color: #8C8CD9;
+}
+
+.zarafa-calendar-appointment-label-birthday
+{
+	background-color: #C48CD9;
+}
+
+.zarafa-calendar-appointment-label-special-date
+{
+	background-color: #D9928C;
+}
+
+.zarafa-calendar-appointment-label-phone-interview
+{
+	background-color: #9BD98C;
+}
+
+.zarafa-calendar-appointment-extrainfo
+{
+	background-color: #D2E0F0; 
+	border-color: #15428B;
+	border-style: solid;
+	border-width: 1px;
+	padding: 2px 5px 2px 5px;
+}
+/*
+ * Calendar grid (HTML & Canvas)
+ */
+.zarafa-calendar-grid-green .zarafa-calendar-grid-group-header
+{
+	border-color: #73a65a;
+}
+
+.zarafa-calendar-grid-green .zarafa-calendar-grid-group-title
+{
+	color: #73a65a;
+}
+
+.zarafa-calendar-grid-green.zarafa-calendar-grid-row
+{
+	background-image: none ! important;
+	background-color: #b5cfa5 ! important;
+}
+
+/*
+ * Calendar (HTML & Canvas)
+ */
+.zarafa-calendar-header .zarafa-calendar-green.zarafa-calendar-container-header
+{
+	background-color: #b5cfa5;
+}
+
+.zarafa-calendar-body .zarafa-calendar-green.zarafa-calendar-border
+{
+	background-color: #9cbe8c;
+	border-color: #73a65a;
+}
+
+/*
+ * Calendar Tabs (HTML & Canvas)
+ */
+.zarafa-calendar-tabarea .zarafa-calendar-green.zarafa-calendar-tab-body
+{
+	background-image: url(../images/calendar/cs_green_timestrip_tab_center.png);
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-green.zarafa-calendar-tab-leftside
+{
+	background-image: url(../images/calendar/cs_green_timestrip_tab_left.png);
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-green.zarafa-calendar-tab-rightside
+{
+	background-image: url(../images/calendar/cs_green_timestrip_tab_right.png);
+}
+/*
+ * Calendar grid (HTML & Canvas)
+ */
+.zarafa-calendar-grid-green2 .zarafa-calendar-grid-group-header
+{
+	border-color: #5aa673;
+}
+
+.zarafa-calendar-grid-green2 .zarafa-calendar-grid-group-title
+{
+	color: #5aa673;
+}
+
+.zarafa-calendar-grid-green2.zarafa-calendar-grid-row
+{
+	background-image: none ! important;
+	background-color: #a5cfb5 ! important;
+}
+
+/*
+ * Calendar (HTML & Canvas)
+ */
+.zarafa-calendar-header .zarafa-calendar-green2.zarafa-calendar-container-header
+{
+	background-color: #a5cfb5;
+}
+
+.zarafa-calendar-body .zarafa-calendar-green2.zarafa-calendar-border
+{
+	background-color: #8cc39c;
+	border-color: #5aa673;
+}
+
+/*
+ * Calendar Tabs (HTML & Canvas)
+ */
+.zarafa-calendar-tabarea .zarafa-calendar-green2.zarafa-calendar-tab-body
+{
+	background-image: url(../images/calendar/cs_green2_timestrip_tab_center.png);
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-green2.zarafa-calendar-tab-leftside
+{
+	background-image: url(../images/calendar/cs_green2_timestrip_tab_left.png);
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-green2.zarafa-calendar-tab-rightside
+{
+	background-image: url(../images/calendar/cs_green2_timestrip_tab_right.png);
+}
+/*
+ * Calendar grid (HTML & Canvas)
+ */
+.zarafa-calendar-grid-ice .zarafa-calendar-grid-group-header
+{
+	border-color: #a5bee7;
+}
+
+.zarafa-calendar-grid-ice .zarafa-calendar-grid-group-title
+{
+	color: #a5bee7;
+}
+
+.zarafa-calendar-grid-ice.zarafa-calendar-grid-row
+{
+	background-image: none ! important;
+	background-color: #a5bee7 ! important;
+}
+
+/*
+ * Calendar (HTML & Canvas)
+ */
+.zarafa-calendar-header .zarafa-calendar-ice.zarafa-calendar-container-header
+{
+	background-color: #cedbef;
+}
+
+.zarafa-calendar-body .zarafa-calendar-ice.zarafa-calendar-border
+{
+	background-color: #b5b6bd;
+	border-color: #a5bee7;
+}
+
+/*
+ * Calendar Tabs (HTML & Canvas)
+ */
+.zarafa-calendar-tabarea .zarafa-calendar-ice.zarafa-calendar-tab-body
+{
+	background-image: url(../images/calendar/cs_ice_timestrip_tab_center.png);
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-ice.zarafa-calendar-tab-leftside
+{
+	background-image: url(../images/calendar/cs_ice_timestrip_tab_left.png);
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-ice.zarafa-calendar-tab-rightside
+{
+	background-image: url(../images/calendar/cs_ice_timestrip_tab_right.png);
+}
+/*
+ * Calendar grid (HTML & Canvas)
+ */
+.zarafa-calendar-grid-pink .zarafa-calendar-grid-group-header
+{
+	border-color: #bd6984;
+}
+
+.zarafa-calendar-grid-pink .zarafa-calendar-grid-group-title
+{
+	color: #bd6984;
+}
+
+.zarafa-calendar-grid-pink.zarafa-calendar-grid-row
+{
+	background-image: none ! important;
+	background-color: #deaebd ! important;
+}
+
+/*
+ * Calendar (HTML & Canvas)
+ */
+.zarafa-calendar-header .zarafa-calendar-pink.zarafa-calendar-container-header
+{
+	background-color: #deaebd;
+}
+
+.zarafa-calendar-body .zarafa-calendar-pink.zarafa-calendar-border
+{
+	background-color: #d696ad;
+	border-color: #bd6984;
+}
+
+/*
+ * Calendar Tabs (HTML & Canvas)
+ */
+.zarafa-calendar-tabarea .zarafa-calendar-pink.zarafa-calendar-tab-body
+{
+	background-image: url(../images/calendar/cs_pink_timestrip_tab_center.png);
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-pink.zarafa-calendar-tab-leftside
+{
+	background-image: url(../images/calendar/cs_pink_timestrip_tab_left.png);
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-pink.zarafa-calendar-tab-rightside
+{
+	background-image: url(../images/calendar/cs_pink_timestrip_tab_right.png);
+}
+/*
+ * Calendar grid (HTML & Canvas)
+ */
+.zarafa-calendar-grid-purple .zarafa-calendar-grid-group-header
+{
+	border-color: #8c6dce;
+}
+
+.zarafa-calendar-grid-purple .zarafa-calendar-grid-group-title
+{
+	color: #8c6dce;
+}
+
+.zarafa-calendar-grid-purple.zarafa-calendar-grid-row
+{
+	background-image: none ! important;
+	background-color: #bdaee7 ! important;
+}
+
+/*
+ * Calendar (HTML & Canvas)
+ */
+.zarafa-calendar-header .zarafa-calendar-purple.zarafa-calendar-container-header
+{
+	background-color: #bdaee7;
+}
+
+.zarafa-calendar-body .zarafa-calendar-purple.zarafa-calendar-border
+{
+	background-color: #ad9ade;
+	border-color: #8c6dce;
+}
+
+/*
+ * Calendar Tabs (HTML & Canvas)
+ */
+.zarafa-calendar-tabarea .zarafa-calendar-purple.zarafa-calendar-tab-body
+{
+	background-image: url(../images/calendar/cs_purple_timestrip_tab_center.png);
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-purple.zarafa-calendar-tab-leftside
+{
+	background-image: url(../images/calendar/cs_purple_timestrip_tab_left.png);
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-purple.zarafa-calendar-tab-rightside
+{
+	background-image: url(../images/calendar/cs_purple_timestrip_tab_right.png);
+}
+/*
+ * Calendar grid (HTML & Canvas)
+ */
+.zarafa-calendar-grid-yellow .zarafa-calendar-grid-group-header
+{
+	border-color: #ffd352;
+}
+
+.zarafa-calendar-grid-yellow .zarafa-calendar-grid-group-title
+{
+	color: #ffd352;
+}
+
+.zarafa-calendar-grid-yellow.zarafa-calendar-grid-row
+{
+	background-image: none ! important;
+	background-color: #ffe79c ! important;
+}
+
+/*
+ * Calendar (HTML & Canvas)
+ */
+.zarafa-calendar-header .zarafa-calendar-yellow.zarafa-calendar-container-header
+{
+	background-color: #ffe79c;
+}
+
+.zarafa-calendar-body .zarafa-calendar-yellow.zarafa-calendar-border
+{
+	background-color: #ffdf84;
+	border-color: #ffd352;
+}
+
+/*
+ * Calendar Tabs (HTML & Canvas)
+ */
+.zarafa-calendar-tabarea .zarafa-calendar-yellow.zarafa-calendar-tab-body
+{
+	background-image: url(../images/calendar/cs_yellow_timestrip_tab_center.png);
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-yellow.zarafa-calendar-tab-leftside
+{
+	background-image: url(../images/calendar/cs_yellow_timestrip_tab_left.png);
+}
+
+.zarafa-calendar-tabarea .zarafa-calendar-yellow.zarafa-calendar-tab-rightside
+{
+	background-image: url(../images/calendar/cs_yellow_timestrip_tab_right.png);
+}
+/* Fix for IE9, without the z-index explicitely
+ * configured, IE9 sets it to 0 and shows odd
+ * behavior where a <div> element which is placed
+ * inside another <div> can still get a lower
+ * z-index value than the parent making it invisible.. */
+.x-panel-body {
+	z-index : 1;
+}
+
+.zarafa-navigation-button-icon, .folder-dialog-icon
+{
+	background-position: center center;
+	background-repeat:no-repeat;
+	overflow : hidden;
+	width : 36px;
+	height : 32px;
+	border : none;
+	vertical-align: middle;
+	margin : 0;
+	cursor : pointer ! important;
+}
+
+.zarafa-navigation-button-open
+{
+	height: 34px;
+	overflow : hidden;
+	background-image : url(../../extjs/resources/images/default/toolbar/bg.gif);
+
+	font-family:arial,tahoma,helvetica,sans-serif;
+	font-size:11px;
+	vertical-align: middle;
+	cursor : pointer ! important;
+}
+
+.zarafa-navigation-closedbuttonholder
+{
+	height: 34px;
+	padding-right : 2px;
+	overflow : hidden;
+	background-image : url(../../extjs/resources/images/default/toolbar/bg.gif);
+	vertical-align: middle;
+}
+
+.zarafa-navigation-button-open-over
+{
+	font-weight : bold;
+}
+
+.zarafa-grid-header {
+	font: 13px Arial,Tahoma,Helvetical,Sans-Serif !important;
+	margin-left: 5px;
+}
+
+body
+{
+	color: #000;
+	font-family: Arial,Tahoma,Helvetical,Sans-Serif !important;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.header_top
+{
+	/* background-image: url(../images/zarafa_top_background.gif) ! important; */
+	background-color: white;
+	border-bottom : 1px solid black;
+}
+
+.x-list-body {
+	background-color: white;
+}
+
+.emptytext {
+	text-align: center;
+}
+.x-grid3-header {
+	background: #dfe0df;
+	color: #393536;
+}
+.zarafa-grid-empty-cell .x-grid3-cell-inner
+{
+	text-decoration : none !important;
+}
+
+.zarafa-task-complete .x-grid3-cell-inner
+{
+	color : #888888;
+	text-decoration : line-through;
+}
+
+.zarafa-task-overdue .x-grid3-cell-inner
+{
+	color : #EC0000;
+}
+td.x-grid3-hd .x-grid3-hd-inner {
+	background-image: none !important;
+	background-color:#dfe0df !important;
+}
+td.x-grid3-hd{
+	border-left-color:#EBEAEB;
+	border-right-color:#D3D2D2;
+}
+td.x-grid3-hd.sort-desc, td.x-grid3-hd.sort-asc{
+	border-left-color:#EBEAEB !important;
+	border-right-color:#D3D2D2 !important;
+}
+td.sort-desc .x-grid3-hd-inner, td.sort-asc .x-grid3-hd-inner {
+	background-image:none !important;
+	background-color:#d3d2d2 !important;
+}
+td.x-grid3-hd-over, td.x-grid3-hd-over.sort-desc, td.x-grid3-hd-over.sort-asc {
+	border-left-color:#F2F2F2 !important;
+}
+td.x-grid3-hd-over .x-grid3-hd-inner
+,td.x-grid3-hd-over.sort-desc .x-grid3-hd-inner
+,td.x-grid3-hd-over.sort-asc .x-grid3-hd-inner {
+	background-image:none !important;
+	background-color:#ebeaeb !important;
+}
+.zarafa-note-iconview {
+	 background-color: white;
+}
+.zarafa-note-iconview-thumb {
+	 background-position:50% 10%;
+	 background-repeat:no-repeat;
+	 float:left;
+	 height:27px;
+	 margin:5px;
+	 overflow:hidden;
+	 padding-left:2px;
+	 padding-right:2px;
+	 padding-top:35px;
+	 text-align:center;
+	 width:70px;
+	 border:1px solid #fff;
+}
+
+.zarafa-note-iconview-over {
+	background-color:#EFEFFF;
+	border:1px solid #DDDDDD;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color:#0E62BB;
+}
+.zarafa-note-iconview-selected	{
+	 background-color:#CEE3F6;
+	 border:1px solid #7EACD6;
+	 -moz-border-radius: 5px;
+	 -webkit-border-radius: 5px;
+	 color:#0E62BB;
+}
+.zarafa-note-iconview-subject {
+	color: #000;
+}
+.stickynote_dialog_yellow {
+	background: #FF9 none repeat scroll 0 0 !important;
+}
+.stickynote_dialog_blue {
+	background: #DEF1FF none repeat scroll 0 0 !important;
+}
+.stickynote_dialog_green {
+	background: #CBF0BB none repeat scroll 0 0 !important;
+}
+.stickynote_dialog_pink {
+	background: #FFDBFB none repeat scroll 0 0 !important;
+}
+.stickynote_dialog_white {
+	background: #FFF none repeat scroll 0 0 !important;
+}
+
+.importance-combobox-item {
+	padding-left : 15px;
+	height : 18px;
+}
+
+.complete {
+	color : #888888;
+	text-decoration : line-through;
+}
+
+div.zarafa-contact-cardview-selected {
+	 border : 1px solid #666666;
+	 background-color : #F8D03F;
+}
+
+.zarafa-contact-cardview {
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
+.zarafa-card-body table {
+	border-collapse: collapse;
+}
+.zarafa-card-body table tr td.contact-card-label {
+	font-style: italic;
+	padding-right:3px;
+}
+.zarafa-contact-cardview-card {
+	border: 1px solid transparent;
+	padding : 5px;
+	width : 250px;
+	height : 150px;
+	float : left;
+	background-color : transparent;
+	}
+.zarafa-contact-cardview-card .x-panel {
+	border-radius:5px;
+	box-shadow:0px 1px 2px rgba(0,0,0,0.4);
+	overflow:hidden;
+}
+.zarafa-contact-cardview-card .x-panel .x-panel-tl {
+	background-color:#f0f0f0 !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), color-stop(50%,#f0f0f0), to(#ededed)) !important; /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #f0f0f0, #f0f0f0, #ededed) !important; /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:		-moz-linear-gradient(top, #f0f0f0, #f0f0f0, #ededed) !important; /* FF3.6 */
+	background-image:		 -ms-linear-gradient(top, #f0f0f0, #f0f0f0, #ededed) !important; /* IE10 */
+	background-image:			-o-linear-gradient(top, #f0f0f0, #f0f0f0, #ededed) !important; /* Opera 11.10+ */
+	background-image:				 linear-gradient(to bottom, #f0f0f0, #f0f0f0, #ededed) !important;
+
+}
+.zarafa-contact-cardview-contact-card {
+	width : 45px;
+	height : 125px;
+	float : left;
+}
+.zarafa-contact-cardview-card .x-panel-header-text {
+	font-size:1.1em;
+}
+.zarafa-contact-cardview-card-title
+{
+	padding:5px;
+}
+.zarafa-contact-cardview-distlist-card {
+	width : 80px;
+	height : 125px;
+	float : left;
+}
+
+.zarafa-tbar-loading {
+	background-image: url(../images/loading.gif) !important;
+	background-repeat: no-repeat	!important;
+	background-position: right;
+}
+
+.zarafa-hierarchy-header {
+	padding : 1px 3px 1px 10px;
+}
+.zarafa-context-navigation-item-body {
+	background-color:white;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+	margin: 0px 2px 2px 2px;
+}
+.x-panel-body {
+	background-color:#fff !important;
+}
+.zarafa-attachments-dialog-filelist {
+	background-color: #FFF;
+}
+.zarafa-text-center {
+	text-align : center;
+}
+
+.zarafa-hierarchy-node-unread-count span.zarafa-hierarchy-node-counter {
+	color: blue !important;
+}
+
+.zarafa-hierarchy-node-total-count span.zarafa-hierarchy-node-counter {
+	color: #008000 !important;
+}
+
+.zarafa-hierarchy-node-withcounter {
+	font-weight: bold !important;
+}
+
+.x-tree-drop-ok-append .x-dd-drop-icon {
+	background-image: url(../../extjs/resources/images/default/dd/drop-yes.gif);
+}
+
+.x-tree-drop-ok-append-add .x-dd-drop-icon {
+	background-image: url(../../extjs/resources/images/default/dd/drop-add.gif);
+}
+
+.x-tree-drop-ok-above .x-dd-drop-icon{
+	background-image: url(../../extjs/resources/images/default/tree/drop-over.gif);
+}
+
+.x-tree-drop-ok-above-add .x-dd-drop-icon{
+	background-image: url(../../extjs/resources/images/default/tree/drop-over.gif);
+}
+
+.x-tree-drop-ok-below .x-dd-drop-icon{
+	background-image: url(../../extjs/resources/images/default/tree/drop-under.gif);
+}
+
+.x-tree-drop-ok-below-add .x-dd-drop-icon{
+	background-image: url(../../extjs/resources/images/default/tree/drop-under.gif);
+}
+
+.x-tree-drop-ok-between .x-dd-drop-icon{
+	background-image: url(../../extjs/resources/images/default/tree/drop-between.gif);
+}
+
+.x-tree-drop-ok-between-add .x-dd-drop-icon{
+	background-image: url(../../extjs/resources/images/default/tree/drop-between.gif);
+}
+
+#loading-mask {
+		 position: absolute;
+		 top: 0;
+		 left: 0;
+		 width: 100%;
+		 height: 100%;
+		 background: #fff;
+	 /** ExtJS uses 20001 as z-index for its loading mask, so we need to use values higher then this **/
+		 z-index: 20002;
+}
+
+#loading {
+		 position: absolute;
+		 top: 40%;
+		 left: 40%;
+		 z-index: 20003;
+}
+
+#loading span.loading {
+		 background: url(../../extjs/resources/images/default/tree/loading.gif) no-repeat left center;
+		 padding: 5px 35px;
+		 display: block;
+}
+
+#loading span.loading-error {
+	background: url(../../extjs/resources/images/default/window/icon-error.gif) no-repeat left center;
+	padding: 5px 35px;
+	display: block;
+}
+
+.zarafa-fieldset {
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding-top: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.zarafa-fieldset-second {
+	padding-left:10px;
+}
+
+.zarafa-link {
+	color: #0000BB;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+div.zarafa-folder-link, div.zarafa-user-link, div.zarafa-word-link {
+	text-decoration: underline;
+	padding: 4px 0px 0px 5px;
+	cursor:pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+.x-form-item .x-form-cb-label {
+	 top : 0px !important;
+}
+.x-form-field-wrap .x-form-trigger {
+	background-image: url(../images/button/trigger.png);
+}
+.x-form-field-wrap .x-form-search-trigger, .x-form-trigger.icon_search {
+	background-image: url(../icons/new/magnifier.png);
+	border-bottom:none !important;
+}
+.x-form-field-wrap .x-form-spinner-trigger {
+	background-image: url(../images/button/spinner.png);
+}
+.x-form-field-wrap .x-form-clear-trigger {
+	background-image: url(../images/button/clear.png);
+}
+.x-trigger-wrap-focus .x-form-trigger {
+	background-position: 0 0;
+	border-bottom:1px solid #d0d0d0;
+}
+
+.zarafa-mainpanel-toolbar {
+	background-color: transparent;
+	background-image: none;
+	border: 0px none;
+	padding: 0 0 0 10px;
+}
+
+.zarafa-mainpanel-toolbar-title {
+	font-size: 13px !important;
+}
+
+/**
+ * This CSS class is added to the body of main viewport,
+ * To separate the stacking context of mainviewport
+ * and the dialogs we need to forcefully specify
+ * z-index of viewport's body. So other stacking contexts
+ * will not interfere with viewport's stacking context.
+ * This z-index is only used to create separate stacking context
+ * for viewport, we can specify any z-index value
+ * which is < 9000 (Ext.WindowMgr.zseed)
+ *
+ * Dialogs are added directly below body element of the window,
+ * with absolute positions and every dialog have declared z-index
+ * so they have separate stacking context.
+ *
+ * Reference -> http://reference.sitepoint.com/css/z-index
+ */
+.x-border-layout-ct {
+	background-color:transparent;
+}
+.zarafa-panel-body
+{
+	z-index : 0;
+	background-color:#eaeaea;
+}
+
+.zarafa-window-header span {
+	display: block;
+	position: absolute;
+	right: 25px;
+}
+
+.zarafa-window-header .x-window-header-text {
+/*	height: 15px;*/
+	overflow: hidden;
+	left: 7px;
+	white-space: nowrap;
+}
+
+.zarafa-window-header .fade {
+	background: none;
+	display: block;
+	top: 7px;
+	width: 40px;
+}
+
+.zarafa-reminder-dialog-active-reminder-icon {
+	width: 24px;
+	height: 15px;
+	float: left;
+}
+
+.zarafa-reminder-dialog-active-reminder-subject
+{
+	font-weight: bold;
+}
+.zarafa-reminder-dialog-snooze, .zarafa-reminder-dialog-active-reminder
+{
+	padding:8px;
+}
+/* override buttons */
+.zarafa-maintoolbar .x-btn {
+	margin-right:10px;
+}
+.zarafa-context-mainpanel .x-btn, .zarafa-previewpanel-toolbar .x-btn, .zarafa-dialogtoolbar .x-btn {
+	margin-right:5px;
+}
+.x-html-editor-tb .x-btn-pressed .x-btn-small, .x-html-editor-tb .x-btn-pressed.x-btn-over .x-btn-small
+{
+	background: url(../images/button/background_small.png) center center no-repeat ;
+}
+
+.x-btn-over
+{
+	background-color:#E3E2E3;
+}
+.x-btn em
+{
+	display:block;
+	height:100%;
+}
+.x-tool-close
+{
+	background-image: url(../images/button/close_button.png);
+}
+.x-tool-close-over
+{
+	background-image: url(../images/button/close_button.png);
+	background-position: center;
+}
+.x-tool.x-tool-plus
+{
+	background-image: url(../images/button/plus.png);
+	background-position: center;
+}
+.x-tool.x-tool-gear
+{
+	background-image: url(../icons/new/cogwheel.png);
+	background-position: center;
+}
+.x-panel-header .x-tool-toggle
+{
+	background-image: url(../icons/new/toggle.png);
+	background-position: center;
+}
+.x-panel-collapsed .x-tool-toggle
+{
+	background-image: url(../icons/new/toggle_down.png);
+	background-position: center;
+}
+.x-tool.x-tool-toggle.x-tool-collapse-west, .x-tool.x-tool-expand-east
+{
+	background-image: url(../icons/new/collapse_west.png);
+	background-position: center;
+}
+.x-tool.x-tool-toggle.x-tool-collapse-east, .x-tool.x-tool-expand-west
+{
+	background-image: url(../icons/new/collapse_east.png);
+	background-position: center;
+}
+.x-tool.x-tool-help
+{
+	background-image: url(../icons/new/info.png);
+	background-position: center;
+}
+
+.x-btn em.x-btn-split, .x-btn em.x-btn-arrow
+{
+	background-image: url(../images/button/s-arrow-o.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-color:transparent;
+	padding-right:14px;
+}
+.x-btn-over .x-btn-large em.x-btn-split, .x-btn-over .x-btn-large em.x-btn-arrow
+{
+/*
+	background-image: url(../images/button/s-arrow-o.png);
+*/
+}
+/*
+.x-btn-over em.x-btn-split, .x-btn-over em.x-btn-arrow
+{
+	background-image: url(../images/button/s-arrow-o.gif);
+}
+*/
+.x-btn-click .x-btn-large em.x-btn-split, .x-btn-click .x-btn-large em.x-btn-arrow
+{
+	background-image: url(../images/button/s-arrow-c.png);
+}
+.x-btn .x-btn-large
+{
+	height:32px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border:1px solid transparent;
+}
+.x-btn-icon .x-btn-large .x-btn-text
+{
+	width:32px;
+}
+.x-btn-text-icon .x-btn-icon-small-left .x-btn-text
+{
+	background-position: 0 center;
+	height:20px;
+	padding-left:24px;
+}
+.x-btn .x-btn-large button
+{
+	width:32px;
+	height:32px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.x-btn .x-btn-small
+{
+	height:20px;
+	min-width:20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border:1px solid transparent;
+}
+.x-btn-icon .x-btn-small .x-btn-text
+{
+	width:20px;
+	height:20px;
+}
+.x-btn-noicon .x-btn-icon-small-left
+{
+	border-width:1px;
+	border-style:solid;
+	border-color:#aaaaaa;
+	border-radius:2px;
+}
+.x-btn-noicon .x-btn-small .x-btn-text {
+	height:20px;
+	padding: 0 5px;
+}
+.x-btn-icon {
+	border:none !important;
+}
+.x-btn-text-icon .x-btn-small .x-btn-text {
+	padding: 0 5px 2px 20px;
+}
+.x-btn-icon .x-btn-large {
+	border-width:1px;
+	border-style:solid;
+	border-color:#AEAEAE #999999 #999999 #AEAEAE;
+	border-radius:2px;
+	box-shadow: 0 0 1px #B5B5B5, 0 1px 1px white inset;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), color-stop(50%,#f6f6f6), to(#E6E6E6)) !important; /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #f6f6f6, #f6f6f6, #e6e6e6) !important; /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:		-moz-linear-gradient(top, #f6f6f6, #f6f6f6, #e6e6e6) !important; /* FF3.6 */
+	background-image:		 -ms-linear-gradient(top, #f6f6f6, #f6f6f6, #e6e6e6) !important; /* IE10 */
+	background-image:			-o-linear-gradient(top, #f6f6f6, #f6f6f6, #e6e6e6) !important; /* Opera 11.10+ */
+	background-image:				 linear-gradient(to bottom, #f6f6f6, #f6f6f6, #e6e6e6) !important;
+
+}
+/* buttons with icons have an image as background */
+.x-btn-icon.x-btn-over .x-btn-large, .x-btn-icon.x-btn-over .x-btn-small
+{
+	border:1px solid #7A7A7A;
+	border-radius:2px;
+	box-shadow: 0 1px 1px white, 0 1px 1px white inset;
+}
+.x-btn-icon.x-btn-click.x-btn-over .x-btn-large
+{
+	background: url(../images/button/background_large.png) center left no-repeat !important;
+}
+
+.x-btn-icon.x-btn-click.x-btn-over .x-btn-small, .x-btn-icon.x-btn-pressed .x-btn-small
+{
+	background: url(../images/button/background_small.png) center left no-repeat ;
+}
+.x-btn-icon.x-btn-over {
+	border:none;
+	box-shadow:none;
+}
+.x-btn-noicon {
+	text-align:center;
+}
+.x-form-field .x-btn {
+	text-align:left;
+}
+.x-btn-noicon .x-btn-large .x-btn-text {
+	height:40px;
+}
+.x-btn-text-icon {
+	border-width:1px;
+	border-style:solid;
+	border-color:#AEAEAE #999999 #999999 #AEAEAE;
+	border-radius:2px;
+	box-shadow: 0 0 1px #B5B5B5, 0 1px 1px white inset;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), color-stop(50%,#f6f6f6), to(#E6E6E6)) !important; /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #f6f6f6, #f6f6f6, #e6e6e6) !important; /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:		-moz-linear-gradient(top, #f6f6f6, #f6f6f6, #e6e6e6) !important; /* FF3.6 */
+	background-image:		 -ms-linear-gradient(top, #f6f6f6, #f6f6f6, #e6e6e6) !important; /* IE10 */
+	background-image:			-o-linear-gradient(top, #f6f6f6, #f6f6f6, #e6e6e6) !important; /* Opera 11.10+ */
+	background-image:				 linear-gradient(to bottom, #f6f6f6, #f6f6f6, #e6e6e6) !important;
+}
+.x-btn-over.x-btn-text-icon {
+	border:1px solid #7A7A7A;
+	border-radius:2px;
+	box-shadow: 0 1px 1px white, 0 1px 1px white inset;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#EEEEEE), color-stop(50%,#EEEEEE), to(#E6E6E6)) !important; /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #EEEEEE, #EEEEEE, #e6e6e6) !important; /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:		-moz-linear-gradient(top, #EEEEEE, #EEEEEE, #e6e6e6) !important; /* FF3.6 */
+	background-image:		 -ms-linear-gradient(top, #EEEEEE, #EEEEEE, #e6e6e6) !important; /* IE10 */
+	background-image:			-o-linear-gradient(top, #EEEEEE, #EEEEEE, #e6e6e6) !important; /* Opera 11.10+ */
+	background-image:				 linear-gradient(to bottom, #EEEEEE, #EEEEEE, #e6e6e6) !important;
+}
+.x-btn-over.x-btn-click.x-btn-text-icon, .x-btn-over.x-btn-click.x-btn-noicon {
+	border-radius:2px;
+	box-shadow: 0 1px 1px white, 0 1px 1px white inset;
+	background-color: #8a8a8a !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#C5C5C5), color-stop(50%,#C5C5C5), to(#A1A1A1)) !important; /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #C5C5C5, #C5C5C5, #A1A1A1) !important; /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:		-moz-linear-gradient(top, #C5C5C5, #C5C5C5, #A1A1A1) !important; /* FF3.6 */
+	background-image:		 -ms-linear-gradient(top, #C5C5C5, #C5C5C5, #A1A1A1) !important; /* IE10 */
+	background-image:			-o-linear-gradient(top, #C5C5C5, #C5C5C5, #A1A1A1) !important; /* Opera 11.10+ */
+	background-image:				 linear-gradient(to bottom, #C5C5C5, #C5C5C5, #A1A1A1) !important;
+
+}
+/*
+ * Make a clear distinction between a normal button
+ * and a button which has the focus
+ */
+.x-btn-focus .x-btn-tl{
+	background-position: -6px 0;
+}
+
+.x-btn-focus .x-btn-tr{
+	background-position: -9px 0;
+}
+
+.x-btn-focus .x-btn-tc{
+	background-position: 0 -9px;
+}
+
+.x-btn-focus .x-btn-ml{
+	background-position: -6px -24px;
+}
+
+.x-btn-focus .x-btn-mr{
+	background-position: -9px -24px;
+}
+
+.x-btn-focus .x-btn-mc{
+	background-position: 0 -2168px;
+}
+
+.x-btn-focus .x-btn-bl{
+	background-position: -6px -3px;
+}
+
+.x-btn-focus .x-btn-br{
+	background-position: -9px -3px;
+}
+
+.x-btn-focus .x-btn-bc{
+	background-position: 0 -18px;
+}
+
+.x-panel-tbar-noheader .x-toolbar, .x-panel-mc .x-panel-tbar .x-toolbar {
+	background-image:none;
+	border-color:transparent;
+}
+.x-panel-tbar-noborder, .x-panel-tbar-noborder.x-panel-tbar-noheader
+{
+/*
+	border-width:0;
+*/
+}
+.x-panel-noborder .x-panel-tbar-noborder .x-toolbar {
+	border-color:transparent;
+}
+/**
+ * Theming options
+ */
+/* Style the whole background */
+body {
+	background-color: #F3F3F3 !important;
+}
+/** Style the BUTTON GROUPS **/
+/* Style buttons groups header */
+.x-btn-group{
+	padding:0;
+}
+/* button groups no longer have their own backgrounds */
+.x-btn-group-tr {
+/*	background-color: #d2d2d4 !important;*/
+/*	border-bottom: 1px solid white !important;*/
+}
+.x-btn-group-tl,
+.x-btn-group-tr,
+.x-btn-group-tc {
+	background-image: none !important;
+	/* remove background as it is present even without a title for the group*/
+	background-color:transparent;
+	padding:0;
+}
+.x-btn-group-header-text {
+	color: #424244;
+	text-transform: uppercase;
+	font-weight: bold !important;
+	font-family: Arial, Tahoma, Helvetical, Sans-Serif !important;
+}
+/* Style buttons groups body */
+.x-btn-group-mr {
+/*	background-color: #e6e6e7 !important;*/
+}
+.x-btn-group-ml,
+.x-btn-group-mr {
+	background-image: none !important;
+}
+.x-btn-group-mc {
+	padding:0;
+}
+/* Style buttons groups bottom */
+.x-btn-group-bl,
+.x-btn-group-br,
+.x-btn-group-bc {
+	background-image: none !important;
+}
+
+/* Top toolbars in main window and dialog and toolbar at the bottom. */
+.zarafa-maintoolbar,
+.zarafa-bottomtoolbar,
+.zarafa-dialogtoolbar {
+	background-image: none !important;
+	border-color: transparent !important;
+}
+.zarafa-maintoolbar {
+	background-color:transparent;
+	padding-top:10px;
+	padding-left:10px;
+	border-top: 1px solid white;
+	background: -moz-linear-gradient(top, rgba(222,222,222,1) 0%, rgba(222,222,222,0.2) 16%, rgba(222,222,222,0) 20%, rgba(228,228,228,0) 89%, rgba(229,229,229,0) 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(222,222,222,1)), color-stop(16%,rgba(222,222,222,0.2)), color-stop(20%,rgba(222,222,222,0)), color-stop(89%,rgba(228,228,228,0)), color-stop(100%,rgba(229,229,229,0))) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(222,222,222,1) 0%,rgba(222,222,222,0.2) 16%,rgba(222,222,222,0) 20%,rgba(228,228,228,0) 89%,rgba(229,229,229,0) 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(222,222,222,1) 0%,rgba(222,222,222,0.2) 16%,rgba(222,222,222,0) 20%,rgba(228,228,228,0) 89%,rgba(229,229,229,0) 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(222,222,222,1) 0%,rgba(222,222,222,0.2) 16%,rgba(222,222,222,0) 20%,rgba(228,228,228,0) 89%,rgba(229,229,229,0) 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom, rgba(222,222,222,1) 0%,rgba(222,222,222,0.2) 16%,rgba(222,222,222,0) 20%,rgba(228,228,228,0) 89%,rgba(229,229,229,0) 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#00e5e5e5',GradientType=0 ) !important; /* IE6-9 */
+}
+.zarafa-bottomtoolbar.x-toolbar {
+	background-color : #DFE0DF !important;
+}
+.zarafa-maintoolbar.x-toolbar {
+	border-bottom-width : 0 !important;
+}
+/* separator */
+.x-toolbar .xtb-sep {
+	background-image: url(../images/grid/grid-split.gif);
+}
+/* HTML editor toolbar */
+.x-html-editor-tb .x-toolbar {
+	background-image:none;
+	background-color:#ebeaeb;
+	border-color:#d3d2d2;
+}
+/* html editor buttons are smaller than 'regular' buttons */
+.x-html-editor-tb .x-btn
+{
+	height:20px;
+	min-width:20px;
+	text-align:center;
+	vertical-align:middle;
+}
+.x-html-editor-tb a.x-menu-item img.x-menu-item-icon, .x-html-editor-tb .x-btn-icon .x-btn-text
+{
+	height:16px !important;
+	width:16px !important;
+}
+.x-html-editor-wrap {
+	border-color:#B5B8C8;
+}
+.x-tree-node .x-tree-node-over {
+	background-color: #f2f2f2;
+}
+.x-tree-root-ct {
+	background-color: #ffffff;
+}
+.x-tree-node-el * {
+	cursor : pointer;
+}
+.x-grid3-row {
+	background-color:#ffffff;
+}
+.x-grid3-row-over {
+	background-color:#efefef;
+}
+/* Selection in grid */
+.x-grid3-row-selected {
+	background-color: #f8d03f !important;
+	border-color: #d8ab0a;
+}
+.x-grid3-body .x-grid3-row-selected .x-grid3-td-numberer, .x-grid3-body .x-grid3-row-selected .x-grid3-td-checker, .x-grid3-body .x-grid3-row-selected .x-grid3-td-expander {
+	background-image:none;
+	background-color:#918f90;
+}
+/* Upper bar on a panel, contains the title */
+.x-panel-header {
+	padding:4px 3px 4px 8px;
+	background-image:none !important;
+	background-color:#E9E9E9;
+	color: #393536 !important;
+	font-weight: normal;
+	font-size: 13px;
+	font-family: Arial, Tahoma, Helvetical, Sans-Serif !important;
+	border-color:transparent;
+}
+.x-panel-footer {
+	background-color:#F4F4F4;
+}
+.x-panel-noborder .x-panel-header-noborder {
+	border-bottom: none !important;
+}
+.zarafa-widgetpanel
+{
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+	border-top:1px solid white;
+}
+/* Body element of a panel */
+.x-panel-body {
+	border-color:#d3d2d2;
+	background-color:#F4F4F4 !important;
+}
+.x-panel-body {
+}
+.x-fieldset-body .x-column-inner {
+/*
+	padding:0 5px;
+*/
+}
+.x-panel-btns {
+	padding:5px;
+}
+.x-panel-tl, .x-panel-tc, .x-panel-tr {
+	background-image:none;
+	background-color:transparent;
+}
+.x-panel-tl {
+	border-bottom-color:transparent;
+	border-top:1px solid white;
+}
+.x-panel-ml, .x-panel-mc, .x-panel-mr {
+	background-image:none;
+	background-color:#EBEAEB;
+}
+.x-panel-bl, .x-panel-bc, .x-panel-br {
+	background-image:none;
+	background-color:#EBEAEB;
+}
+.x-panel.x-portlet {
+	box-shadow:0px 1px 2px rgba(0,0,0,0.4);
+	margin-bottom: 10px;
+}
+
+/** Style the CONTEXT **/
+/* Header panel, specifically header of a context */
+.zarafa-context-header {
+	background-color: #DFE0DF !important;
+	margin-bottom:5px;
+	box-shadow:0px 1px 2px rgba(0,0,0,0.4);
+}
+/* Toolbar within the header of the context */
+/*.zarafa-context-header .x-toolbar {*/
+/*	background-color: transparent !important;*/
+/*}*/
+
+
+/** Style the HIERARCHY **/
+.zarafa-navigationpanel-item {
+	background-color: #ebeaeb;
+}
+.zarafa-context-navigation-block {
+	margin:8px;
+}
+
+.zarafa-content-navigation-block > div {
+	background: #ff0000 !important;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+}
+
+.x-panel-header.zarafa-hierarchy-header {
+	border-radius:5px 5px 0 0;
+	box-shadow: 0 0 2px rgba(0,0,0,0.4);
+	margin: 0px 2px;
+}
+.zarafa-navigation-buttons {
+	border-top: 1px solid white !important;
+}
+.zarafa-navigation-button-row {
+	background-color: #dddfe0 !important;
+	background-image: none !important;
+	border-bottom: 1px solid white !important;
+}
+/* Style the root node for each store */
+.zarafa-tree-ipm-subtree-node {
+	font-size: 10pt;
+	margin: 2px 0px;
+}
+.zarafa-tree-ipm-subtree-container {
+	padding: 4px 0px;
+	background: white;
+}
+/* Style the plus/minus symbols for the root folder */
+.zarafa-tree-root-node .x-tree-elbow,
+.zarafa-tree-root-node .x-tree-elbow-end {
+	background-image:url(../../extjs/resources/images/default/tree/s.gif);
+}
+.zarafa-tree-root-node .x-tree-elbow-plus,
+.zarafa-tree-root-node .x-tree-elbow-end-plus {
+	background-image:url(../../extjs/resources/images/default/tree/elbow-plus-nl.gif);
+}
+.zarafa-tree-root-node .x-tree-elbow-minus,
+.zarafa-tree-root-node .x-tree-elbow-end-minus {
+	background-image:url(../../extjs/resources/images/default/tree/elbow-minus-nl.gif);
+}
+
+/* Selection in tree */
+.x-tree-node > .x-tree-selected {
+	background-color: #F8D03F;
+}
+/* Remove the first dotted indent line */
+.x-tree-node-indent img:first-child {
+	/*
+	* Hide it like this so the next indent line is not
+	* moved to the left if we use "display: none;".
+	*/
+	visibility: hidden;
+ }
+ /* Style the bottombar of the HierarchyTreePanel */
+.zarafa-hierarchy-treepanel-bottombar.x-toolbar {
+	/* Relative positioning is used in combination with the bottom style
+	 * to always keep the shared folder object in view at the bottom.
+	 */
+	position: relative;	/* TODO: style the x-panel-bbar that this bar belongs to, to overflow: visible or something	*/
+	top: auto; /* Disable the top property otherwise you canot use the bottom property */
+
+	padding: 0px;
+	background-color: white !important;
+	background-image: none;
+	border-top: 1px solid #AEAEAE !important;
+}
+/* Remove the border from the button in the footer of the HierarchyTreePanel */
+.zarafa-hierarchy-treepanel-footer-opensharedfolder {
+	border-top:1px solid #AEAEAE;
+}
+.zarafa-hierarchy-treepanel-footer-opensharedfolder .x-btn-small {
+	border: 0px;
+	border-radius:0 0 5px 5px;
+}
+.zarafa-hierarchy-treepanel-tbar .x-toolbar {
+	background-color:white !important;
+}
+/** HACK to get the checkbox in the topbar of the hierarchy correctly aligned **/
+/** The Ext.ux.FieldLabeler sets the position to absolute for all IE browsers, but IE9 does not need that **/
+.ext-ie.ext-ie8 .zarafa-hierarchy-treepanel-tbar tr.x-toolbar-right-row div.x-form-element {
+	position: relative !important;
+}
+
+/** Style the SEARCHBAR **/
+.zarafa-searchbar .x-panel-header {
+	background-color: #e6e6e7 !important;
+	border-top: none;
+}
+.zarafa-searchbar .x-panel-body {
+	background-color: #e6e6e7 !important;
+}
+/** Style the CALENDAR **/
+/* Date picker */
+.x-date-picker .x-date-left,
+.x-date-picker .x-date-middle,
+.x-date-picker .x-date-right {
+	background: #ffffff;
+}
+.x-date-middle .x-btn {
+	border-color:#918f90;
+}
+/* rounded corners of date picker table */
+.x-date-picker .x-date-left {
+	border-top-left-radius:5px
+}
+.x-date-picker .x-date-right {
+	border-top-right-radius:5px
+}
+.x-date-picker {
+	background-color:#f4f4f4 !important;
+	padding:8px;
+	width:auto;
+	border-color:transparent;
+}
+/* center date picker inside container */
+.ext-webkit table.x-date-inner {
+	width:100%;
+}
+.x-date-picker table {
+	width:100%;
+	background-color:white;
+	border-radius:5px 5px 0 0;
+	box-shadow:0px 0px 2px rgba(0,0,0,0.4);
+}
+.x-date-picker > table tr {
+	border-style:none;
+}
+.x-date-middle .x-btn .x-btn-text {
+	color: #000;
+}
+.x-date-bottom {
+	background-image:none;
+	background-color: #EBEAEB;
+	border-top-color:#D3D2D2;
+}
+.x-date-inner th {
+	background-image:none !important;
+	background-color:transparent !important;
+	color:#393536;
+	border-bottom:none;
+}
+.x-date-inner thead {
+	background-color: #bdbcbc !important;
+	border-radius:5px 5px 0 0;
+}
+.x-date-weeknumber {
+	background-color: #EBEAEB !important;
+	border-color: #EBEAEB !important;
+}
+.x-date-weeknumber a{
+	text-align: center;
+}
+.x-date-inner a {
+	color: #393536;
+}
+.x-date-inner .x-date-selected a {
+	background-color: #F8D03F;
+	background-image: none;
+	border-color:#a7a5a6;
+	color:black;
+	border-radius:3px;
+}
+.x-date-inner a:hover, .x-date-inner .x-date-disabled a:hover {
+	background-color:#ebeaeb;
+	color:black;
+	border-radius:3px;
+}
+.x-date-inner .x-date-today a {
+	border-color:#d8ab0a;
+	border-width:1px;
+	border-radius:3px;
+}
+.x-date-inner .x-date-selected span{
+	font-weight:inherit;
+}
+.x-date-inner .x-date-busy span{
+	font-weight:bold;
+}
+
+.zarafa-panel {
+	box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
+	border-top:1px solid white;
+}
+
+/** Style the widget panel **/
+.zarafa-widgetpanel, .zarafa-panel {
+	background-color: #f4f4f4;
+}
+.zarafa-body-tabbar .zarafa-widgetpanel, .zarafa-body-tabbar .zarafa-panel {
+	box-shadow : none;
+	border-top : none;
+}
+.zarafa-widget-item {
+	width:80px;
+	text-align:center;
+	display: block;
+	float:left;
+	margin:5px;
+	cursor:pointer;
+}
+.zarafa-widget-item .thumb-wrap {
+	display: block;
+	width:80px;
+	height:80px;
+	text-align:center;
+	vertical-align:middle;
+	position:relative;
+}
+.zarafa-widget-item > span {
+	height:2.75em;
+	display:block;
+	overflow:hidden;
+	padding-top:0.25em;
+}
+.zarafa-widgets-selectedwidget
+{
+	color : #7f7f7f;
+}
+.zarafa-widgets-hoverwidget
+{
+	color : #7f7f7f;
+	text-decoration : underline;
+}
+.zarafa-widget-item .thumb-wrap img {
+	display:block;
+	margin:auto;
+}
+/** Dialog window **/
+.x-window-tl .x-window-header {
+	font-size:15px;
+	font-weight:normal;
+	padding:4px 4px 6px 4px;
+}
+.x-window-header-text {
+	color:#393536 !important;
+}
+.x-window-tr, .x-window-tc {
+	background:none !important;
+}
+.x-window-tr {
+	background-image:none;
+}
+.x-window-tl {
+	background-color: #CCCCCC;
+	background-image: -webkit-gradient(linear, left top, right top, from(#cccccc), color-stop(50%,#D4D4D4), to(#cccccc)) !important; /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(left, #cccccc, #d4d4d4, #cccccc) !important; /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:		-moz-linear-gradient(left, #cccccc, #d4d4d4, #cccccc) !important; /* FF3.6 */
+	background-image:		 -ms-linear-gradient(left, #cccccc, #d4d4d4, #cccccc) !important; /* IE10 */
+	background-image:			-o-linear-gradient(left, #cccccc, #d4d4d4, #cccccc) !important; /* Opera 11.10+ */
+	background-image:				 linear-gradient(to right, #cccccc, #d4d4d4, #cccccc) !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(startColorStr='#cccccc', endColorStr='#d4d4d4', GradientType=0)";
+	border-left: 1px solid #c0c0c0;
+	border-top: 1px solid #E6E6E6;
+	border-right: 1px solid #c0c0c0;
+	border-bottom:none;
+	border-radius: 5px 5px 0 0;
+	}
+
+.x-window-ml, .x-window-mr, .x-window-mc {
+	background:#f4f4f4 !important;
+}
+.x-window-ml {
+	padding-left:0;
+}
+.x-window-mr {
+	padding-right:0;
+}
+.x-window-mc {
+	border:none !important;
+}
+.x-window-bl, .x-window-br, .x-window-bc {
+	background:#EBEAEB !important;
+}
+.x-form-text.x-zarafa-boxfield-input{
+	background-color:transparent;
+}
+
+.x-form-text {
+	border-color:#d3d2d2;
+	background-color:white;
+}
+.x-form-focus, textarea.x-form-focus, .x-trigger-wrap-focus	{
+	border-color:#918f90;
+}
+.x-layout-collapsed	{
+	background-color:#f0f0f0;
+	border:none;
+	box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
+	border-top:1px solid white;
+}
+.x-panel-body.x-form {
+	padding:0;
+}
+/* right click context menu */
+.x-menu {
+	background-color: #F0F0F0;
+	background-image: url(../images/menu/menu.png);
+	background-position: 2px center;
+}
+.x-menu-floating {
+	border-color:#918f90;
+}
+.x-menu-nosep {
+	background-image:none;
+}
+/* context menu items */
+a.x-menu-item
+{
+	padding: 3px 21px 3px 29px;
+	line-height:20px;
+}
+li.x-menu-list-item{
+	border-width:1px;
+	border-color:transparent;
+	border-style:solid;
+	border-radius:4px;
+	background-image: none;
+}
+/* mouseover */
+li.x-menu-item-active{
+	background-image: none;
+	background-color: transparent;
+	border:1px solid #666666;
+	margin:0 1px;
+	padding:1px;
+	box-shadow:0 0 2px 1px #ffffff inset;
+}
+li.x-menu-item a.x-menu-item {
+	border:none;
+}
+.x-menu-item-icon {
+	height: 20px;
+	width: 20px;
+	background-repeat:no-repeat;
+}
+li.x-menu-item-active a.x-menu-item {
+	border:none;
+}
+li.x-menu-list-item.x-menu-sep-li {
+	border:none;
+	box-shadow:none;
+}
+/* loading mask */
+.x-mask-loading {
+	background-image: none;
+	background-color:#ebeaeb;
+	border-color:#d3d2d2;
+}
+.x-mask-loading div {
+	border-color:#d3d2d2;
+}
+.x-mask-error {
+	background-image: none;
+	background-color:#ebeaeb;
+	border-color:#d3d2d2;
+}
+.x-mask-error div {
+	cursor: default;
+	border-color:#d3d2d2;
+}
+
+.x-combo-list {
+	border-color:#918F90;
+}
+.x-combo-list .x-combo-selected {
+	border-color:#d3d2d2 !important;
+	background-color:#ebeaeb;
+}
+/* tabs */
+ul.x-tab-strip-top	{
+	background-image: none;
+	background-color:transparent;
+	border-bottom-color:#B0B0B0;
+}
+
+.x-tab-panel-header, .x-tab-panel-footer {
+	background-color:transparent;
+	border: none;
+	padding:0;
+}
+.x-tab-strip span.x-tab-strip-text {
+	color:#393536;
+}
+.x-tab-panel-body {
+	border-color:#CACACA #B0B0B0 #B0B0B0 #CACACA;
+	background-color:#F4F4F4;
+	padding:3px;
+}
+.x-tab-panel-body .zarafa-panel {
+	box-shadow:none;
+}
+.x-tab-strip .x-tab-strip-closable a.x-tab-strip-close {
+	width:15px;
+	height:15px;
+	background-image: url("../images/button/close_button.png");
+	margin-top:4px;
+}
+.x-tab-strip .x-tab-strip-closable a.x-tab-strip-close, .x-tab-strip .x-tab-strip-closable a.x-tab-strip-close:hover {
+	background-image: url("../images/button/close_button.png");
+}
+
+.x-tab-strip-active span.x-tab-strip-text {
+	color:#393536;
+}
+.x-tab-strip-top .x-tab-right, .x-tab-strip-top .x-tab-left, .x-tab-strip-top .x-tab-strip-inner {
+	background-image:none;
+}
+.x-tab-strip-top .x-tab-strip-inner {
+	overflow:visible;
+}
+.x-tab-strip-top .x-tab-right {
+	background-color:#ebebea;
+	border-width:1px 1px 0 1px;
+	border-color:#918F90;
+	border-style:solid;
+	border-radius:3px 3px 0 0;
+}
+.x-tab-scroller-left {
+	background-image:url(../images/tabs/scroll-left.gif);
+	border-bottom-color: #B0B0B0;
+}
+.x-tab-scroller-right {
+	background-image:url(../images/tabs/scroll-right.gif);
+	border-bottom-color: #B0B0B0;
+}
+/* main content tabs */
+.zarafa-body-tabbar > div > div > ul.x-tab-strip li {
+	margin : 0;
+	margin-right:2px;
+	box-shadow: 0 0 1px #B5B5B5, 0 1px 1px white inset;
+}
+.zarafa-body-tabbar > div > div > ul.x-tab-strip li .x-tab-right {
+	border-color:#CACACA #B0B0B0 #B0B0B0 #CACACA;
+	background-color: #E8E8E8;
+	border-radius : 0;
+}
+.zarafa-body-tabbar > div > div > ul.x-tab-strip li > .x-tab-right:hover {
+	background-color:#f3f3f3;
+	box-shadow: 0 1px 5px #E6E6E6 inset;
+}
+.zarafa-body-tabbar > div > div > ul.x-tab-strip .x-tab-strip-inner span.x-tab-strip-text.x-tab-strip-icon, .zarafa-body-tabbar > div > div > ul.x-tab-strip li.x-tab-with-icon .x-tab-strip-inner span.x-tab-strip-text {
+	padding-left: 21px;
+	background-position: 0 5px;
+	background-repeat: no-repeat;
+}
+.zarafa-body-tabbar > div > div > ul.x-tab-strip .x-tab-strip-inner span.x-tab-strip-text {
+	height : 15px;
+	padding-top : 8px;
+}
+.zarafa-body-tabbar ul.x-tab-strip li.x-tab-strip-active .x-tab-right, .zarafa-body-tabbar ul.x-tab-strip li.x-tab-strip-active .x-tab-right:hover{
+	background-color: #F4F4F4;
+	box-shadow: none;
+}
+.zarafa-body-tabbar > div > div > ul.x-tab-strip .x-tab-strip-active span.x-tab-strip-text {
+	font-weight: normal;
+}
+.zarafa-body-tabbar > div > div > ul.x-tab-strip li.x-tab-strip-closable .x-tab-right {
+	padding-left:7px;
+}
+
+/* iconCls for dirty messages */
+.x-tab-strip-text.zarafa-tab-edited {
+	font-style : italic !important;
+}
+/* edge contains the '+' sign */
+.zarafa-body-tabbar > div > div > ul.x-tab-strip li.x-tab-edge {
+	/* icon is 15px wide, so add 5px on each side */
+	width:25px;
+	box-shadow:none;
+}
+.zarafa-body-tabbar > div > div > ul.x-tab-strip li {
+	display : inline-block;
+}
+.zarafa-body-tabbar > div > div > ul.x-tab-strip li.x-tab-edge .x-tab-add {
+	height:20px;
+	width:25px;
+	padding-top: 8px;
+	display:block;
+	background-image: url("../images/button/plus.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	cursor: pointer;
+}
+.zarafa-body-tabbar ul.x-tab-strip:first-child li.x-tab-edge .x-tab-strip-text:hover {
+	background-color:#dedede;
+}
+.zarafa-body-tabbar > div.x-tab-panel-header {
+	position : relative;
+}
+
+.x-fieldset {
+	padding:5px;
+}
+.x-fieldset legend {
+	color:#393536;
+}
+
+/* month picker */
+.x-date-mp-btns {
+	background-image:none;
+	background-color:#ebeaeb;
+}
+.x-date-mp-btns td {
+	border-top-color:#d3d2d2;
+}
+.x-date-mp td {
+	padding:0;
+}
+td.x-date-mp-month a, td.x-date-mp-year a	{
+	color:#918f90;
+	padding:4px;
+}
+td.x-date-mp-sel a {
+	background-image:none;
+	background-color:#d3d2d2;
+	border-color:#918f90;
+	color:#393536;
+}
+td.x-date-mp-month a:hover, td.x-date-mp-year a:hover {
+	background-color:#ebeaeb;
+	color:#393536;
+}
+.x-date-mp-btns button {
+	background-color: #393536;
+	border-color: #a7a5a6 #231f20 #231f20 #a7a5a6;
+	color: #FFFFFF;
+}
+/* mid separator for months | years */
+td.x-date-mp-sep {
+	border-color:#D3D2D2;
+}
+/* tooltip */
+.x-tip .x-tip-tc, .x-tip .x-tip-tl, .x-tip .x-tip-tr, .x-tip .x-tip-bc, .x-tip .x-tip-bl, .x-tip .x-tip-br, .x-tip .x-tip-ml, .x-tip .x-tip-mr {
+	background-image: url(../images/tip-sprite.gif);
+}
+.x-tip .x-tip-mc {
+	background-color: transparent;
+}
+/* class for the rect displayed while dialog is being dragged */
+.x-panel-ghost {
+		background-color:#f2f2f2;
+		border-color:transparent;
+}
+.x-panel-ghost ul {
+		border-color:#a7a5a6 !important;
+}
+.x-panel-ghost .x-window-tl {
+	border-color:transparent;
+}
+.zarafa-freebusy-datetime-toolbar .x-panel-body
+{
+	padding:5px;
+}
+.x-btn.zarafa-freebusy-suggestionrow
+{
+	text-align: center;
+	margin-bottom:1px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#AEAEAE #999999 #999999 #AEAEAE;
+	border-radius:2px;
+	box-shadow: 0 0 1px #B5B5B5, 0 1px 1px white inset;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), color-stop(50%,#f6f6f6), to(#E6E6E6)) !important; /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #f6f6f6, #f6f6f6, #e6e6e6) !important; /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:		-moz-linear-gradient(top, #f6f6f6, #f6f6f6, #e6e6e6) !important; /* FF3.6 */
+	background-image:		 -ms-linear-gradient(top, #f6f6f6, #f6f6f6, #e6e6e6) !important; /* IE10 */
+	background-image:			-o-linear-gradient(top, #f6f6f6, #f6f6f6, #e6e6e6) !important; /* Opera 11.10+ */
+	background-image:				 linear-gradient(to bottom, #f6f6f6, #f6f6f6, #e6e6e6) !important;
+
+}
+.x-btn.zarafa-freebusy-suggestionrow:hover
+{
+	border:1px solid #7A7A7A;
+	border-radius:2px;
+	box-shadow: 0 1px 1px white, 0 1px 1px white inset;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#EEEEEE), color-stop(50%,#EEEEEE), to(#E6E6E6)) !important; /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #EEEEEE, #EEEEEE, #e6e6e6) !important; /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:		-moz-linear-gradient(top, #EEEEEE, #EEEEEE, #e6e6e6) !important; /* FF3.6 */
+	background-image:		 -ms-linear-gradient(top, #EEEEEE, #EEEEEE, #e6e6e6) !important; /* IE10 */
+	background-image:			-o-linear-gradient(top, #EEEEEE, #EEEEEE, #e6e6e6) !important; /* Opera 11.10+ */
+	background-image:				 linear-gradient(to bottom, #EEEEEE, #EEEEEE, #e6e6e6) !important;
+}
+.zarafa-freebusy-suggestionrow button
+{
+	width:100%;
+	height:100%;
+}
+.x-form-item
+{
+	margin-bottom:2px;
+}
+
+/** Main Tab Bar **/
+.zarafa-maintabbar {
+	/* OVERRIDE .x-toolbar styles, should be done in a generic way */
+	border:none !important;
+	padding: 0px;
+}
+.zarafa-maintabbar .x-btn-over, .zarafa-maintabbar .x-btn-over.x-btn-click.x-btn-text-icon, .zarafa-maintabbar .x-btn-over.x-btn-click.x-btn-noicon {
+	background: transparent !important;
+	box-shadow: none;
+	font-weight: bold !important;
+}
+
+.zarafa-maintabbar > .x-toolbar-ct {
+	background: url(../images/tabbackground.jpg);
+	padding:2px 2px 0;
+	color: #ffffff;
+	height: 28px;
+}
+.zarafa-maintab.x-btn-noicon {
+	text-align: center;
+	margin: 0 1px;
+	padding: 0px 4px 4px 4px;
+}
+.zarafa-maintab.x-btn-noicon .x-btn-small {
+	border:none !important;
+}
+.zarafa-maintab.x-btn-noicon.x-btn-over button.x-btn-text {
+	color: white;
+}
+
+.zarafa-maintab.x-btn-noicon button.x-btn-text {
+	font-size: 14px;
+	color: #c0c0c0;
+	font-family: Arial;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+	display:inline-block;
+}
+
+.zarafa-maintabbar-maintab-active.x-btn-noicon button.x-btn-text {
+	color: white;
+	font-weight: bold;
+	border-bottom: 2px solid #F8D03F;
+	padding-top: 1px;
+}
+
+/**
+ * paging buttons
+ */
+.x-tbar-page-next {
+	background-image: url(../icons/new/triangle_right.png) !important;
+}
+.x-tbar-page-last {
+	background-image: url(../icons/new/triangle_right_stop.png) !important;
+}
+.x-tbar-page-prev {
+	background-image: url(../icons/new/triangle_left.png) !important;
+}
+.x-tbar-page-first {
+	background-image: url(../icons/new/triangle_left_stop.png) !important;
+}
+.x-item-disabled .x-tbar-page-prev {
+	background-image: url(../icons/new/triangle_left_outline.png) !important;
+}
+.x-item-disabled .x-tbar-page-first {
+	background-image: url(../icons/new/triangle_left_stop_outline.png) !important;
+}
+.x-item-disabled .x-tbar-page-next {
+	background-image: url(../icons/new/triangle_right_outline.png) !important;
+}
+.x-item-disabled .x-tbar-page-last {
+	background-image: url(../icons/new/triangle_right_stop_outline.png) !important;
+}
+/*
+ * datepicker paging
+ */
+.x-date-right a
+{
+	background-image: url(../icons/new/triangle_right.png) !important;
+}
+.x-date-left a
+{
+	background-image: url(../icons/new/triangle_left.png) !important;
+}
+
+/*
+ * month picker
+ */
+.x-date-mp-ybtn a.x-date-mp-next
+{
+	background-image: url(../icons/new/triangle_right.png) !important;
+	background-position: center;
+}
+.x-date-mp-ybtn a.x-date-mp-prev
+{
+	background-image: url(../icons/new/triangle_left.png) !important;
+	background-position: center;
+}
+.x-date-mp-ybtn a.x-date-mp-next:hover, .x-date-mp-ybtn a.x-date-mp-prev:hover {
+	background-position: center;
+}
+.sort-desc .x-grid3-sort-icon
+{
+	background-image: url(../images/grid/sort_desc.png);
+}
+.sort-asc .x-grid3-sort-icon
+{
+	background-image: url(../images/grid/sort_asc.png);
+}
+.x-grid3-hd-btn
+{
+	background-image: url(../images/grid/x-grid3-hd-btn.png);
+}
+.zarafa-main-header, .x-toolbar {
+	background-color: transparent !important;
+}
+.x-toolbar
+{
+	background-image: none;
+	border-color:#AEAEAE;
+}
+.zarafa-main-header {
+	padding: 7px 5px;
+}
+
+.x-panel-tl, .x-panel-header.zarafa-hierarchy-header {
+	background-color:#ffffff !important;
+}
+
+.zarafa-bottombar {
+/*
+	background-color: #0469B1;
+*/
+	background:transparent;
+}
+.zarafa-card-body {
+	background-color: white !important;
+	border:none;
+	font-weight:normal;
+}
+.zarafa-navigationpanel-item .x-table-layout {
+	table-layout: fixed;
+}
+
+.zarafa-context-navigation-item-body .x-panel-body {
+	overflow-x: hidden !important;
+}
+
+.zarafa-maintoolbar .x-toolbar-left {
+	background-image: url(../images/zlogo.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.zarafa-quotabar
+{
+	border: 1px solid;
+	overflow: hidden;
+	height: 15px;
+}
+
+/* Green part of quotabar */
+.zarafa-quotabar-normal
+{
+	background-color: #66FF66;
+	background-image: url(../images/quota_background_sprite.png);
+	height: 15px;
+	display: inline-block;
+}
+
+/* Yellow part of quotabar */
+.zarafa-quotabar-warn
+{
+	background-color: #EEE92B;
+	background-image: url(../images/quota_background_sprite.png);
+	background-position: 0 -20px;
+	height: 15px;
+	display: inline-block;
+}
+
+/* Orange part of quotabar */
+.zarafa-quotabar-soft
+{
+	background-color: #FFAA66;
+	background-image: url(../images/quota_background_sprite.png);
+	background-position: 0 -40px;
+	height: 15px;
+	display: inline-block;
+}
+
+/* Red part of quotabar */
+.zarafa-quotabar-hard
+{
+	background-color: #FF6666;
+	background-image: url(../images/quota_background_sprite.png);
+	background-position: 0 -60px;
+	height: 15px;
+	display: inline-block;
+}
+
+.zarafa-quota-string {
+	font-weight : bold;
+}
+
+/* Override ExtJS CSS to remove non-standard proprietary fonts */
+.x-box-mc {
+	font-family: "Tahoma","Helvetica","Arial",sans-serif;
+}
+
+/**
+ * Override Tiny mce toolbar css to give look and feel of webapp
+ */
+.defaultSkin a.mceButtonEnabled:hover {
+	border:1px solid #AAAAAA !important;
+	background-color:#d0d0d0 !important;
+}
+.defaultSkin a.mceButtonActive, .defaultSkin a.mceButtonSelected {
+	border:1px solid #AAAAAA !important;
+	background: url("../images/button/background_small.png") no-repeat scroll left center rgba(0, 0, 0, 0) !important;
+}
+
+.defaultSkin table.mceSplitButtonEnabled:hover a.mceAction, .defaultSkin .mceSplitButtonHover a.mceAction, .defaultSkin .mceSplitButtonSelected a.mceAction {
+	border:1px solid #AAAAAA !important;
+	border-right:0 !important;
+	background-color:#d0d0d0 !important;
+}
+
+.defaultSkin table.mceSplitButtonEnabled:hover a.mceOpen, .defaultSkin .mceSplitButtonHover a.mceOpen, .defaultSkin .mceSplitButtonSelected a.mceOpen {
+	background-color:#d0d0d0 !important;
+	border:1px solid #AAAAAA !important;
+}
+
+.defaultSkin .mceSplitButtonActive a.mceAction {
+	border:1px solid #AAAAAA !important;
+	background: url("../images/button/background_small.png") no-repeat scroll left center rgba(0, 0, 0, 0) !important;
+}
+
+.defaultSkin .mceMenu .mceMenuItemEnabled a:hover, .defaultSkin .mceMenu .mceMenuItemActive {
+	background-color:#EAEAEB !important;
+}
+
+.defaultSkin .mceColorSplitMenu a.mceMoreColors:hover {
+	border:1px solid #AAAAAA !important;
+	background-color:#d0d0d0 !important;
+}.x-freebusy-timeline-container {
+	/* Background to grey to fill the empty space to the right of the header (above the right scrollbar) */
+	background-color: #E0E0E0;
+}
+
+.x-freebusy-legenda {
+	background-color: transparent;
+	border-top:1px solid #ccc;
+}
+
+.x-freebusy-legenda div .x-form-item-label {
+	padding-left: 3px;
+}
+
+.x-freebusy-timeline-container .x-freebusy-header {
+	overflow: hidden;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	/* Set the background to white so the space between different days is white and not grey */
+	background-color: #FFF;
+}
+.x-freebusy-timeline-container .x-freebusy-header-body {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.x-freebusy-timeline-container .x-freebusy-body {
+	position: absolute;
+	overflow: scroll;
+	width: 100%;
+	/* Set the background to white so the space between different days is white and not grey */
+	background-color: #FFF;
+}
+
+.x-freebusy-timeline-container .x-freebusy-header .x-freebusy-sumblockcontainer, 
+.x-freebusy-timeline-container .x-freebusy-body .x-freebusy-selectorcontainer, 
+.x-freebusy-timeline-container .x-freebusy-body .x-freebusy-blockcontainer, 
+.x-freebusy-timeline-container .x-freebusy-body .x-freebusy-background {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.x-freebusy-timeline-container div.x-freebusy-timeline-day {
+	position: absolute;
+	top: 0px;
+	height: 100%;
+}
+.x-freebusy-legenda .x-form-display-field {
+	padding-left:3px;
+}
+/**
+ * Using the border-spacing property in combination with the background-color to create borders. Hide the real borders.
+ */
+.x-freebusy-timeline-container div.x-freebusy-timeline-day table {
+	height: 100%;
+	border-collapse: separate;
+	border-spacing:1px 0px;
+	border-width: 0px;
+	border-color: #FFF;
+}
+.x-freebusy-timeline-container div.x-freebusy-timeline-day table.x-freebusy-timeline-day-header {
+	background-color: #FFF;
+}
+.x-freebusy-timeline-container div.x-freebusy-timeline-day table.x-freebusy-timeline-day-sum, 
+.x-freebusy-timeline-container div.x-freebusy-timeline-day table.x-freebusy-timeline-day-body {
+	background-color: #AAA;
+}
+
+/* Current day can be marked */
+.x-freebusy-timeline-container div.x-freebusy-timeline-day-current table.x-freebusy-timeline-day-header tr.x-freebusy-timeline-day td {
+	background-image: url(../images/freebusy/currentday_header.png);
+}
+
+/* No border is needed in the timeline-hour rows. */
+.x-freebusy-timeline-container div.x-freebusy-timeline-day table tr.x-freebusy-timeline-hour td {
+	border-width: 0px;
+}
+.x-freebusy-timeline-container .x-freebusy-header div.x-freebusy-timeline-day table.x-freebusy-timeline-day-sum {
+	border-spacing:1px 1px;
+}
+
+/* Set font for header tables */
+.x-freebusy-timeline-container .x-freebusy-header div.x-freebusy-timeline-day table td {
+	background-color: #FFF;
+	font-family: Arial;
+	font-size: 8pt;
+}
+.x-freebusy-timeline-container .x-freebusy-header div.x-freebusy-timeline-day table tr.x-freebusy-timeline-day td {
+	font-weight: bold;
+}
+/* Set background for all cells */
+.x-freebusy-timeline-container div.x-freebusy-timeline-day table td {
+	background-color: #FFF;
+}
+
+.x-freebusy-timeline-container div.x-freebusy-blockcontainer .x-freebusy-timeline-block {
+	position: absolute;
+	height: 10px;
+}
+.x-freebusy-timeline-container div.x-freebusy-sumblockcontainer .x-freebusy-timeline-sumblock {
+	position: absolute;
+	height: 8px;
+	top: 1px;
+}
+.x-freebusy-timeline-container .x-freebusy-timeline-block-free {
+	background-color: #EEE;
+}
+.x-freebusy-timeline-container .x-freebusy-timeline-block-tentative {
+	background-image: url(../images/freebusy/block_tentative.png);
+	background-color: #6969C6;
+}
+.x-freebusy-timeline-container .x-freebusy-timeline-block-busy {
+	background-color: #6969C6;
+}
+.x-freebusy-timeline-container .x-freebusy-timeline-block-outofoffice {
+	background-color: #800080;
+}
+.x-freebusy-timeline-container .x-freebusy-timeline-block-blur {
+	background-image: url(../images/dashed_background_reverse.gif);
+	background-color: #AAA;
+}
+
+/* Set row lines for hour cells in body of timeline */
+.x-freebusy-timeline-container div.x-freebusy-background tr.x-freebusy-timeline-hour td {
+	background-image: url(../images/freebusy/rowbg.gif);
+}
+
+/** Selector **/
+.x-freebusy-timeline-container .x-freebusy-selectorcontainer .x-freebusy-selector {
+	position: absolute;
+	border-left: 3px solid #8CBC76;
+	border-right: 3px solid #E17575;
+	height: 100%;
+	background-image: url(../images/freebusy/selectorbg.png);
+}
+
+/*** Userlist ***/
+.x-freebusy-userlist .x-panel-header {
+	/* Make a separator to clearly distinguish the recipients below from the header when scrolling */
+	border-bottom: 1px solid white !important;
+}
+
+/* Overwrite .ext-gecko .x-form-text from extjs css to limit the top padding for some browsers, 
+otherwise the input field at the bottom would only be partially visible when the list can scroll */
+.ext-gecko .x-form-text.x-zarafa-boxfield {
+	padding-top: 1px;
+}
+
+.x-freebusy-userlist-container {
+	background-color: #E0E0E0;
+	border-right: 1px solid #AAAAAA;
+	padding: 0px;
+	border-width: 0px;
+}
+
+.x-freebusy-userlist-container .x-freebusy-header {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px solid #AAAAAA;
+	background-color: #FFF;
+}
+.x-freebusy-userlist-container .x-freebusy-body {
+	overflow: hidden;
+}
+.x-freebusy-userlist-container .x-freebusy-body .x-freebusy-body-rowcontainer {
+	background-image : url(../images/freebusy/rowbg.gif);
+}
+
+.x-freebusy-userlist-container .x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item .x-zarafa-boxfield-item-icon {
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 0 none;
+	height: 18px;
+	padding: 0;
+	vertical-align: top;
+	width: 16px;
+	margin-right: 2px;
+	float: left;
+}
+.x-freebusy-userlist-container .x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item .x-zarafa-boxfield-item-text {
+	float: left;
+	margin-top: 2px;
+
+	overflow: hidden;
+	white-space: nowrap;
+	width: 160px;
+}
+
+.x-freebusy-userlist-container .x-zarafa-boxfield-item.x-zarafa-boxfield-recipient-item .x-freebusy-userrow-remove {
+	margin-left: 2px;
+	cursor: pointer;
+	height: 20px;
+	width: 16px;
+	/* The close.png contains multiple icons, here we dislay the top one */
+	background: url(../icons/cross.png) no-repeat scroll left 1px;
+	display: block;
+	float: left;
+	position: relative;
+}
+
+/* Following set of icons are used in the userlist as well as in the contextmenu */
+.x-freebusy-userlist-recipienttype-originator {
+	background-image: url(../icons/icon_meetingrequest_organizer.gif);
+	background-repeat: no-repeat;
+}
+.x-freebusy-userlist-recipienttype-required {
+	background-image: url(../icons/icon_meetingrequest_requiredattendee.gif);
+	background-repeat: no-repeat;
+}
+.x-freebusy-userlist-recipienttype-optional {
+	background-image: url(../icons/icon_meetingrequest_optionalattendee.gif);
+	background-repeat: no-repeat;
+}
+.x-freebusy-userlist-recipienttype-resource {
+	background-image: url(../icons/icon_meetingrequest_resource.gif);
+	background-repeat: no-repeat;
+}
+
+.zarafa-freebusy-suggestionrow-empty {
+	text-align: center;
+}
+/* Mail icons */
+.icon_mail_flag
+{
+	background-image: url(../icons/icon_flag.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_flag_purple
+{
+	background-image: url(../icons/icon_flag_purple.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_flag_orange
+{
+	background-image: url(../icons/icon_flag_orange.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_flag_green
+{
+	background-image: url(../icons/icon_flag_green.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_flag_yellow
+{
+	background-image: url(../icons/icon_flag_yellow.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_flag_blue
+{
+	background-image: url(../icons/icon_flag_blue.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_flag_red
+{
+	background-image: url(../icons/icon_flag_red.gif) ! important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon_mail_completed
+{
+	background-image: url(../icons/icon_flag_complete.gif) ! important;
+	background-repeat: no-repeat;
+}
+
+A.zarafa_attachment, A.zarafa_attachment:link, A.zarafa_attachment:active, A.zarafa_attachment:visited
+{
+	color:#003DB2;
+	text-decoration:none;
+} 
+
+.grid_compact_left {
+	padding-left: 28px;
+}
+
+.grid_compact {
+	width: auto;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #777777;
+}
+
+.mail_unread div
+{
+	font-weight : bold;
+}.zarafa-notifier-dropdown-item,
+.zarafa-notifier-eventdropdown-item
+{
+	background-color : #f4f4f4;
+	text-align : left;
+	width: 300px;
+	padding : 10px 10px 10px 44px;
+	box-shadow : 0 1px 1px white;
+	border-width : 0 1px 1px 1px;
+	border-style : solid;
+	border-color : #ccc;
+}
+.zarafa-notifier-popup-item
+{
+	background-color : #f4f4f4;
+	text-align : left;
+	width: 300px;
+	padding : 10px 10px 10px 44px;
+	box-shadow : 0 1px 1px white;
+	border-width : 1px 0 0 1px;
+	border-style : solid;
+	border-color : #ccc;
+}
+
+.zarafa-notifier-dropdown-item-title,
+.zarafa-notifier-eventdropdown-item-title,
+.zarafa-notifier-popup-item-title
+{
+	font-weight : bold;
+	font-size : 1.3em;
+}
+.zarafa-notifier-container
+{
+	position : absolute;
+	z-index : 1000000000;
+	width : 356px;
+}
+
+.zarafa-slide-notifier-error {
+	background-image : url('../icons/notifications/error.png');
+	background-repeat : no-repeat;
+	background-position : 10px center;
+	background-color : #f4eaea;
+}
+
+.zarafa-slide-notifier-warning {
+	background-image : url('../icons/notifications/warning.png');
+	background-repeat : no-repeat;
+	background-position : 10px center;
+	background-color : #f4eac0;
+}
+
+.zarafa-slide-notifier-info {
+	background-image : url('../icons/notifications/info.png');
+	background-repeat : no-repeat;
+	background-position : 10px center;
+	background-color : #eaf4ea;
+}
+
+/* Create a normal formatted list in the Missing Default Folder notifier */
+.zarafa-slide-notifier-error-hierarchy-defaultfolder ul {
+	list-style: disc;
+	padding-left: 40px;
+}
+/* Preview panel */
+
+.preview-header
+{
+	position : relative !important;
+	background-color : #F0F0F0;
+	padding: 5px;
+	border-bottom: 1px solid #DFDFDF;
+}
+
+.preview-header-title
+{
+	/* The div also has the x-panel-header-noborder class applied,
+	 * which surprisingly sets a border on the div */
+	border: 0px !important;
+	padding-bottom: 2px;
+
+}
+
+.preview-header .x-panel-body
+{
+	background-color:transparent !important;
+}
+
+.preview-header-collapse
+{
+	width: 14px;
+	height: 10px;
+	cursor: pointer;
+	margin: 3px;
+}
+
+.preview-header-collapse-minus
+{
+	background-image: url(../images/folder_open.gif);
+	background-repeat: no-repeat;
+}
+
+.preview-header-collapse-plus
+{
+	background-image: url(../images/folder_close.gif);
+	background-repeat: no-repeat;
+}
+
+.preview-header-title .preview-title
+{
+	font-size: 11pt;
+	font-weight: bold;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+/* The special blocks containing recipients & attachments */
+
+.preview-header-recipients,
+.preview-header-meeting,
+.preview-header-attachments
+{
+	display : block;
+	margin-top : 5px;
+}
+
+.preview-header-sentinfo .preview-from
+{
+	display: inline;
+	font-weight: normal;
+	font-size: 8pt;
+}
+
+.preview-header-sentinfo .preview-timestamp
+{
+	display: block;
+	font-weight: normal;
+	font-size: 8pt;
+}
+
+.preview-header-sentinfo .preview-timestamp-title,
+.preview-header-recipients .preview-recipient-title,
+.preview-header-attachments .preview-attachment-title,
+.preview-header-meeting .preview-when .preview-when-title,
+.preview-header-meeting .preview-proposed .preview-proposed-title,
+.preview-header-meeting .preview-location .preview-location-title
+{
+	font-weight:bold;
+	color:#555;
+	font-size:8pt;
+	padding-right: 5px;
+}
+
+.preview-header-recipients .preview-recipient-title,
+.preview-header-attachments .preview-attachment-title
+{
+	float:left;
+}
+
+.preview-header-recipients .preview-recipient-data,
+.preview-header-attachments .preview-attachment-data
+{
+	overflow-x: hidden;
+	overflow-y: auto;
+	border-width : 1px;
+}
+
+.preview-header-attachmentbox
+{
+	line-height:18px;
+	padding-top:2px;
+}
+
+.preview-header-attachments .zarafa-attachment-link
+{
+	font-weight: normal;
+	font-size: 8pt;
+	position: relative;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	o-border-radius: 4px;
+	khtml-border-radius: 4px;
+	border: 1px solid #d3d2d2;
+	background-color: #ebeaeb;
+	color: #00a;
+	padding: 1px 5px;
+	margin: 1px;
+	height:20px;
+	text-decoration:none;
+	box-shadow: 0 0 1px #ddd inset;
+	cursor: pointer;
+}
+
+.preview-header-attachments .zarafa-attachment-link-over
+{
+	background-color:#ddd;
+}
+
+.preview-body
+{
+	position : relative !important;
+	background:#fff;
+}
+
+.preview .x-panel-body
+{
+	background:#fff;
+	color:#222;
+	font:normal 12px tahoma,verdana,arial,sans-serif;
+}
+
+.preview .x-panel-body p {
+	line-height:18px;
+	margin:8px 0;
+}
+
+.preview .x-panel-body ul {
+	margin-left:18px;
+}
+
+.preview .x-panel-body ul li {
+	display:list-item;
+	list-style-image:none !important;
+	list-style-position:outside !important;
+	list-style-type:disc !important;
+	margin-left:18px;
+}
+
+/*remove panel decorations*/
+
+
+.preview .x-panel-body pre, #preview .x-panel-body code {
+	background:#f1f1f1;
+	display:block;
+}
+
+.preview-iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.preview-meetingrequest {
+	float: right;
+}
+
+.preview-title-label {
+	width:10%;
+}
+
+.preview-title-value {
+	width:90%;
+	float:right;
+}
+
+.preview-title-hr {
+	color:#DEDEDE;
+	margin : 2px 0;
+}
+
+span.zarafa-emailaddress-link {
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+span.zarafa-emailaddress-link:hover {
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+.preview-header-extrainfobox {
+	background-color: #D2E0F0;
+	color: #000000;
+	vertical-align: middle;
+	padding: 2px 0px;
+}
+
+.preview-header-extrainfobox-item-over {
+	background-color: #FFBD69;
+	cursor : pointer;
+}
+
+.preview-header-extrainfobox-item {
+	padding: 0px 8px;
+	color: #15428B;
+}
+.zarafa-rules-add {
+	background-image: url(../icons/new/insert.gif);
+	background-size: 10px 10px;
+}
+
+.zarafa-rules-remove {
+	background-image: url(../icons/new/delete.png);
+	background-size: 10px 10px;
+}
+
+.zarafa-rules-sequence-up {
+	background-image: url(../icons/new/toggle.png);
+	background-size: 10px 10px;
+}
+
+.zarafa-rules-sequence-down {
+	background-image: url(../icons/new/toggle_down.png);
+	background-size: 10px 10px;
+}
+
+button.zarafa-rules-remove, button.zarafa-rules-add {
+	padding : 0px !important;
+	height: 20px !important;
+	width : 90% !important;
+}/** SETTINGS SCREEN **/
+/* tabs */
+.zarafa-settings-category-tab {
+	padding: 7px 7px 7px 25px;
+	cursor:pointer;
+	border:1px solid transparent;
+}
+.zarafa-settings-category-tab-over {
+	background-color:#DEDEDE;
+}
+.zarafa-settings-category-tab-active {
+ background-color:#F8D03F;	
+ border:1px dotted #D8AB0A;
+}
+
+/* widgets */
+.zarafa-settings-widget {
+	margin: 5px;
+}
+.zarafa-settings-widget .x-panel-header {
+	background-color:#d0d0d0 !important;
+}
+.zarafa-settings-widget .x-panel-bwrap .x-panel-body {
+	padding:10px;
+}
+.zarafa-settings-widget .x-panel-bwrap .x-panel-body-noheader {
+	padding:0;
+}
+.zarafa-settings-category-panel {
+	background-color:#EBEAEB !important;
+	margin-right:10px;
+}
+.zarafa-settings-widget-extrainfo
+{
+	padding: 0px 0px 20px 0px !important;
+}
+.x-mask-loading-combo, .x-mask-loading-combo div {
+	background-color: transparent !important;
+	border: none !important;
+}
+
+/* favorite settings */
+.zarafa-settings-favorite-tab
+{
+	padding:7px 7px 7px 25px;
+	cursor:pointer;
+}
+.zarafa-settings-favorite-tab, .zarafa-settings-category-tab {
+	font-size: 9pt;
+}
+.zarafa-settings-favorite-tab-over
+{
+	background-color:#DEDEDE;
+}
+
+/* settings */
+.zarafa-settings-category-tab, .zarafa-settings-favorite-tab
+{
+	background-position: 2px center;
+	background-repeat: no-repeat;
+}
+.zarafa-settings-category-general
+{
+	background-image: url(../icons/new/cogwheel.png) !important;
+}
+.zarafa-settings-category-mail
+{
+	background-image: url(../icons/new/new_email2.png) !important;
+}
+.zarafa-settings-category-oof
+{
+	background-image: url(../icons/new/oof.png) !important;	
+}
+.zarafa-settings-category-rules
+{
+	background-image: url(../icons/new/funnel.png) !important;
+}
+.zarafa-settings-category-calendar
+{
+	background-image: url(../icons/new/calendar_today.png) !important;
+}
+.zarafa-settings-category-delegate
+{
+	background-image: url(../icons/new/delegates.png) !important;
+}
+.zarafa-settings-category-sendas
+{
+	background-image: url(../icons/new/sendas.png) !important;
+}
+.zarafa-settings-category-advanced
+{
+	background-image: url(../icons/new/spanner.png) !important;
+}
+.zarafa-settings-category-plugins
+{
+	background-image: url(../icons/new/plug.png) !important;
+}
+.zarafa-settings-category-copyright
+{
+	background-image: url(../icons/new/seal.png) !important;
+}
+.zarafa-settings-category-keyshortcut
+{
+	background-image: url(../icons/new/shortcuts.png) !important;
+}
+.zarafa-settings-favorite-signatures
+{
+	background-image: url(../icons/new/signature.png) !important;	
+}
+.zarafa-settings-favorite-oof
+{
+	background-image: url(../icons/new/oof.png) !important;	
+}
+.x-panel-inline-icon.zarafa-settings-favorite-oof, .x-panel-inline-icon.zarafa-settings-favorite-signatures
+{
+	width:20px;
+	height:20px;
+}
+
+/* Plugins Category */
+.zarafa-settings-pluginavailable .x-grid3-body .x-grid3-row-selected .x-grid3-td-checker {
+	background-color: inherit;
+}
+
+.zarafa-settings-pluginavailable .x-grid3-body .x-grid3-td-checker {
+	background-image: none;
+}
+
+.zarafa-settings-pluginavailable .x-grid3-body .zarafa-settings-pluginavailable-fixed .x-grid3-cell-inner {
+	white-space: normal;
+}
+
+.zarafa-settings-pluginavailable .x-grid3-body .zarafa-settings-pluginavailable-fixed span {
+	color: #777777;
+	float: right;
+}
+
+.zarafa-settings-pluginavailable .x-grid3-body .zarafa-settings-pluginavailable-fixed.x-grid3-td-checker {
+	display: none;
+}
+
+/* About Category */
+.zarafa-settings-about-text p
+{
+	padding-bottom: 1ex;
+}
+.zarafa-settings-about-text h1
+{
+	margin-bottom: 0.2em;
+	margin-top: 0.3em;
+	font-size: 1.2em;
+	border-bottom: 1px dotted;
+}
+
+/* Keyboard Shortcut*/
+.zarafa-settings-keyboard-shortcut-row
+{
+	background-color: #EBEAEB;
+}.zarafa-welcome-body {
+	border : 1px solid #b0b0b0;
+}
+
+.zarafa-welcome-body .zarafa-welcome-title {
+	font-size: xx-large;
+	border-bottom : 1px solid #b0b0b0;
+	padding : 10px 10px 10px 50px;
+	background-color : #00467A;
+	color : #eaeaea;
+	background : url(../images/zarafa_logo_notext.png) no-repeat 10px center,
+		-webkit-linear-gradient(top, #004579 0%, #0A4F88 75%, #3C78AA 100%);
+	background : url(../images/zarafa_logo_notext.png) no-repeat 10px center,
+		-ms-linear-gradient(top, #004579 0%, #0A4F88 75%, #3C78AA 100%);
+	background : url(../images/zarafa_logo_notext.png) no-repeat 10px center,
+		linear-gradient(to bottom, #004579 0%, #0A4F88 75%, #3C78AA 100%);
+	text-shadow : 0 1px 1px rgba(0,0,0,0.8);
+}
+
+.zarafa-welcome-body .x-panel-bwrap .x-panel-body, .zarafa-welcome-body .x-panel-bwrap .x-panel-footer {
+	background-color : #eaeaea !important;
+}
+
+.zarafa-welcome-body .zarafa-welcome-message {
+	font-size: small;
+	color : #444;
+	padding : 10px;
+}
+
+.zarafa-settings-widget-welcome {
+	margin: 0 10px 10px 10px;
+}
+
+.zarafa-settings-widget-welcome .x-panel-header {
+	background-color : #d0d0d0 !important;
+}
+
+.zarafa-settings-widget-welcome .x-panel-bwrap .x-panel-body {
+	padding : 10px;
+	background-color : #f4f4f4 !important;
+}
+
+.zarafa-settings-widget-welcome .x-panel-bwrap .x-panel-body-noheader {
+	padding:0;
+}
+
+/* Hide warning messages regarding reloading WebApp */
+.zarafa-settings-widget-welcome .zarafa-settings-reload-warning {
+	position: absolute !important;
+	left: -10000px;
+	top: -10000px;
+	visibility: hidden;
+}
