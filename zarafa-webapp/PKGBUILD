@@ -31,8 +31,8 @@ package_zarafa-webapp() {
     cd deploy
 
     # create folders
-    mkdir -p ${pkgdir}/usr/share/${pkgname}/
-    cp -r * ${pkgdir}/usr/share/${pkgname}/
+    mkdir -p ${pkgdir}/usr/share/webapps/${pkgname}/
+    cp -r * ${pkgdir}/usr/share/webapps/${pkgname}/
 
     mkdir -p ${pkgdir}/usr/share/doc/${pkgname}/
     cp config.php.dist ${pkgdir}/usr/share/doc/${pkgname}/
@@ -49,17 +49,17 @@ package_zarafa-webapp-plugins() {
     ant deploy-plugins
 
     # create folders                                                
-    mkdir -p ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/                         
+    mkdir -p ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/                         
 
     cd deploy/plugins
-    cp -r extbox ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
-    cp -r folderwidgets ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
-    cp -r oauthlib ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
-    cp -r pdfbox ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
-    cp -r pimfolder ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
-    cp -r quickitems ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
-    cp -r shellgame ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
-    cp -r webappmanual ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
-    cp -r webodf ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
-    cp -r xmpp ${pkgdir}/usr/share/${pkgname//-plugins/}/plugins/
+    cp -r extbox ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/
+    cp -r folderwidgets ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/
+    cp -r oauthlib ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/
+    cp -r pdfbox ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/
+    cp -r pimfolder ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/
+    cp -r quickitems ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/
+    cp -r shellgame ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/
+    cp -r webappmanual ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/
+    cp -r webodf ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/
+    cp -r xmpp ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/
 }
