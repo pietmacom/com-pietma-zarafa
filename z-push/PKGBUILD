@@ -1,0 +1,54 @@
+# Maintainer: MartiMcFly martimcfly@autorisation.de
+# Contributor: C Anthony Risinger
+# Contributer: Jörg Thalheim <joerg@higgsboson.tk>
+
+pkgname=z-push
+pkgver=2.2.1
+pkgrel=1939
+pkgdesc="open-source implementation of the ActiveSync protocol"
+arch=('any')
+url="http://z-push.sf.net/"
+license=('AGPL3')
+depends=('php')
+install=z-push.install
+backup=('/etc/webapps/z-push/config.php')
+options=('!strip')
+source=("http://download.z-push.org/final/2.2/${pkgname}-${pkgver}-${pkgrel}.tar.gz"
+        "apache.conf"
+        "nginx.conf"
+        "htaccess"
+	"z-push.ini"
+	"z-push.conf"
+	"nginx-location.conf"
+	"nginx-ssl.conf.example")
+
+md5sums=('f844d0c3b708f151284338c1a938eca8'
+         '32a459bd61135b6c5e99e82e3a6b0007'
+         'e768c5ed6e631d18e156f94b3bc46948'
+         '1091aa1ba272ef05bf628f73b05c527a'
+	 'ceaa699636b0de6d678a2cf3af264d2b')
+
+package() {
+    mkdir -p ${pkgdir}/usr/share/webapps/z-push
+    cp -r ${srcdir}/${pkgname}-${pkgver}-${pkgrel}/* ${pkgdir}/usr/share/webapps/z-push/
+
+    mkdir -p ${pkgdir}/usr/share/doc/z-push
+    cp ${srcdir}/apache.conf ${pkgdir}/usr/share/doc/z-push
+    cp ${srcdir}/nginx-location.conf ${pkgdir}/usr/share/doc/z-push
+    cp ${srcdir}/nginx-ssl.conf.example ${pkgdir}/usr/share/doc/z-push
+
+    mkdir -p ${pkgdir}/etc/webapps/z-push
+    cp ${srcdir}/${pkgname}-${pkgver}-${pkgrel}/config.php ${pkgdir}/etc/webapps/z-push/config.php
+    cp ${srcdir}/htaccess ${pkgdir}/etc/webapps/z-push/.htaccess
+    cp ${srcdir}/{apache.conf,nginx.conf} ${pkgdir}/etc/webapps/z-push/
+    ln -s ${pkgdir}/etc/webapps/z-push/config.php ${pkgdir}/usr/share/webapps/z-push/config.php
+    ln -s /etc/webapps/z-push/.htaccess ${pkgdir}/usr/share/webapps/z-push/.htaccess
+
+    mkdir -p ${pkgdir}/etc/php/conf.d
+    cp ${srcdir}/z-push.ini ${pkgdir}/etc/php/conf.d
+
+    mkdir -p ${pkgdir}/etc/php/fpm.d
+    cp ${srcdir}/z-push.conf ${pkgdir}/etc/php/fpm.d
+
+    mkdir -p ${pkgdir}/var/{lib,log}/z-push
+}

@@ -10,18 +10,18 @@
 	## https://raymii.org/s/tutorials/Strong_SSL_Security_On_nginx.html & https://cipherli.st/
 	##
 	## Generate a strong SSL-Certificate and DHE parameter:
-	## openssl genrsa -out /etc/ssl/private/zarafa-webapp.key 4096
-	## openssl req -new -sha512 -key /etc/ssl/private/zarafa-webapp.key -out /tmp/zarafa-webapp.csr
-	## openssl x509 -req -days 3650 -in /tmp/zarafa-webapp.csr -signkey /etc/ssl/private/zarafa-webapp.key -out /etc/ssl/private/zarafa-webapp.crt
-        ## openssl dhparam -out /etc/ssl/private/zarafa-webapp.dh 4096
-	## chmod go-rwx /etc/ssl/private/zarafa-webapp.*;
-	## chmod u+rw /etc/ssl/private/zarafa-webapp.*
-	## chown root:root /etc/ssl/private/zarafa-webapp.*
+	## openssl genrsa -out /etc/ssl/private/zarafa.key 4096
+	## openssl req -new -sha512 -key /etc/ssl/private/zarafa.key -out /tmp/zarafa.csr
+	## openssl x509 -req -days 3650 -in /tmp/zarafa.csr -signkey /etc/ssl/private/zarafa.key -out /etc/ssl/private/zarafa.crt
+        ## openssl dhparam -out /etc/ssl/private/zarafa.dh 4096
+	## chmod go-rwx /etc/ssl/private/zarafa.*;
+	## chmod u+rw /etc/ssl/private/zarafa.*
+	## chown root:root /etc/ssl/private/zarafa.*
 	##
 	ssl on;
-	ssl_certificate_key /etc/ssl/private/zarafa-webapp.key;
-	ssl_certificate /etc/ssl/private/zarafa-webapp.crt;
-	ssl_dhparam /etc/ssl/private/zarafa-webapp.dh;
+	ssl_certificate_key /etc/ssl/private/zarafa.key;
+	ssl_certificate /etc/ssl/private/zarafa.crt;
+	ssl_dhparam /etc/ssl/private/zarafa.dh;
 
 	## https://raymii.org/s/tutorials/Strong_SSL_Security_On_nginx.html
 	## The recommended cipher suite for backwards compatibility (IE6/WinXP):
@@ -51,6 +51,6 @@
             return 404;
         }
 	
-	include ${PATH_TO_LOCATION_FILE};
+	include ${PATH_TO_ATTACHED_LOCATION_FILE};
 	include ${PATH_TO_ANOTHER_LOCATION_FILE};
     }

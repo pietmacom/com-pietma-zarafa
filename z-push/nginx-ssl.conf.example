@@ -1,3 +1,4 @@
+# Maintainer: MartiMcFly info@pietma.com
 
     server {
         # server_name YOUR_SERVER_FQDN; ## uncomment replace this with something like www.example.com
