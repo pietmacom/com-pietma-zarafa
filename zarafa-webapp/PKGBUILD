@@ -4,8 +4,8 @@
 
 pkgname=('zarafa-webapp'
 	 'zarafa-webapp-plugins')
-pkgver=1.6.1
-_pkgsvn=svn46039
+pkgver=2.0.2
+_pkgsvn=48619
 pkgrel=1
 pkgdesc=('WebApp for Zarafa')
 arch=('any')
@@ -17,7 +17,7 @@ depends=('php')
 makedepends=('apache-ant'
 	     'gettext')
 source=("webapp-${pkgver}.${_pkgsvn}.tar.gz::http://download.zarafa.com/community/final/WebApp/${pkgver}/webapp-${pkgver}.${_pkgsvn}.tar.gz")
-md5sums=('b948773f97847887f594240f74da40c2')
+md5sums=('0d384708bd97d52fc2f9eb651f6f6f1e')
 
 package_zarafa-webapp() {
     # php-fpm
