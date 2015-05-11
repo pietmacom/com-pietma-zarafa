@@ -1,1 +1,0 @@
-/etc/webapps/zarafa-webaccess/config.php

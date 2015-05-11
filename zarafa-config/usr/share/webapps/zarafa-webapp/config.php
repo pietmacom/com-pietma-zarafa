@@ -1,1 +1,0 @@
-/etc/webapps/zarafa-webapp/config.php
