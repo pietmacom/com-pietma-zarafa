@@ -20,7 +20,7 @@ backup=('etc/webapps/z-push/config.php'
 	'etc/php/conf.d/z-push.ini'
 	'etc/php/conf.d/z-push.conf')
 options=('!strip')
-source=("http://download.z-push.org/final/2.2/${pkgname}-${pkgver}-${pkgrel}.tar.gz"
+source=("${pkgname}-${pkgver}.${pkgrel}.tar.gz::http://download.z-push.org/final/2.2/${pkgname}-${pkgver}-${pkgrel}.tar.gz"
         "apache.example.conf"
         "htaccess"
 	"z-push.ini"

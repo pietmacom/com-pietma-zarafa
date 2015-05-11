@@ -18,7 +18,7 @@ backup=('etc/webapps/sabre-zarafa/config.inc.php'
 	'etc/php/conf.d/sabre-zarafa.ini'
 	'etc/php/conf.d/sabre-zarafa.conf')
 options=('!strip')
-source=("$pkgname.tar.gz::https://github.com/1afa/sabre-zarafa/archive/v${pkgver}.tar.gz"
+source=("${pkgname}-${pkgver}.${pkgrel}.tar.gz::https://github.com/1afa/sabre-zarafa/archive/v${pkgver}.tar.gz"
 	"sabre-zarafa.ini"
 	"sabre-zarafa.conf"
 	"nginx-location.conf"

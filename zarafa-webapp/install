@@ -1,7 +1,7 @@
 post_install() {
     if [ ! -e /usr/share/{pkgname}/config.php ]
     then
-	cp -n /usr/share/doc/{pkgname}/config.php.dist /etc/webapps/{pkgname}/config.php
-	cp -n /usr/share/doc/{pkgname}/debug.php.dist /etc/webapps/{pkgname}/debug.php
+	cp -n /usr/share/doc/zarafa-webapp/config.php.dist /etc/webapps/zarafa-webapp/config.php
+	cp -n /usr/share/doc/zarafa-webapp/debug.php.dist /etc/webapps/zarafa-webapp/debug.php
     fi
 }

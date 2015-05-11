@@ -11,25 +11,37 @@ pkgdesc=('WebApp for Zarafa')
 arch=('any')
 url=('http://www.zarafa.com/')
 license=('AGPL3')
-#istall=('install')
-#backup=("usr/share/${pkgname}/config.php")
+install=('install')
+backup=("etc/webapps/zarafa-webapp/config.php")
 depends=('php')
 makedepends=('apache-ant'
 	     'gettext')
-source=("webapp-${pkgver}.${_pkgsvn}.tar.gz::http://download.zarafa.com/community/final/WebApp/${pkgver}/webapp-${pkgver}.${_pkgsvn}.tar.gz")
-md5sums=('0d384708bd97d52fc2f9eb651f6f6f1e')
+	     
+source=("webapp-${pkgver}.${_pkgsvn}.tar.gz::http://download.zarafa.com/community/final/WebApp/${pkgver}/webapp-${pkgver}.${_pkgsvn}.tar.gz"
+	"nginx-location.conf"
+	"nginx-ssl.conf.example"
+	"zarafa-webapp.conf"
+	"zarafa-webapp.ini")
+	
+md5sums=('0d384708bd97d52fc2f9eb651f6f6f1e'
+         'a2a1305f8102f55ca5abd567d749f506'
+         '73451bc5c35072b22b0b2925c5920978'
+         '6366362672e770a5a7001bf237fe7ce0'
+         'daedd4114b213e9279806ee720eeb1ef')
 
-package_zarafa-webapp() {
-    # php-fpm
-    # nginx
-
+build() {
     cd ${srcdir}/webapp-${pkgver}.${_pkgsvn}
-    
     # create translations, compress javascript-files
     ant deploy
 
-    cd deploy
+    # create translations, compress javascript-files.
+    ant deploy-plugins
+}
 
+package_zarafa-webapp() {
+    # according to https://wiki.archlinux.org/index.php/Web_application_package_guidelines
+    cd ${srcdir}/webapp-${pkgver}.${_pkgsvn}/deploy
+    
     # create folders
     mkdir -p ${pkgdir}/usr/share/webapps/${pkgname}/
     cp -r * ${pkgdir}/usr/share/webapps/${pkgname}/
@@ -43,15 +55,11 @@ package_zarafa-webapp() {
 }
 
 package_zarafa-webapp-plugins() {                                     
-    cd ${srcdir}/webapp-${pkgver}.${_pkgsvn}
-
-    # create translations, compress javascript-files.
-    ant deploy-plugins
+    cd ${srcdir}/webapp-${pkgver}.${_pkgsvn}/deploy/plugins
 
     # create folders                                                
     mkdir -p ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/                         
 
-    cd deploy/plugins
     cp -r extbox ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/
     cp -r folderwidgets ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/
     cp -r oauthlib ${pkgdir}/usr/share/webapps/${pkgname//-plugins/}/plugins/
