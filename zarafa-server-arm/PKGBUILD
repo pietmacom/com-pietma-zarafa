@@ -3,7 +3,9 @@
 
 pkgname=zarafa-server-arm
 pkgver=7.2.0
-pkgrel=48204
+_pkgmajver=7.2
+_pkgrev=${pkgver}-48204
+pkgrel=0
 pkgdesc="Open Source Groupware Solution"
 arch=('any')
 url="http://www.zarafa.com/"
@@ -40,7 +42,7 @@ optdepends=('zarafa-webapp'
 	    'sabre-zarafa'
 	    'z-push')
 install=('install')
-source=("zarafa-${pkgver}.tar.gz::http://download.zarafa.com/community/final/7.2/${pkgver}-${pkgrel}/sourcecode/zarafa-${pkgver}.tar.gz"
+source=("zarafa-${pkgver}.tar.gz::http://download.zarafa.com/community/final/${_pkgmajver}/${_pkgrev}/sourcecode/zarafa-${pkgver}.tar.gz"
         "rc.zarafa-ical"
         "rc.zarafa-server"
 	"swig.patch"
