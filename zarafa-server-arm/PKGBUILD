@@ -5,7 +5,7 @@ pkgname=zarafa-server-arm
 pkgver=7.2.0
 _pkgmajver=7.2
 _pkgrev=${pkgver}-48204
-pkgrel=1
+pkgrel=2
 pkgdesc="Open Source Groupware Solution"
 arch=('any')
 url="http://www.zarafa.com/"
@@ -97,9 +97,6 @@ package() {
   install -m 755 -o root -g root -d ${pkgdir}/var/log/zarafa
   install -m 755 -o root -g root -d ${pkgdir}/var/lib/zarafa
   install -m 755 -o root -g root -d ${pkgdir}/var/lib/zarafa-webaccess
-
-  install -m 755 -o root -g root -D ${srcdir}/rc.zarafa-ical ${pkgdir}/etc/rc.d/zarafa-ical
-  install -m 755 -o root -g root -D ${srcdir}/rc.zarafa-server ${pkgdir}/etc/rc.d/zarafa-server
 
   mkdir -p  ${pkgdir}/usr/lib/systemd/system
   install -m 755 $startdir/zarafa-server.service ${pkgdir}/usr/lib/systemd/system
