@@ -1,45 +1,48 @@
 #!/bin/bash
 
-echo "Please do 'rm /etc/ssl/private/zarafa.*' to recreate all ssl files."
+keypath="/etc/ssl/private"
+certpath="/etc/ssl/certs"
+
+echo "Please do 'rm $keypath/zarafa.*' to recreate all ssl files."
 
 # Strong SSL Security
 # https://raymii.org/s/tutorials/Strong_SSL_Security_On_nginx.html 
 # https://cipherli.st/
 # http://www.shellhacks.com/en/HowTo-Create-CSR-using-OpenSSL-Without-Prompt-Non-Interactive
-if [ ! -f "/etc/ssl/private/zarafa.key" ]
+if [ ! -f "$keypath/zarafa.key" ]
 then
-    echo "Creating default key (4096 bit) to /etc/ssl/private/zarafa.key"
-    openssl genrsa -out /etc/ssl/private/zarafa.key 4096
+    echo "Creating default key (4096 bit) to $keypath/zarafa.key"
+    openssl genrsa -out $keypath/zarafa.key 4096
 else
-    echo "Found default key (4096 bit) under /etc/ssl/private/zarafa.key"
+    echo "Found default key (4096 bit) under $keypath/zarafa.key"
 fi
 
-if [ ! -f "/etc/ssl/private/zarafa.crt" ]
+if [ ! -f "$keypath/zarafa.crt" ]
 then
-    echo "Creating default certificate (sha512 / 3650 days) to /etc/ssl/private/zarafa.crt"    
-    openssl req -new -sha512 -key /etc/ssl/private/zarafa.key -out /tmp/zarafa.csr -subj "/CN=localhost"
-    openssl x509 -req -days 3650 -in /tmp/zarafa.csr -signkey /etc/ssl/private/zarafa.key -out /etc/ssl/private/zarafa.crt 
+    echo "Creating default certificate (sha512 / 3650 days) to $keypath/zarafa.crt"    
+    openssl req -new -sha512 -key $keypath/zarafa.key -out /tmp/zarafa.csr -subj "/CN=localhost"
+    openssl x509 -req -days 3650 -in /tmp/zarafa.csr -signkey $keypath/zarafa.key -out $keypath/zarafa.crt 
 else
-    echo "Found certificate under /etc/ssl/private/zarafa.crt"    
+    echo "Found certificate under $keypath/zarafa.crt"    
 fi
 
 echo "Trust own certificate for later connections"
-find -L /etc/ssl/certs -samefile /etc/ssl/private/zarafa.crt -exec rm {} \;
-ln -s /etc/ssl/private/zarafa.crt /etc/ssl/certs/zarafa.crt 
-ln -s /etc/ssl/private/zarafa.crt /etc/ssl/certs/$(openssl x509 -noout -hash -in /etc/ssl/certs/zarafa.crt).0 
+find -L $certpath -samefile $keypath/zarafa.crt -exec rm {} \;
+ln -s $keypath/zarafa.crt $certpath/zarafa.crt 
+ln -s $keypath/zarafa.crt $certpath/$(openssl x509 -noout -hash -in $certpath/zarafa.crt).0 
 update-ca-trust
 
 
-if [ ! -f "/etc/ssl/private/zarafa.dh" ]
+if [ ! -f "$keypath/zarafa.dh" ]
 then
-    echo "Creating Diffie Hellman (2048 bit) precalculation to /etc/ssl/private/zarafa.dh"
-    openssl dhparam -out /etc/ssl/private/zarafa.dh 2048
+    echo "Creating Diffie Hellman (2048 bit) precalculation to $keypath/zarafa.dh"
+    openssl dhparam -out $keypath/zarafa.dh 2048
 else
-    echo "Found Diffie Hellman precalculation under /etc/ssl/private/zarafa.dh"
+    echo "Found Diffie Hellman precalculation under $keypath/zarafa.dh"
 fi
 
-echo "Setting permissions to /etc/ssl/private/zarafa.*"
-chmod go-rwx /etc/ssl/private/zarafa.*
-chmod u+rw /etc/ssl/private/zarafa.*
-chown root:root /etc/ssl/private/zarafa.*
+echo "Setting permissions to $keypath/zarafa.*"
+chmod go-rwx $keypath/zarafa.*
+chmod u+rw $keypath/zarafa.*
+chown root:root $keypath/zarafa.*
 
