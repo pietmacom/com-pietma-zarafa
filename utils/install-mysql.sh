@@ -23,6 +23,11 @@ function ceiling() {
     fi
 }
 
+function set() {
+    # 1: field / 2: value / 3: file / 4: prefix
+    sed -i "s|^$4\($1\).*|\1 = $2|" $3
+}
+
 
 memory_total=$(calc "$(cat /proc/meminfo | grep 'MemTotal' | grep -oh '[0-9]*') / 1024") # "
 
@@ -47,7 +52,7 @@ total_zarafa=$(calc "$total_fixed_zarafa + $cache_cell_size + $cache_object_size
 memory_used=$(calc "$total_instance + ($total_connection * $max_connections) + $total_zarafa") # "
 memory_free=$(calc "$memory_total - $memory_used")
 memory_used_prc=$(calc "($memory_used / $memory_total) * 100") # "
-memory_free_prc=$(calc "($memory_free / $memory_total) * 100")
+memory_free_prc=$(calc "($memory_free / $memory_total) * 100") # "
 
 
 echo 
@@ -68,11 +73,11 @@ echo "=> total_filesystem: $total_filesystem MB"
 echo
 echo "ZARAFA"
 echo
+echo "total_fixed_zarafa: $total_fixed_zarafa"
 echo "cache_cell_size_ratio: $cache_cell_size_ratio"
 echo "cache_cell_size: $cache_cell_size MB"
 echo "cache_object_size: $cache_object_size MB"
 echo "cache_indexedobject_size: $cache_indexedobject_size MB"
-echo "total_fixed_zarafa: $total_fixed_zarafa"
 echo "threads: $threads"
 echo "=> total_zarafa: $total_zarafa MB"
 echo
@@ -86,5 +91,14 @@ echo "memory_free_prc: $memory_free_prc %"
 echo "zarafa_users: $zarafa_users"
 
 mysqlconf="my.cnf.cust"
-cp my.cnf $mysqlconf
+cp -f my.cnf $mysqlconf
+set "innodb_buffer_pool_size" "$(ceiling ${innodb_buffer_pool_size})M" ${mysqlconf}
+set "max_connections" "$max_connections" ${mysqlconf}
+set "innodb_log_file_size" "$(ceiling ${innodb_log_file_size})M" ${mysqlconf}
+
+zarafaconf="server.cfg.cust"
+cp -f "server.cfg" $zarafaconf
+set "cache_cell_size" "$(ceiling ${cache_cell_size})M" ${zarafaconf} "#*\s*"
+set "cache_object_size" "$(ceiling ${cache_object_size})M" ${zarafaconf} "#*\s*"
+set "cache_indexedobject_size" "$(ceiling ${cache_indexedobject_size})M" ${zarafaconf} "#*\s*"
 
