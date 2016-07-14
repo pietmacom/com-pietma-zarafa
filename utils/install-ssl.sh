@@ -2,6 +2,9 @@
 
 keypath="/etc/ssl/private"
 certpath="/etc/ssl/certs"
+keysize="4096"
+dhsize="2048"
+
 
 echo "Please do 'rm $keypath/zarafa.*' to recreate all ssl files."
 
@@ -11,10 +14,10 @@ echo "Please do 'rm $keypath/zarafa.*' to recreate all ssl files."
 # http://www.shellhacks.com/en/HowTo-Create-CSR-using-OpenSSL-Without-Prompt-Non-Interactive
 if [ ! -f "$keypath/zarafa.key" ]
 then
-    echo "Creating default key (4096 bit) to $keypath/zarafa.key"
-    openssl genrsa -out $keypath/zarafa.key 4096
+    echo "Creating default key ($keysize bit) to $keypath/zarafa.key"
+    openssl genrsa -out $keypath/zarafa.key $keysize
 else
-    echo "Found default key (4096 bit) under $keypath/zarafa.key"
+    echo "Found default key ($keysize bit) under $keypath/zarafa.key"
 fi
 
 if [ ! -f "$keypath/zarafa.crt" ]
@@ -35,8 +38,8 @@ update-ca-trust
 
 if [ ! -f "$keypath/zarafa.dh" ]
 then
-    echo "Creating Diffie Hellman (2048 bit) precalculation to $keypath/zarafa.dh"
-    openssl dhparam -out $keypath/zarafa.dh 2048
+    echo "Creating Diffie Hellman ($dhsize bit) precalculation to $keypath/zarafa.dh"
+    openssl dhparam -out $keypath/zarafa.dh $dhsize
 else
     echo "Found Diffie Hellman precalculation under $keypath/zarafa.dh"
 fi
