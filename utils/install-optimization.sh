@@ -42,7 +42,7 @@ function backup() {
 
 
 memory_total=$(calc "$(cat /proc/meminfo | grep 'MemTotal' | grep -oh '[0-9]*') / 1024") # "
-mysql_example_conf="my.cnf"
+mysql_example_conf="$(dirname $0)/my.cnf"
 
 mysql_conf="/etc/mysql/my.cnf"
 zarafa_conf="/etc/zarafa/server.cfg"
