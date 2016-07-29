@@ -5,8 +5,9 @@ certpath="/etc/ssl/certs"
 keysize="4096"
 dhsize="2048"
 
-
+echo
 echo "Please do 'rm $keypath/zarafa.*' to recreate all ssl files."
+echo
 
 # Strong SSL Security
 # https://raymii.org/s/tutorials/Strong_SSL_Security_On_nginx.html 
@@ -45,7 +46,10 @@ else
 fi
 
 echo "Setting permissions to $keypath/zarafa.*"
-chmod go-rwx $keypath/zarafa.*
-chmod u+rw $keypath/zarafa.*
 chown root:root $keypath/zarafa.*
+chmod 600 $keypath/zarafa.*
+
+# crt must be readable for all users. or else no checks are possible
+chmod 644 $keypath/zarafa.crt
+
 
