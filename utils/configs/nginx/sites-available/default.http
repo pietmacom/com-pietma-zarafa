@@ -1,0 +1,69 @@
+    server {
+        listen  443 default_server;
+
+        ssl     on;
+        ssl_certificate /etc/ssl/private/zarafa.crt;
+        ssl_certificate_key /etc/ssl/private/zarafa.key;
+        ssl_trusted_certificate /etc/ssl/private/zarafa.crt;
+	ssl_dhparam /etc/ssl/private/zarafa.dh;
+	
+	add_header Strict-Transport-Security max-age=63072000;
+
+	root /usr/share/nginx/html;
+	
+        include /etc/webapps/zarafa-webapp/nginx-location.conf;
+        include /etc/webapps/z-push/nginx-location.conf;
+        include /etc/webapps/sabre-zarafa/nginx-location.conf;
+	include /etc/webapps/zarafa-postfixadmin/nginx-location.conf;
+
+
+        # HIDDEN FILES AND FOLDERS
+        # rewrite ^(.*)\/\.(.*)$ @404 break;
+        
+        location = @404 {
+            return 404;
+        }
+        
+	location / {
+            root /usr/share/webapps/zarafa-service-overview;
+	}
+        
+        location /caldav {
+            proxy_pass        http://127.0.0.1:8080/caldav;
+        }
+        
+        # Workaround for Apple MacOS X El Capitan
+        location /.well-known/carddav {
+            rewrite ^(.*)$ https://$server_name/carddav permanent;
+        }
+    } 
+    
+    # just for service overview
+    server {
+        listen  80 default_server;
+
+	root /usr/share/nginx/html;
+
+	location / {
+            root /usr/share/webapps/zarafa-service-overview;
+	}
+    }
+    
+    # return instructions for mail proxy
+    server {
+        listen 127.0.0.1:81 default_server;
+
+        location = /auth-imap {
+            add_header Auth-Status OK;
+            add_header Auth-Server 127.0.0.1;  # backend ip
+            add_header Auth-Port   142;        # backend port
+            return 200;
+        }
+
+        location = /auth-pop {
+            add_header Auth-Status OK;
+            add_header Auth-Server 127.0.0.1;  # backend ip
+            add_header Auth-Port   111;        # backend port
+            return 200;
+        }
+    }
