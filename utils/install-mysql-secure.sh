@@ -250,7 +250,8 @@ get_root_password() {
     while [ $status -eq 1 ]; do
 	stty -echo
 	echo $echo_n "Enter current password for root (enter for none): $echo_c"
-	read password
+	#read password
+	password=""
 	echo
 	stty echo
 	if [ "x$password" = "x" ]; then
@@ -270,10 +271,12 @@ get_root_password() {
 set_root_password() {
     stty -echo
     echo $echo_n "New password: $echo_c"
-    read password1
+    #read password1
+    password1=""
     echo
     echo $echo_n "Re-enter new password: $echo_c"
-    read password2
+    #read password2
+    password2=""
     echo
     stty echo
 
@@ -403,7 +406,31 @@ get_root_password
 # Set the root password
 #
 
-# removed
+echo "Setting the root password ensures that nobody can log into the MariaDB"
+echo "root user without the proper authorisation."
+echo
+
+if [ $hadpass -eq 0 ]; then
+    echo $echo_n "Set root password? [Y/n] $echo_c"
+else
+    echo "You already have a root password set, so you can safely answer 'n'."
+    echo
+    echo $echo_n "Change the root password? [Y/n] $echo_c"
+fi
+
+#read reply
+reply="n"
+if [ "$reply" = "n" ]; then
+    echo " ... skipping."
+else
+    status=1
+    while [ $status -eq 1 ]; do
+	set_root_password
+	status=$?
+    done
+fi
+echo
+
 
 #
 # Remove anonymous users
@@ -416,8 +443,15 @@ echo "go a bit smoother.  You should remove them before moving into a"
 echo "production environment."
 echo
 
-echo $echo_n "Remove anonymous users"
-remove_anonymous_users
+echo $echo_n "Remove anonymous users? [Y/n] $echo_c"
+
+#read reply
+reply="y"
+if [ "$reply" = "n" ]; then
+    echo " ... skipping."
+else
+    remove_anonymous_users
+fi
 echo
 
 
@@ -429,8 +463,14 @@ echo "Normally, root should only be allowed to connect from 'localhost'.  This"
 echo "ensures that someone cannot guess at the root password from the network."
 echo
 
-echo $echo_n "Disallow root login remotely"
-remove_remote_root
+echo $echo_n "Disallow root login remotely? [Y/n] $echo_c"
+#read reply
+reply="y"
+if [ "$reply" = "n" ]; then
+    echo " ... skipping."
+else
+    remove_remote_root
+fi
 echo
 
 
@@ -443,8 +483,14 @@ echo "access.  This is also intended only for testing, and should be removed"
 echo "before moving into a production environment."
 echo
 
-echo $echo_n "Remove test database and access to it"
-remove_test_database
+echo $echo_n "Remove test database and access to it? [Y/n] $echo_c"
+#read reply
+reply="y"
+if [ "$reply" = "n" ]; then
+    echo " ... skipping."
+else
+    remove_test_database
+fi
 echo
 
 
@@ -456,8 +502,14 @@ echo "Reloading the privilege tables will ensure that all changes made so far"
 echo "will take effect immediately."
 echo
 
-echo $echo_n "Reload privilege"
-reload_privilege_tables
+echo $echo_n "Reload privilege tables now? [Y/n] $echo_c"
+#read reply
+reply="y"
+if [ "$reply" = "n" ]; then
+    echo " ... skipping."
+else
+    reload_privilege_tables
+fi
 echo
 
 cleanup
