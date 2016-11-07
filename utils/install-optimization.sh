@@ -68,6 +68,7 @@ total_instance=$(calc "$total_fixed_instance + $innodb_buffer_pool_size")
 total_connection="18.656" # MB
 max_connections_ratio="0.25"
 max_connections=$(floor $(calc "(($memory_total - $total_instance) * $max_connections_ratio) / $total_connection")) # "
+max_connections_withbackup=$(calc "$max_connections + 10")
 threads=$(floor $(calc "($max_connections - 1) / 2")) #"
 zarafa_users=$threads
 cache_cell_size_ratio="0.25"
@@ -90,7 +91,7 @@ echo "total_fixed_instance: $total_fixed_instance MB"
 echo "innodb_buffer_pool_size_ratio: $innodb_buffer_pool_size_ratio"
 echo "innodb_buffer_pool_size: $innodb_buffer_pool_size MB"
 echo "max_connections_ratio: $max_connections_ratio"
-echo "max_connections: $max_connections"
+echo "max_connections: $max_connections (+10 backup)"
 echo "=> total_instance: $total_instance MB"
 echo
 echo "=> total_connection: $total_connection MB"
@@ -129,7 +130,7 @@ cp -f $mysql_example_conf $mysql_conf
 echo "SETTING $mysql_conf ..."
 echo
 setconf "innodb_buffer_pool_size" "$(ceiling ${innodb_buffer_pool_size})M" ${mysql_conf}
-setconf "max_connections" "$max_connections" ${mysql_conf}
+setconf "max_connections" "$max_connections_withbackup" ${mysql_conf}
 setconf "innodb_log_file_size" "$(ceiling ${innodb_log_file_size})M" ${mysql_conf}
 
 
