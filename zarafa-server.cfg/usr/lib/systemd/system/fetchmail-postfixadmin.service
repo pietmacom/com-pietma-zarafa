@@ -4,7 +4,7 @@ After=network.target mysqld.service
 
 [Service]
 ExecStartPre=/bin/sh -c "/usr/bin/mkdir -p -m 777 /var/run/fetchmail"
-ExecStart=/usr/share/doc/postfixadmin/ADDITIONS/fetchmail.pl
+ExecStart=/usr/share/doc/zarafa-postfixadmin/ADDITIONS/fetchmail.pl
 User=fetchmail
 Group=nobody
 
