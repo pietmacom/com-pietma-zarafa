@@ -29,7 +29,7 @@ setconf "server_secret_key" "${_presence_password}" "/etc/zarafa/presence.cfg"
 
 # => optimization
 echo "[....] Install optimizations"
-/usr/share/doc/zarafa/zarafa-pietma/install-optimization.sh >> $installlog 2>> $installlog
+/usr/share/doc/zarafa/install-optimization.sh >> $installlog 2>> $installlog
 echo "[DONE] Install optimizations"
 
 # => mysql-database
@@ -45,7 +45,7 @@ then
 	echo "[DONE] Start MySQL database"	
 
 	echo "[....] Secure MySQL database"	
-	/usr/share/doc/zarafa/zarafa-pietma/install-mysql-secure.sh >> $installlog 2>> $installlog
+	/usr/share/doc/zarafa/install-mysql-secure.sh >> $installlog 2>> $installlog
 	echo "[DONE] Secure MySQL database"		
 	
 	echo "[....] Create Zarafa database"	
@@ -90,13 +90,13 @@ if [ ! -e "/etc/ssl/private/zarafa.key" ] \
  && [ ! -e "/etc/ssl/private/zarafa.dh" ];
 then
 	echo "[....] Create SSL-Keys/Certificates and trust them (this will take a while >10min)"
-	/usr/share/doc/zarafa/zarafa-pietma/install-ssl.sh | tail -n +1 >> $installlog 2>> $installlog
+	/usr/share/doc/zarafa/install-ssl.sh | tail -n +1 >> $installlog 2>> $installlog
 	echo "[DONE] Create SSL-Keys/Certificates and trust them"
 else
     echo
     echo "Please create SSL-Keys/Certificates and add to trusted"
     echo 
-    echo "  $ /usr/share/doc/zarafa/zarafa-pietma/install-ssl.sh"
+    echo "  $ /usr/share/doc/zarafa/install-ssl.sh"
     echo
 fi
 
