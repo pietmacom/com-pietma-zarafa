@@ -5,22 +5,43 @@ compatibility_level = 2
 mynetworks = 127.0.0.0/8
 inet_interfaces = all
 inet_protocols = ipv4
-virtual_mailbox_domains = pimac.ie
-virtual_transport = lmtp:127.0.0.1:2003
 
-myhostname = mail.pimac.ie
-mydomain = $myhostname
+#myhostname = mail.example.com
+#mydomain = $myhostname
 
 append_dot_mydomain = no
 biff = no
 
-
-# SMTP-RELAY
+# ZARAFA
 ###
-#relayhost = ???
-#smtp_sasl_auth_enable = yes
-#smtp_sasl_security_options = noanonymous
-#smtp_sasl_password_maps = hash:/etc/postfix/sasl_password
+virtual_transport = lmtp:127.0.0.1:2003
+
+# smtp-authentification against local imap-server
+smtpd_sasl_auth_enable = yes
+smtpd_sasl_path = smtpd
+broken_sasl_auth_clients = yes
+
+
+# ZARAFAPOSTFIXADMIN
+###
+virtual_mailbox_domains = 
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/domain_to_zpa_domain_domain.mysql
+virtual_mailbox_maps = 
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_zpa_mailbox_username.mysql
+virtual_alias_maps = 
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_zpa_alias_goto.mysql,
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_zpa_aliasdomain_at-targetdomain.mysql
+alias_maps = 
+
+
+# RELAY
+#relayhost = smtp.example.com
+smtp_sasl_auth_enable = yes
+smtp_sasl_security_options = noanonymous
+smtp_sasl_mechanism_filter = plain
+smtp_sender_dependent_authentication = yes
+sender_dependent_relayhost_maps = proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_zpa_fetchmail_dstserver.mysql
+smtp_sasl_password_maps = proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_zpa_fetchmail_credentials.mysql
 
 
 # ANTI-SPAM
@@ -79,22 +100,18 @@ smtpd_recipient_restrictions =
  reject_rbl_client b.barracudacentral.org,
  permit
 
-# IMAP-Authentification
-smtpd_sasl_auth_enable = yes                                                                         
-smtpd_sasl_path = smtpd                                                                              
-broken_sasl_auth_clients = yes                                                                       
-                                                                                                     
-# TLS parameters                                                                       
-smtp_use_tls=yes                                                                       
-smtp_tls_security_level = may                                                          
-smtp_tls_note_starttls_offer = yes                                                     
-smtp_tls_cert_file = /etc/ssl/private/zarafa.crt                              
-smtp_tls_key_file = /etc/ssl/private/zarafa.key                               
-                                                                                       
-# TLS for clients                                                                       
-smtpd_use_tls = yes                                                                    
-smtpd_tls_auth_only = no                                                               
-smtpd_tls_security_level = may                                                         
+
+# TLS parameters
+smtp_use_tls=yes
+smtp_tls_security_level = may
+smtp_tls_note_starttls_offer = yes
+smtp_tls_cert_file = /etc/ssl/private/zarafa.crt
+smtp_tls_key_file = /etc/ssl/private/zarafa.key
+
+# TLS for clients
+smtpd_use_tls = yes
+smtpd_tls_auth_only = no
+smtpd_tls_security_level = may
 smtpd_tls_cert_file = $smtp_tls_cert_file
 smtpd_tls_key_file = $smtp_tls_key_file
 smtpd_tls_loglevel = 1
@@ -108,12 +125,6 @@ smtpd_tls_eecdh_grade = strong
 smtpd_tls_dh512_param_file = /etc/ssl/private/zarafa.dh
 submission_tls_dh1024_param_file = /etc/ssl/private/zarafa.dh
 
-alias_maps = hash:/etc/postfix/aliases
-alias_database = $alias_maps
-debugger_command =
-         PATH=/bin:/usr/bin:/usr/local/bin:/usr/X11R6/bin
-         ddd $daemon_directory/$process_name $process_id & sleep 5
-
 # HANDLING
 ###
 # maximal message size
@@ -125,8 +136,10 @@ virtual_mailbox_limit = $message_size_limit
 maximal_queue_lifetime = 2d
 bounce_queue_lifetime = 2d
 
-# benachrichtigen
+# notice
 delay_warning_time = 10m
 confirm_delay_cleared = yes
 
-
+debugger_command =
+         PATH=/bin:/usr/bin:/usr/local/bin:/usr/X11R6/bin
+         ddd $daemon_directory/$process_name $process_id & sleep 5

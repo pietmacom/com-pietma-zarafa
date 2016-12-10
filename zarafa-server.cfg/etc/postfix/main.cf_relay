@@ -5,7 +5,7 @@ inet_interfaces = all
 inet_protocols = ipv4
 virtual_mailbox_domains = example.com
 virtual_transport = lmtp:127.0.0.1:2003
-myhostname = pimac.ie
+myhostname = example.com
 
 # Maximal message size
 message_size_limit = 268435456
