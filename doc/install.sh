@@ -13,10 +13,6 @@ for cfg in /usr/share/doc/zarafa/example-config/*.cfg; do
 	install --backup=simple --suffix .pacsave -o zarafa -g zarafa -m 0600  ${cfg} /etc/zarafa
 done
 
-# => server.cfg
-_mysql_password="$(< /dev/urandom tr -dc A-Za-z0-9 | head -c16)"
-setconf "mysql_password" "${_mysql_password}" "/etc/zarafa/server.cfg"
-
 # => ical.cfg
 if [[ -e "/etc/localtime" ]];
 then
@@ -36,6 +32,10 @@ echo "[DONE] Install optimizations"
 if [[ -e "/var/lib/mysql" ]] \
  && [[ "$(ls -A /var/lib/mysql)" == "" ]];
 then
+	# => server.cfg
+	_mysql_password="$(< /dev/urandom tr -dc A-Za-z0-9 | head -c16)"
+	setconf "mysql_password" "${_mysql_password}" "/etc/zarafa/server.cfg"
+
 	echo "[....] Initialize MySQL database"
 	mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql | tail -n +1 >> $installlog 2>> $installlog
 	echo "[DONE] Initialize MySQL database"    
@@ -63,6 +63,8 @@ then
 	systemctl stop mysqld >> $installlog 2>> $installlog
         echo "[DONE] Stop Zarafa and MySQL"	
 else
+# passwort holen
+# passwort ggf. setzen
 	echo
 	echo "Please initialize MySQL:"
 	echo

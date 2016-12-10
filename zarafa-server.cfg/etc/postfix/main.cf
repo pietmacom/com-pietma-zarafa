@@ -25,12 +25,12 @@ broken_sasl_auth_clients = yes
 # ZARAFAPOSTFIXADMIN
 ###
 virtual_mailbox_domains = 
-    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/domain_to_zpa_domain_domain.mysql
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/domain_to_domain_domain.mysql
 virtual_mailbox_maps = 
-    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_zpa_mailbox_username.mysql
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_mailbox_username.mysql
 virtual_alias_maps = 
-    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_zpa_alias_goto.mysql,
-    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_zpa_aliasdomain_at-targetdomain.mysql
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_alias_goto.mysql,
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_aliasdomain_at-targetdomain.mysql
 alias_maps = 
 
 
@@ -40,8 +40,8 @@ smtp_sasl_auth_enable = yes
 smtp_sasl_security_options = noanonymous
 smtp_sasl_mechanism_filter = plain
 smtp_sender_dependent_authentication = yes
-sender_dependent_relayhost_maps = proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_zpa_fetchmail_dstserver.mysql
-smtp_sasl_password_maps = proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_zpa_fetchmail_credentials.mysql
+sender_dependent_relayhost_maps = proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_fetchmail_dstserver.mysql
+smtp_sasl_password_maps = proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_fetchmail_credentials.mysql
 
 
 # ANTI-SPAM
