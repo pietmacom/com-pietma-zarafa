@@ -1,6 +1,6 @@
-
-# SERVER
+# Postfix /etc/main.cf
 ###
+
 compatibility_level = 2
 mynetworks = 127.0.0.0/8
 inet_interfaces = all
@@ -12,40 +12,110 @@ inet_protocols = ipv4
 append_dot_mydomain = no
 biff = no
 
-# ZARAFA
-###
+message_size_limit = 268435456
+mailbox_size_limit = $message_size_limit
+virtual_mailbox_limit = $message_size_limit
+
+# deferred - try for two days
+maximal_queue_lifetime = 2d
+bounce_queue_lifetime = 2d
+delay_warning_time = 10m
+confirm_delay_cleared = yes
+
+debugger_command =
+         PATH=/bin:/usr/bin:/usr/local/bin:/usr/X11R6/bin
+         ddd $daemon_directory/$process_name $process_id & sleep 5
+
+
+# encryption
+smtp_use_tls=yes
+smtp_tls_security_level = may
+smtp_tls_note_starttls_offer = yes
+smtp_tls_cert_file = /etc/ssl/private/zarafa.crt
+smtp_tls_key_file = /etc/ssl/private/zarafa.key
+
+# encryption client
+smtpd_use_tls = yes
+smtpd_tls_auth_only = no
+smtpd_tls_security_level = may
+smtpd_tls_cert_file = $smtp_tls_cert_file
+smtpd_tls_key_file = $smtp_tls_key_file
+smtpd_tls_loglevel = 1
+smtpd_tls_received_header = yes
+smtpd_tls_session_cache_timeout = 3600s
+
+# encryption perfect forward secrecy - https://sys4.de/de/blog/2013/08/14/postfix-tls-forward-secrecy/
+tls_preempt_cipherlist = yes
+smtpd_tls_eecdh_grade = strong
+smtpd_tls_dh512_param_file = /etc/ssl/private/zarafa.dh
+smtpd_tls_dh1024_param_file = /etc/ssl/private/zarafa.dh
+
+
+# zarafa dagent
 virtual_transport = lmtp:127.0.0.1:2003
 
-# smtp-authentification against local imap-server
+# zarafa gateway authentification before accepting relay
 smtpd_sasl_auth_enable = yes
 smtpd_sasl_path = smtpd
 broken_sasl_auth_clients = yes
 
+# zarafa-postfixadmin
+proxy_read_maps = $local_recipient_maps,
+	$mydestination,
+	$virtual_alias_maps,
+	$virtual_alias_domains,
+	$virtual_mailbox_maps,
+	$virtual_mailbox_domains,
+	$relay_recipient_maps,
+	$relay_domains,
+	$canonical_maps,
+	$sender_canonical_maps,
+	$recipient_canonical_maps,
+	$relocated_maps,
+	$transport_maps,
+	$mynetworks,
+	$smtpd_sender_login_maps,
+	$sender_bcc_maps,
+	$recipient_bcc_maps,
+	$smtp_generic_maps,
+	$lmtp_generic_maps,
+	$alias_maps,
+	$smtpd_client_restrictions,
+	$smtpd_helo_restrictions,
+	$smtpd_sender_restrictions,
+	$smtpd_relay_restrictions,
+	$smtpd_recipient_restrictions,
+	$sender_dependent_relayhost_maps,
+	$smtp_sasl_password_maps
 
-# ZARAFAPOSTFIXADMIN
-###
 virtual_mailbox_domains = 
-    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/domain_to_domain_domain.mysql
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/domain_domain_to_domain.mysql
+
 virtual_mailbox_maps = 
-    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_mailbox_username.mysql
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/mailbox_username_to_username.mysql
+
 virtual_alias_maps = 
-    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_alias_goto.mysql,
-    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_aliasdomain_at-targetdomain.mysql
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/alias_address_to_goto.mysql,
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/aliasdomain_at-aliasdomain_to_at-targetdomain.mysql
+
 alias_maps = 
 
-
-# RELAY
-#relayhost = smtp.example.com
+# smarthost from fetchmail
 smtp_sasl_auth_enable = yes
 smtp_sasl_security_options = noanonymous
 smtp_sasl_mechanism_filter = plain
 smtp_sender_dependent_authentication = yes
-sender_dependent_relayhost_maps = proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_fetchmail_dstserver.mysql
-smtp_sasl_password_maps = proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/address_to_fetchmail_credentials.mysql
+sender_canonical_maps = proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/fetchmail_mailbox_to_dstaddress.mysql
+
+sender_dependent_relayhost_maps = proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/fetchmail_mailbox_to_dstserver.mysql,
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/fetchmail_dstaddress_to_dstserver.mysql
+    
+smtp_sasl_password_maps = proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/fetchmail_mailbox_to_credentials.mysql,
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/fetchmail_dstaddress_to_credentials.mysql
 
 
-# ANTI-SPAM
-####
+
+# anti spam
 smtpd_helo_required = yes
 disable_vrfy_command = yes
 strict_rfc821_envelopes = yes
@@ -72,13 +142,13 @@ smtpd_sender_restrictions =
  reject_unknown_sender_domain,
  permit
 
-# bitte hier beachten: DNSBL sind mit Vorsicht zu genießen
+# bitte hier beachten: DNSBL sind mit Vorsicht zu geniessen
 # zum Einen entscheidet die Reihenfolge
 # (manche RBL-Anbieter lassen nur x queries/Tag zu, daher besser vorher schon ordentlich Spam wegputzen)
 # und zum Anderen das Vertrauen in den jeweiligen Anbieter
 # UCEPROTECT z.B. wird von vielen sehr kritisch betrachtet;
 # ich für meinen Teil kann deren Vorgehen jedoch nur unterstützen
-# bitte hier beachten: DNSBL sind mit Vorsicht zu genießen
+# bitte hier beachten: DNSBL sind mit Vorsicht zu geniessen
 #
 # http://search.cpan.org/dist/Mail-SPF-Query/
 # https://help.ubuntu.com/community/Postfix/SPF
@@ -100,46 +170,3 @@ smtpd_recipient_restrictions =
  reject_rbl_client b.barracudacentral.org,
  permit
 
-
-# TLS parameters
-smtp_use_tls=yes
-smtp_tls_security_level = may
-smtp_tls_note_starttls_offer = yes
-smtp_tls_cert_file = /etc/ssl/private/zarafa.crt
-smtp_tls_key_file = /etc/ssl/private/zarafa.key
-
-# TLS for clients
-smtpd_use_tls = yes
-smtpd_tls_auth_only = no
-smtpd_tls_security_level = may
-smtpd_tls_cert_file = $smtp_tls_cert_file
-smtpd_tls_key_file = $smtp_tls_key_file
-smtpd_tls_loglevel = 1
-smtpd_tls_received_header = yes
-smtpd_tls_session_cache_timeout = 3600s
-
-# PSF
-# https://sys4.de/de/blog/2013/08/14/postfix-tls-forward-secrecy/
-tls_preempt_cipherlist = yes
-smtpd_tls_eecdh_grade = strong
-smtpd_tls_dh512_param_file = /etc/ssl/private/zarafa.dh
-submission_tls_dh1024_param_file = /etc/ssl/private/zarafa.dh
-
-# HANDLING
-###
-# maximal message size
-message_size_limit = 268435456
-mailbox_size_limit = $message_size_limit
-virtual_mailbox_limit = $message_size_limit
-
-# deferred - maximal 2 Tage versuchen.
-maximal_queue_lifetime = 2d
-bounce_queue_lifetime = 2d
-
-# notice
-delay_warning_time = 10m
-confirm_delay_cleared = yes
-
-debugger_command =
-         PATH=/bin:/usr/bin:/usr/local/bin:/usr/X11R6/bin
-         ddd $daemon_directory/$process_name $process_id & sleep 5
