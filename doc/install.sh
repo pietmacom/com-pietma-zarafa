@@ -53,6 +53,7 @@ else
 		mysqlexec="mysql -uroot -p${_mysqlpassword} -s -N -e"
 	fi
 	echo
+	echo
 fi
 
 if [[ -z $($mysqlexec "show databases like '${_databasename}';") ]];
