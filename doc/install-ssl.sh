@@ -18,7 +18,7 @@ then
     echo "Creating default key ($keysize bit) to $keypath/zarafa.key"
     openssl genrsa -out $keypath/zarafa.key $keysize
 else
-    echo "Found default key ($keysize bit) under $keypath/zarafa.key"
+    echo "Found default key under $keypath/zarafa.key"
 fi
 
 if [ ! -f "$keypath/zarafa.crt" ]
