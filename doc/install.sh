@@ -53,7 +53,7 @@ else
 	fi
 fi
 
-if [[ -z $($mysqlexec "show databases like '${_databasename}%';") ]];
+if [[ -z $($mysqlexec "show databases like '${_databasename}';") ]];
 then
 	echo "[....] Create Zarafa database"	
 	# => server.cfg
