@@ -45,12 +45,14 @@ then
 	/usr/share/doc/zarafa/install-mysql-secure.sh >> $_installlog 2>> $_installlog
 	echo "[DONE] Secure MySQL database"		
 else
+	echo
 	_mysqlfound="yes"
 	read -s -p "MySQL Root Password (or empty):" _mysqlpassword
 	if [[ ! -z ${_mysqlpassword} ]];
 	then
 		mysqlexec="mysql -uroot -p${_mysqlpassword} -s -N -e"
 	fi
+	echo
 fi
 
 if [[ -z $($mysqlexec "show databases like '${_databasename}';") ]];
@@ -86,6 +88,8 @@ then
 		systemctl stop mysqld >> $_installlog 2>> $_installlog
 		echo "[DONE] Stop MySQL"
 	fi
+else
+	echo "[SKIP] Database found"
 fi
 
 # => ssl-keys / -certificates
