@@ -5,6 +5,7 @@ function setconf() {
     sed -i "s|^#*\s*\($1\).*|\1 = $2|" $3
 }
 
+_basedir="$(dirname $0)"
 _databasename="zarafa"
 _databaseuser="zarafa"
 _databasepassword="$(< /dev/urandom tr -dc A-Za-z0-9 | head -c16)"
@@ -37,11 +38,11 @@ echo
 if [[ "${_response,,}" = "y" ]];
 then
     echo "[....] Copy and override NGINX, PHP, POSTFIX, SASL settings"
-    cp -rf configs/nginx /etc    
-    cp -rf configs/php /etc
-    cp -rf configs/postfix /etc
-    cp -rf configs/sasl /etc
-    cp -rf configs/conf.d /etc
+    cp -rf ${_basedir}/configs/nginx /etc    
+    cp -rf ${_basedir}/configs/php /etc
+    cp -rf ${_basedir}/configs/postfix /etc
+    cp -rf ${_basedir}/configs/sasl /etc
+    cp -rf ${_basedir}/configs/conf.d /etc
     echo "[DONE] Copy and override NGINX, PHP, POSTFIX, SASL settings"
     
     if [[ -z $(grep "smtps" /etc/services) ]]; then 
@@ -62,7 +63,7 @@ if [[ -e "/var/lib/mysql" ]] \
  && [[ "$(ls -A /var/lib/mysql)" == "" ]];
 then
 	echo "[....] Install optimizations"
-	/usr/share/doc/zarafa/install-optimization.sh
+	${_basedir}/install-optimization.sh
 	echo "[DONE] Install optimizations"
 
 	echo "[....] Initialize MySQL database"
@@ -74,7 +75,7 @@ then
 	echo "[DONE] Start MySQL database"	
 
 	echo "[....] Secure MySQL database"	
-	/usr/share/doc/zarafa/install-mysql-secure.sh
+	${_basedir}/install-mysql-secure.sh
 	echo "[DONE] Secure MySQL database"		
 else
 	echo "[SKIP] Install optimizations - Not empty /var/lib/mysql"
@@ -131,7 +132,7 @@ fi
 
 
 echo "[....] Create SSL-Keys/Certificates and trust them (this will take a while >10min)"
-/usr/share/doc/zarafa/install-ssl.sh
+${_basedir}/install-ssl.sh
 echo "[DONE] Create SSL-Keys/Certificates and trust them"
 
 
