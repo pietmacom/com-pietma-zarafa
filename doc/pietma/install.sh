@@ -142,7 +142,6 @@ then
     systemctl enable nginx
     systemctl enable saslauthd
     systemctl enable postfix
-    #systemctl enable zarafa-postfixadmin
 
     systemctl start mysqld
     systemctl start zarafa-server
@@ -154,7 +153,6 @@ then
     systemctl start nginx
     systemctl start saslauthd
     systemctl start postfix
-    #systemctl start zarafa-postfixadmin
     echo "[DONE] Enable and start services"
 fi
 

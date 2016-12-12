@@ -26,6 +26,7 @@ debugger_command =
          PATH=/bin:/usr/bin:/usr/local/bin:/usr/X11R6/bin
          ddd $daemon_directory/$process_name $process_id & sleep 5
 
+
 # encryption
 smtp_use_tls=yes
 smtp_tls_security_level = may
@@ -57,6 +58,62 @@ virtual_transport = lmtp:127.0.0.1:2003
 smtpd_sasl_auth_enable = yes
 smtpd_sasl_path = smtpd
 broken_sasl_auth_clients = yes
+
+# zarafa-postfixadmin
+proxy_read_maps = $local_recipient_maps,
+	$mydestination,
+	$virtual_alias_maps,
+	$virtual_alias_domains,
+	$virtual_mailbox_maps,
+	$virtual_mailbox_domains,
+	$relay_recipient_maps,
+	$relay_domains,
+	$canonical_maps,
+	$sender_canonical_maps,
+	$recipient_canonical_maps,
+	$relocated_maps,
+	$transport_maps,
+	$mynetworks,
+	$smtpd_sender_login_maps,
+	$sender_bcc_maps,
+	$recipient_bcc_maps,
+	$smtp_generic_maps,
+	$lmtp_generic_maps,
+	$alias_maps,
+	$smtpd_client_restrictions,
+	$smtpd_helo_restrictions,
+	$smtpd_sender_restrictions,
+	$smtpd_relay_restrictions,
+	$smtpd_recipient_restrictions,
+	$sender_dependent_relayhost_maps,
+	$smtp_sasl_password_maps
+
+virtual_mailbox_domains = 
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/domain_domain_to_domain.mysql
+
+virtual_mailbox_maps = 
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/mailbox_username_to_username.mysql
+
+virtual_alias_maps = 
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/alias_address_to_goto.mysql,
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/aliasdomain_at-aliasdomain_to_at-targetdomain.mysql
+
+alias_maps = 
+
+# smarthost from fetchmail
+smtp_sasl_auth_enable = yes
+smtp_sasl_security_options = noanonymous
+smtp_sasl_mechanism_filter = plain
+smtp_sender_dependent_authentication = yes
+sender_canonical_maps = proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/fetchmail_mailbox_to_dstaddress.mysql
+
+sender_dependent_relayhost_maps = proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/fetchmail_mailbox_to_dstserver.mysql,
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/fetchmail_dstaddress_to_dstserver.mysql
+    
+smtp_sasl_password_maps = proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/fetchmail_mailbox_to_credentials.mysql,
+    proxy:mysql:/etc/webapps/zarafa-postfixadmin/postfix/fetchmail_dstaddress_to_credentials.mysql
+
+
 
 # anti spam
 smtpd_helo_required = yes
