@@ -9,46 +9,72 @@ _installlog="/tmp/zarafa-install.log"
 _databasename="zarafa"
 _databaseuser="zarafa"
 _databasepassword="$(< /dev/urandom tr -dc A-Za-z0-9 | head -c16)"
-
-# CONFIG
-# => ical.cfg
-if [[ -e "/etc/localtime" ]];
-then
-	setconf "server_timezone" "$(readlink -f /etc/localtime | sed  's|/usr/share/zoneinfo/||' | tr '_' ' ')" "/etc/zarafa/ical.cfg"
-fi
-
-# => presence.cfg
-_presence_password="$(< /dev/urandom tr -dc A-Za-z0-9 | head -c16)"
-setconf "server_secret_key" "${_presence_password}" "/etc/zarafa/presence.cfg"
-
-# => optimization
-echo "[....] Install optimizations"
-/usr/share/doc/zarafa/install-optimization.sh >> $_installlog 2>> $_installlog
-echo "[DONE] Install optimizations"
-
-# => mysql-database
 # without password
 mysqlexec="mysql -uroot -s -N -e"
+
+
+
+
+if [[ -e "/etc/localtime" ]];
+then
+	echo "[....] Set timezone for ical service"
+	setconf "server_timezone" "$(readlink -f /etc/localtime | sed  's|/usr/share/zoneinfo/||' | tr '_' ' ')" "/etc/zarafa/ical.cfg"
+	echo "[DONE] Set timezone for ical service"
+else
+	echo "[SKIP] Set timezone for ical service - Not found /etc/localtime"
+fi
+
+
+
+echo "[....] Generate password for zarafa presence"
+_presence_password="$(< /dev/urandom tr -dc A-Za-z0-9 | head -c16)"
+setconf "server_secret_key" "${_presence_password}" "/etc/zarafa/presence.cfg"
+echo "[DONE] Generate password for zarafa presence"
+
+
+echo
+read -p ":: Copy and override NGINX, PHP, POSTFIX, SASL settings? [Y/n]" _response
+echo
+echo
+if [[ "${_response,,}" = "y" ]];
+then
+    echo "[....] Copy and override NGINX, PHP, POSTFIX, SASL settings"
+    cp -rf configs/nginx /etc    
+    cp -rf configs/php /etc
+    cp -rf configs/postfix /etc
+    cp -rf configs/sasl /etc
+    cp -rf configs/conf.d /etc
+    echo "[DONE] Copy and override NGINX, PHP, POSTFIX, SASL settings"    
+fi
+
 
 if [[ -e "/var/lib/mysql" ]] \
  && [[ "$(ls -A /var/lib/mysql)" == "" ]];
 then
+	echo "[....] Install optimizations"
+	/usr/share/doc/zarafa/install-optimization.sh
+	echo "[DONE] Install optimizations"
+
 	echo "[....] Initialize MySQL database"
-	mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql | tail -n +1 >> $_installlog 2>> $_installlog
+	mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 	echo "[DONE] Initialize MySQL database"    
 
 	echo "[....] Start MySQL database"
-	systemctl start mysqld >> $_installlog 2>> $_installlog
+	systemctl start mysqld
 	echo "[DONE] Start MySQL database"	
 
 	echo "[....] Secure MySQL database"	
-	/usr/share/doc/zarafa/install-mysql-secure.sh >> $_installlog 2>> $_installlog
+	/usr/share/doc/zarafa/install-mysql-secure.sh
 	echo "[DONE] Secure MySQL database"		
 else
+	echo "[SKIP] Install optimizations - Not empty /var/lib/mysql"
+	echo "[SKIP] Initialize MySQL database - Not empty /var/lib/mysql"
+	echo "[SKIP] Secure MySQL database - Not empty /var/lib/mysql"
+	
 	echo
 	_mysqlfound="yes"
-	read -s -p "MySQL Root Password (or empty):" _mysqlpassword
-	if [[ ! -z ${_mysqlpassword} ]];
+	read -s -p ":: Please enter MySQL Root Password (or empty) " _mysqlpassword
+	if [[ ! -z "${_mysqlpassword}" ]];
 	then
 		mysqlexec="mysql -uroot -p${_mysqlpassword} -s -N -e"
 	fi
@@ -70,38 +96,69 @@ then
 	else
 		$mysqlexec "SET PASSWORD FOR '${_databaseuser}'@'localhost' = PASSWORD('${_databasepassword}');"
 	fi
-	mysql -u root -e "CREATE DATABASE IF NOT EXISTS ${_databasename};" >> $_installlog 2>> $_installlog
-	mysql -u root -e "GRANT ALL PRIVILEGES ON ${_databasename}.* TO ${_databaseuser}@localhost;" >> $_installlog 2>> $_installlog
+	mysql -u root -e "CREATE DATABASE IF NOT EXISTS ${_databasename};"
+	mysql -u root -e "GRANT ALL PRIVILEGES ON ${_databasename}.* TO ${_databaseuser}@localhost;"
 	echo "[DONE] Create Zarafa database"	
 	
         echo "[....] Start Zarafa and install database tables (this will take a while >1min)"
-	systemctl start zarafa-server >> $_installlog 2>> $_installlog
-	sleep 60 >> $_installlog 2>> $_installlog
+	systemctl start zarafa-server
+	sleep 60
         echo "[DONE] Start Zarafa and install database tables"
         
         echo "[....] Stop Zarafa"
-	systemctl stop zarafa-server >> $_installlog 2>> $_installlog
+	systemctl stop zarafa-server
         echo "[DONE] Stop Zarafa"
 
 	if [[ -z ${_mysqlfound} ]];
 	then
 		echo "[....] Stop MySQL"
-		systemctl stop mysqld >> $_installlog 2>> $_installlog
+		systemctl stop mysqld
 		echo "[DONE] Stop MySQL"
 	fi
 else
-	echo "[SKIP] Database found"
+	echo "[SKIP] Create Zarafa database - Database found"
 fi
 
-# => ssl-keys / -certificates
+
 echo "[....] Create SSL-Keys/Certificates and trust them (this will take a while >10min)"
-/usr/share/doc/zarafa/install-ssl.sh | tail -n +1 >> $_installlog 2>> $_installlog
+/usr/share/doc/zarafa/install-ssl.sh
 echo "[DONE] Create SSL-Keys/Certificates and trust them"
 
+
 echo
-echo "Open The Full Installation Log"
+read -p ":: Enable and start services MYSQLD, ZARAFA-SERVER, ZARAFA-GATEWAY, ZARAFA-SPOOLER, ZARAFA-DAGENT, ZARAFA-ICAL, PHP-FPM, NGINX, SASLAUTHD, POSTFIX [Y/n]" _response
 echo
-echo "   $ cat ${_installlog}"
+echo
+if [[ "${_response,,}" = "y" ]];
+then
+    echo "[....] Enable and start services"
+    systemctl enable mysqld
+    systemctl enable zarafa-server
+    systemctl enable zarafa-gateway
+    systemctl enable zarafa-spooler
+    systemctl enable zarafa-dagent
+    systemctl enable zarafa-ical
+    systemctl enable php-fpm
+    systemctl enable nginx
+    systemctl enable saslauthd
+    systemctl enable postfix
+    #systemctl enable zarafa-postfixadmin
+
+    systemctl start mysqld
+    systemctl start zarafa-server
+    systemctl start zarafa-gateway
+    systemctl start zarafa-spooler
+    systemctl start zarafa-dagent
+    systemctl start zarafa-ical
+    systemctl start php-fpm
+    systemctl start nginx
+    systemctl start saslauthd
+    systemctl start postfix
+    #systemctl start zarafa-postfixadmin
+    echo "[DONE] Enable and start services"
+fi
+
+
 echo
 echo "Read More"
 echo
