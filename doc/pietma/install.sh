@@ -37,9 +37,12 @@ echo
 if [[ "${_response,,}" = "y" ]];
 then
     echo "[....] Copy and override NGINX, PHP, POSTFIX, SASL settings"
-    cp -rf configs/nginx /etc    
+    cp -rf configs/nginx /etc
+    ln -sf /etc/ngin/sites-available/* /etc/ngin/sites-enabled/
+
     cp -rf configs/php /etc
     cp -rf configs/postfix /etc
+
     cp -rf configs/sasl /etc
     cp -rf configs/conf.d /etc
     echo "[DONE] Copy and override NGINX, PHP, POSTFIX, SASL settings"

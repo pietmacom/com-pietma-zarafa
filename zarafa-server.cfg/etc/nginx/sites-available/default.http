@@ -15,7 +15,11 @@
         include /etc/webapps/z-push/nginx-location.conf;
         include /etc/webapps/sabre-zarafa/nginx-location.conf;
 	include /etc/webapps/zarafa-postfixadmin/nginx-location.conf;
+	include /etc/webapps/zarafa-service-overview/nginx-location.conf;
 
+	location / {
+	     return 302 /zarafa-service-overview;
+	}
 
         # HIDDEN FILES AND FOLDERS
         # rewrite ^(.*)\/\.(.*)$ @404 break;
@@ -23,10 +27,6 @@
         location = @404 {
             return 404;
         }
-        
-	location / {
-            root /usr/share/webapps/zarafa-service-overview;
-	}
         
         location /caldav {
             proxy_pass        http://127.0.0.1:8080/caldav;
@@ -44,8 +44,10 @@
 
 	root /usr/share/nginx/html;
 
+	include /etc/webapps/zarafa-service-overview/nginx-location.conf;
+
 	location / {
-            root /usr/share/webapps/zarafa-service-overview;
+	    return 302 /zarafa-service-overview;
 	}
     }
     
