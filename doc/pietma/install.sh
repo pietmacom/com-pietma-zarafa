@@ -5,7 +5,6 @@ function setconf() {
     sed -i "s|^#*\s*\($1\).*|\1 = $2|" $3
 }
 
-_installlog="/tmp/zarafa-install.log"
 _databasename="zarafa"
 _databaseuser="zarafa"
 _databasepassword="$(< /dev/urandom tr -dc A-Za-z0-9 | head -c16)"
@@ -26,15 +25,14 @@ fi
 
 
 
-echo "[....] Generate password for zarafa presence"
+echo "[....] Generate password for zarafa presence service"
 _presence_password="$(< /dev/urandom tr -dc A-Za-z0-9 | head -c16)"
 setconf "server_secret_key" "${_presence_password}" "/etc/zarafa/presence.cfg"
-echo "[DONE] Generate password for zarafa presence"
+echo "[DONE] Generate password for zarafa presence service"
 
 
 echo
-read -p ":: Copy and override NGINX, PHP, POSTFIX, SASL settings? [Y/n]" _response
-echo
+read -p ":: Copy and override NGINX, PHP, POSTFIX, SASL settings? [Y/n] " _response
 echo
 if [[ "${_response,,}" = "y" ]];
 then
@@ -44,7 +42,19 @@ then
     cp -rf configs/postfix /etc
     cp -rf configs/sasl /etc
     cp -rf configs/conf.d /etc
-    echo "[DONE] Copy and override NGINX, PHP, POSTFIX, SASL settings"    
+    echo "[DONE] Copy and override NGINX, PHP, POSTFIX, SASL settings"
+    
+    if [[ -z $(grep "smtps" /etc/services) ]]; then 
+	echo "[....] Add smtps to /etc/services"
+	echo >> /etc/services
+	echo "smtps             465/tcp" >> /etc/services
+	echo "smtps             465/udp" >> /etc/services
+	echo "[DONE] Add smtps/465 to /etc/services"	
+    else
+	echo "[SKIP] Add smtps to /etc/services - found"
+    fi
+else
+    echo "[SKIP] Copy and override NGINX, PHP, POSTFIX, SASL settings"
 fi
 
 
@@ -126,8 +136,7 @@ echo "[DONE] Create SSL-Keys/Certificates and trust them"
 
 
 echo
-read -p ":: Enable and start services MYSQLD, ZARAFA-SERVER, ZARAFA-GATEWAY, ZARAFA-SPOOLER, ZARAFA-DAGENT, ZARAFA-ICAL, PHP-FPM, NGINX, SASLAUTHD, POSTFIX [Y/n]" _response
-echo
+read -p ":: Enable and start services MYSQLD, ZARAFA-SERVER, ZARAFA-GATEWAY, ZARAFA-SPOOLER, ZARAFA-DAGENT, ZARAFA-ICAL, PHP-FPM, NGINX, SASLAUTHD, POSTFIX [Y/n] " _response
 echo
 if [[ "${_response,,}" = "y" ]];
 then
@@ -154,6 +163,8 @@ then
     systemctl start saslauthd
     systemctl start postfix
     echo "[DONE] Enable and start services"
+else
+    echo "[SKIP] Enable and start services"
 fi
 
 
