@@ -58,14 +58,14 @@
         location = /auth-imap {
             add_header Auth-Status OK;
             add_header Auth-Server 127.0.0.1;  # backend ip
-            add_header Auth-Port   142;        # backend port
+            add_header Auth-Port   143;        # backend port
             return 200;
         }
 
         location = /auth-pop {
             add_header Auth-Status OK;
             add_header Auth-Server 127.0.0.1;  # backend ip
-            add_header Auth-Port   111;        # backend port
+            add_header Auth-Port   110;        # backend port
             return 200;
         }
     }
