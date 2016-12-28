@@ -51,10 +51,10 @@
 	}
     }
     
-    # return instructions for mail proxy
     server {
         listen 127.0.0.1:81 default_server;
 
+        # return instructions for mail proxy
         location = /auth-imap {
             add_header Auth-Status OK;
             add_header Auth-Server 127.0.0.1;  # backend ip
@@ -68,4 +68,7 @@
             add_header Auth-Port   110;        # backend port
             return 200;
         }
+
+        # unencrypted access to z-push for mdm-plugin in webapp
+        include /etc/webapps/z-push/nginx-location.conf;
     }
