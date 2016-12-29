@@ -113,10 +113,11 @@ then
 	mysql -u root -e "GRANT ALL PRIVILEGES ON ${_databasename}.* TO ${_databaseuser}@localhost;"
 	echo "[DONE] Create Zarafa database"	
 	
-        echo "[....] Start Zarafa and install database tables (this will take a while >1min)"
+        echo "[....] Start Zarafa, install database tables and public store (this will take a while >1min)"
 	systemctl start zarafa-server
+	zarafa-admin -s
 	sleep 60
-        echo "[DONE] Start Zarafa and install database tables"
+        echo "[DONE] Start Zarafa, install database tables and public store"
         
         echo "[....] Stop Zarafa"
 	systemctl stop zarafa-server
