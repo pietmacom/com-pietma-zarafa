@@ -1,1 +1,1 @@
-SASLAUTHD_OPTS="-a rimap -O 127.0.0.1/142 -c -n 0"
+SASLAUTHD_OPTS="-a rimap -r -O 127.0.0.1/143 -c -n 0"
