@@ -32,9 +32,14 @@
             proxy_pass        http://127.0.0.1:8080/caldav;
         }
         
-        # Workaround for Apple MacOS X El Capitan
+        # Workaround for Apple MacOS X El Capitan, Sierra
         location /.well-known/carddav {
             rewrite ^(.*)$ https://$server_name/carddav permanent;
+        }
+
+        # Workaround for Apple MacOS X El Capitan, Sierra
+        location /.well-known/caldav {
+            rewrite ^(.*)$ https://$server_name/caldav permanent;
         }
     } 
     
