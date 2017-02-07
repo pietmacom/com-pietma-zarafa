@@ -147,6 +147,7 @@ then
     echo "[....] Enable and start services"
     systemctl enable mysqld
     systemctl enable zarafa-server
+    systemctl enable zarafa-search
     systemctl enable zarafa-gateway
     systemctl enable zarafa-spooler
     systemctl enable zarafa-dagent
@@ -158,6 +159,7 @@ then
 
     systemctl start mysqld
     systemctl start zarafa-server
+	systemctl start zarafa-search
     systemctl start zarafa-gateway
     systemctl start zarafa-spooler
     systemctl start zarafa-dagent
