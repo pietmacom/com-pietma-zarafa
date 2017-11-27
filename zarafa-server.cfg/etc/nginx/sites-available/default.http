@@ -2,23 +2,23 @@
         listen  443 default_server;
 
         ssl     on;
-        ssl_certificate /etc/ssl/private/zarafa.crt;
-        ssl_certificate_key /etc/ssl/private/zarafa.key;
-        ssl_trusted_certificate /etc/ssl/private/zarafa.crt;
-	ssl_dhparam /etc/ssl/private/zarafa.dh;
+        ssl_certificate /etc/ssl/private/kopano.crt;
+        ssl_certificate_key /etc/ssl/private/kopano.key;
+        ssl_trusted_certificate /etc/ssl/private/kopano.crt;
+	ssl_dhparam /etc/ssl/private/kopano.dh;
 	
 	add_header Strict-Transport-Security max-age=63072000;
 
 	root /usr/share/nginx/html;
 	
-        include /etc/webapps/zarafa-webapp/nginx-location.conf;
+        include /etc/webapps/kopano-webapp/nginx-location.conf;
         include /etc/webapps/z-push/nginx-location.conf;
-        include /etc/webapps/sabre-zarafa/nginx-location.conf;
-	include /etc/webapps/zarafa-postfixadmin/nginx-location.conf;
-	include /etc/webapps/zarafa-service-overview/nginx-location.conf;
+        include /etc/webapps/sabre-kopano/nginx-location.conf;
+	include /etc/webapps/kopano-postfixadmin/nginx-location.conf;
+	include /etc/webapps/kopano-service-overview/nginx-location.conf;
 
 	location / {
-	     return 302 /zarafa-service-overview;
+	     return 302 /kopano-service-overview;
 	}
 
         # HIDDEN FILES AND FOLDERS
@@ -49,10 +49,10 @@
 
 	root /usr/share/nginx/html;
 
-	include /etc/webapps/zarafa-service-overview/nginx-location.conf;
+	include /etc/webapps/kopano-service-overview/nginx-location.conf;
 
 	location / {
-	    return 302 /zarafa-service-overview;
+	    return 302 /kopano-service-overview;
 	}
     }
     

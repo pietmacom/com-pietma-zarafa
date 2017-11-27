@@ -6,8 +6,8 @@ function setconf() {
 }
 
 _basedir="$(dirname $0)"
-_databasename="zarafa"
-_databaseuser="zarafa"
+_databasename="kopano"
+_databaseuser="kopano"
 _databasepassword="$(< /dev/urandom tr -dc A-Za-z0-9 | head -c16)"
 # without password
 mysqlexec="mysql -uroot -s -N -e"
@@ -18,17 +18,17 @@ mysqlexec="mysql -uroot -s -N -e"
 if [[ -e "/etc/localtime" ]];
 then
 	echo "[....] Set timezone for ical service"
-	setconf "server_timezone" "$(readlink -f /etc/localtime | sed  's|/usr/share/zoneinfo/||' | tr '_' ' ')" "/etc/zarafa/ical.cfg"
+	setconf "server_timezone" "$(readlink -f /etc/localtime | sed  's|/usr/share/zoneinfo/||' | tr '_' ' ')" "/etc/kopano/ical.cfg"
 	echo "[DONE] Set timezone for ical service"
 else
 	echo "[SKIP] Set timezone for ical service - Not found /etc/localtime"
 fi
 
 
-echo "[....] Generate password for zarafa presence service"
+echo "[....] Generate password for kopano presence service"
 _presence_password="$(< /dev/urandom tr -dc A-Za-z0-9 | head -c16)"
-setconf "server_secret_key" "${_presence_password}" "/etc/zarafa/presence.cfg"
-echo "[DONE] Generate password for zarafa presence service"
+setconf "server_secret_key" "${_presence_password}" "/etc/kopano/presence.cfg"
+echo "[DONE] Generate password for kopano presence service"
 
 
 echo
@@ -97,11 +97,11 @@ fi
 
 if [[ -z $($mysqlexec "show databases like '${_databasename}';") ]];
 then
-	echo "[....] Create Zarafa database"	
+	echo "[....] Create Kopano database"	
 	# => server.cfg
-	setconf "mysql_user" "${_databaseuser}" "/etc/zarafa/server.cfg"
-	setconf "mysql_password" "${_databasepassword}" "/etc/zarafa/server.cfg"
-	setconf "mysql_database" "${_databasename}" "/etc/zarafa/server.cfg"
+	setconf "mysql_user" "${_databaseuser}" "/etc/kopano/server.cfg"
+	setconf "mysql_password" "${_databasepassword}" "/etc/kopano/server.cfg"
+	setconf "mysql_database" "${_databasename}" "/etc/kopano/server.cfg"
 
 	if [[ -z $($mysqlexec "use mysql; select * from user where user ='${_databaseuser}';") ]];
 	then
@@ -111,17 +111,17 @@ then
 	fi
 	mysql -u root -e "CREATE DATABASE IF NOT EXISTS ${_databasename};"
 	mysql -u root -e "GRANT ALL PRIVILEGES ON ${_databasename}.* TO ${_databaseuser}@localhost;"
-	echo "[DONE] Create Zarafa database"	
+	echo "[DONE] Create Kopano database"	
 	
-        echo "[....] Start Zarafa, install database tables and public store (this will take a while >1min)"
-	systemctl start zarafa-server
-	zarafa-admin -s
+        echo "[....] Start Kopano, install database tables and public store (this will take a while >1min)"
+	systemctl start kopano-server
+	kopano-admin -s
 	sleep 60
-        echo "[DONE] Start Zarafa, install database tables and public store"
+        echo "[DONE] Start Kopano, install database tables and public store"
         
-        echo "[....] Stop Zarafa"
-	systemctl stop zarafa-server
-        echo "[DONE] Stop Zarafa"
+        echo "[....] Stop Kopano"
+	systemctl stop kopano-server
+        echo "[DONE] Stop Kopano"
 
 	if [[ -z ${_mysqlfound} ]];
 	then
@@ -130,7 +130,7 @@ then
 		echo "[DONE] Stop MySQL"
 	fi
 else
-	echo "[SKIP] Create Zarafa database - Database found"
+	echo "[SKIP] Create Kopano database - Database found"
 fi
 
 
@@ -140,30 +140,30 @@ echo "[DONE] Create SSL-Keys/Certificates and trust them"
 
 
 echo
-read -p ":: Enable and start services MYSQLD, ZARAFA-SERVER, ZARAFA-GATEWAY, ZARAFA-SPOOLER, ZARAFA-DAGENT, ZARAFA-ICAL, PHP-FPM, NGINX, SASLAUTHD, POSTFIX [Y/n] " _response
+read -p ":: Enable and start services MYSQLD, KOPANO-SERVER, KOPANO-GATEWAY, KOPANO-SPOOLER, KOPANO-DAGENT, KOPANO-ICAL, PHP-FPM, NGINX, SASLAUTHD, POSTFIX [Y/n] " _response
 echo
 if [[ "${_response,,}" = "y" ]];
 then
     echo "[....] Enable and start services"
     systemctl enable mysqld
-    systemctl enable zarafa-server
-    systemctl enable zarafa-search
-    systemctl enable zarafa-gateway
-    systemctl enable zarafa-spooler
-    systemctl enable zarafa-dagent
-    systemctl enable zarafa-ical
+    systemctl enable kopano-server
+    systemctl enable kopano-search
+    systemctl enable kopano-gateway
+    systemctl enable kopano-spooler
+    systemctl enable kopano-dagent
+    systemctl enable kopano-ical
     systemctl enable php-fpm
     systemctl enable nginx
     systemctl enable saslauthd
     systemctl enable postfix
 
     systemctl start mysqld
-    systemctl start zarafa-server
-	systemctl start zarafa-search
-    systemctl start zarafa-gateway
-    systemctl start zarafa-spooler
-    systemctl start zarafa-dagent
-    systemctl start zarafa-ical
+    systemctl start kopano-server
+    systemctl start kopano-search
+    systemctl start kopano-gateway
+    systemctl start kopano-spooler
+    systemctl start kopano-dagent
+    systemctl start kopano-ical
     systemctl start php-fpm
     systemctl start nginx
     systemctl start saslauthd
@@ -178,6 +178,6 @@ echo
 echo "Read More"
 echo
 echo "   https://wiki.archlinux.org/index.php/MySQL"
-echo "   https://pietma.com/run-and-access-zarafa/"
-echo "   https://pietma.com/optimize-zarafa-and-mysql-mariadb/"
+echo "   https://pietma.com/run-and-access-kopano/"
+echo "   https://pietma.com/optimize-kopano-and-mysql-mariadb/"
 echo

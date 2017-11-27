@@ -45,7 +45,7 @@ memory_total=$(calc "$(cat /proc/meminfo | grep 'MemTotal' | grep -oh '[0-9]*') 
 mysql_example_conf="$(dirname $0)/configs/mysql/my.cnf"
 
 mysql_conf="/etc/mysql/my.cnf"
-zarafa_conf="/etc/zarafa/server.cfg"
+kopano_conf="/etc/kopano/server.cfg"
 
 
 while getopts :t:m:z: opt;
@@ -54,7 +54,7 @@ do
     case $opt in
 	t) memory_total="$OPTARG" ;;
 	m) mysql_conf="$OPTARG" ;;
-	z) zarafa_conf="$OPTARG" ;;	
+	z) kopano_conf="$OPTARG" ;;	
     esac
 done
 
@@ -70,14 +70,14 @@ max_connections_ratio="0.25"
 max_connections=$(floor $(calc "(($memory_total - $total_instance) * $max_connections_ratio) / $total_connection")) # "
 max_connections_withbackup=$(calc "$max_connections + 30")
 threads=$(floor $(calc "($max_connections - 1) / 2")) #"
-zarafa_users=$threads
+kopano_users=$threads
 cache_cell_size_ratio="0.25"
 cache_cell_size=$(calc "$memory_total * $cache_cell_size_ratio")
-cache_object_size=$(calc "0.1 * $zarafa_users")
-cache_indexedobject_size=$(calc "0.5 * $zarafa_users")
-total_fixed_zarafa="30"
-total_zarafa=$(calc "$total_fixed_zarafa + $cache_cell_size + $cache_object_size + $cache_indexedobject_size")
-memory_used=$(calc "$total_instance + ($total_connection * $max_connections) + $total_zarafa") # "
+cache_object_size=$(calc "0.1 * $kopano_users")
+cache_indexedobject_size=$(calc "0.5 * $kopano_users")
+total_fixed_kopano="30"
+total_kopano=$(calc "$total_fixed_kopano + $cache_cell_size + $cache_object_size + $cache_indexedobject_size")
+memory_used=$(calc "$total_instance + ($total_connection * $max_connections) + $total_kopano") # "
 memory_free=$(calc "$memory_total - $memory_used")
 memory_used_prc=$(calc "($memory_used / $memory_total) * 100") # "
 memory_free_prc=$(calc "($memory_free / $memory_total) * 100") # "
@@ -100,15 +100,15 @@ echo "innodb_log_file_size_ratio: $innodb_log_file_size_ratio"
 echo "innodb_log_file_size: $innodb_log_file_size MB"
 echo "=> total_filesystem: $total_filesystem MB"
 echo
-echo "Zarafa"
+echo "Kopano"
 echo
-echo "total_fixed_zarafa: $total_fixed_zarafa"
+echo "total_fixed_kopano: $total_fixed_kopano"
 echo "cache_cell_size_ratio: $cache_cell_size_ratio"
 echo "cache_cell_size: $cache_cell_size MB"
 echo "cache_object_size: $cache_object_size MB"
 echo "cache_indexedobject_size: $cache_indexedobject_size MB"
 echo "threads: $threads"
-echo "=> total_zarafa: $total_zarafa MB"
+echo "=> total_kopano: $total_kopano MB"
 echo
 echo "Total"
 echo
@@ -117,7 +117,7 @@ echo "memory_used: $memory_used MB"
 echo "memory_free: $memory_free MB"
 echo "memory_used_prc: $memory_used_prc %"
 echo "memory_free_prc: $memory_free_prc %"
-echo "zarafa_users: $zarafa_users"
+echo "kopano_users: $kopano_users"
 
 echo "BACKING UP $mysql_conf ..."
 echo
@@ -134,19 +134,19 @@ setconf "max_connections" "$max_connections_withbackup" ${mysql_conf}
 setconf "innodb_log_file_size" "$(ceiling ${innodb_log_file_size})M" ${mysql_conf}
 
 
-echo "BACKING UP $zarafa_conf ..."
+echo "BACKING UP $kopano_conf ..."
 echo 
-backup $zarafa_conf
+backup $kopano_conf
 
-echo "SETTING $zarafa_conf ..."
+echo "SETTING $kopano_conf ..."
 echo 
-setconf "cache_cell_size" "$(ceiling ${cache_cell_size})M" ${zarafa_conf} "#*\s*"
-setconf "cache_object_size" "$(ceiling ${cache_object_size})M" ${zarafa_conf} "#*\s*"
-setconf "cache_indexedobject_size" "$(ceiling ${cache_indexedobject_size})M" ${zarafa_conf} "#*\s*"
-setconf "enable_sql_procedures" "yes" ${zarafa_conf} "#*\s*"
+setconf "cache_cell_size" "$(ceiling ${cache_cell_size})M" ${kopano_conf} "#*\s*"
+setconf "cache_object_size" "$(ceiling ${cache_object_size})M" ${kopano_conf} "#*\s*"
+setconf "cache_indexedobject_size" "$(ceiling ${cache_indexedobject_size})M" ${kopano_conf} "#*\s*"
+setconf "enable_sql_procedures" "yes" ${kopano_conf} "#*\s*"
 
 
-echo "PLEASE RESTART mysql and zarafa ..."
+echo "PLEASE RESTART mysql and kopano ..."
 echo
 echo "\$ systemctl restart mysqld"
-echo "\$ systemctl restart zarafa-server"
+echo "\$ systemctl restart kopano-server"

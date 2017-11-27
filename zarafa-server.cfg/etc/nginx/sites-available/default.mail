@@ -7,10 +7,10 @@
         #imap_capabilities  "IMAP4rev1"  "UIDPLUS"; ## default
         
         ssl on;
-        ssl_certificate /etc/ssl/private/zarafa.crt;
-        ssl_certificate_key /etc/ssl/private/zarafa.key;
-        ssl_trusted_certificate /etc/ssl/private/zarafa.crt;
-        ssl_dhparam /etc/ssl/private/zarafa.dh;
+        ssl_certificate /etc/ssl/private/kopano.crt;
+        ssl_certificate_key /etc/ssl/private/kopano.key;
+        ssl_trusted_certificate /etc/ssl/private/kopano.crt;
+        ssl_dhparam /etc/ssl/private/kopano.dh;
     }
 
     server {
@@ -20,8 +20,8 @@
         auth_http 127.0.0.1:81/auth-pop;
 
         ssl on;
-        ssl_certificate /etc/ssl/private/zarafa.crt;
-        ssl_certificate_key /etc/ssl/private/zarafa.key;
-        ssl_trusted_certificate /etc/ssl/private/zarafa.crt;
-        ssl_dhparam /etc/ssl/private/zarafa.dh;
+        ssl_certificate /etc/ssl/private/kopano.crt;
+        ssl_certificate_key /etc/ssl/private/kopano.key;
+        ssl_trusted_certificate /etc/ssl/private/kopano.crt;
+        ssl_dhparam /etc/ssl/private/kopano.dh;
     }

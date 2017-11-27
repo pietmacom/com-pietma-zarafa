@@ -20,7 +20,7 @@ pacman -Sy
 echo ; echo "### Retriving package dependencies"
 
 allpackages=$(pacman -Slq pietma)
-grouppackages=$(pacman -Sgq zarafa)
+grouppackages=$(pacman -Sgq kopano)
 strictpackages=$(echo "$grouppackages" | xargs -l1 -n 1 pacman -Si | grep "Depends On.*" | sed "s/^.*\: //g" | sed "s/  /\n/g" | grep -P ".*?[a-zA-Z](=|<)[0-9\.]" | sed "s/[=<>].*//g" | sort | uniq)
 
 # for all packages: pactree -s -d 1 -r -l
