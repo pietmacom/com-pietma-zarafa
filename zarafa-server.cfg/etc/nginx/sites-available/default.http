@@ -13,7 +13,7 @@
 	
         include /etc/webapps/kopano-webapp/nginx-location.conf;
         include /etc/webapps/z-push/nginx-location.conf;
-        include /etc/webapps/sabre-kopano/nginx-location.conf;
+        include /etc/webapps/kopano-sabre/nginx-location.conf;
 	include /etc/webapps/kopano-postfixadmin/nginx-location.conf;
 	include /etc/webapps/kopano-service-overview/nginx-location.conf;
 
