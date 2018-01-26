@@ -5,6 +5,13 @@ function setconf() {
     sed -i "s|^#*\s*\($1\).*|\1 = $2|" $3
 }
 
+while getopts :s: opt;
+do
+    case $OPTARG in
+    s) _silent="y" ;;
+    esac
+done
+
 _basedir="$(dirname $0)"
 _databasename="kopano"
 _databaseuser="kopano"
@@ -31,9 +38,14 @@ setconf "server_secret_key" "${_presence_password}" "/etc/kopano/presence.cfg"
 echo "[DONE] Generate password for kopano presence service"
 
 
-echo
-read -p ":: Copy and override NGINX, PHP, POSTFIX, SASL settings? [Y/n] " _response
-echo
+if [[ -z "${_silent}" ]];
+then
+    echo
+    read -p ":: Copy and override NGINX, PHP, POSTFIX, SASL settings? [Y/n] " _response
+    echo
+else
+    _response="y"
+fi
 if [[ "${_response,,}" = "y" ]];
 then
     echo "[....] Copy and override NGINX, PHP, POSTFIX, SASL settings"
@@ -86,7 +98,12 @@ else
 	
 	echo
 	_mysqlfound="yes"
-	read -s -p ":: Please enter MySQL Root Password (or empty) " _mysqlpassword
+	if [[ -z "${_silent}" ]];
+	then
+	    read -s -p ":: Please enter MySQL Root Password (or empty) " _mysqlpassword
+	else
+	    _mysqlpassword=""
+	fi
 	if [[ ! -z "${_mysqlpassword}" ]];
 	then
 		mysqlexec="mysql -uroot -p${_mysqlpassword} -s -N -e"
@@ -139,9 +156,14 @@ ${_basedir}/install-ssl.sh
 echo "[DONE] Create SSL-Keys/Certificates and trust them"
 
 
-echo
-read -p ":: Enable and start services MYSQLD, KOPANO-SERVER, KOPANO-GATEWAY, KOPANO-SPOOLER, KOPANO-DAGENT, KOPANO-ICAL, PHP-FPM, NGINX, SASLAUTHD, POSTFIX [Y/n] " _response
-echo
+if [[ -z "${_silent}" ]];
+then
+    echo
+    read -p ":: Enable and start services MYSQLD, KOPANO-SERVER, KOPANO-GATEWAY, KOPANO-SPOOLER, KOPANO-DAGENT, KOPANO-ICAL, PHP-FPM, NGINX, SASLAUTHD, POSTFIX [Y/n] " _response
+    echo
+else
+    _response="n"    
+fi
 if [[ "${_response,,}" = "y" ]];
 then
     echo "[....] Enable and start services"
